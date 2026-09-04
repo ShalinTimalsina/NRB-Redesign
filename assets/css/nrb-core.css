@@ -1,0 +1,225 @@
+/* NRB Core Design System */
+:root {
+    --nrb-primary: #25295B;
+    --nrb-primary-deep: #1E3A5F;
+    --nrb-secondary: #138496;
+    --nrb-gold: #C59D5F;
+    --nrb-success: #16A34A;
+    --nrb-alert: #DC2626;
+    --nrb-bg: #F8FAFC;
+    --nrb-surface: #FFFFFF;
+    --nrb-border: #E2E8F0;
+    --nrb-text: #0F172A;
+    --nrb-text-muted: #475569;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    background: var(--nrb-bg);
+    color: var(--nrb-text);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--nrb-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nrb-heading {
+    font-family: 'IBM Plex Sans', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+::selection {
+    background: rgba(19, 132, 150, 0.18);
+}
+
+.nrb-page-frame {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nrb-section-shell {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.nrb-page-title {
+    font-size: 56px;
+    line-height: 0.98;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.nrb-section-title {
+    font-size: 34px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.nrb-card-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.nrb-body-text {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--nrb-text-muted);
+}
+
+.nrb-display-note {
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748B;
+}
+
+.nrb-meta-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #64748B;
+}
+
+.nrb-surface {
+    background: var(--nrb-surface);
+    border: 1px solid var(--nrb-border);
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.nrb-surface-hover:hover {
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.nrb-divider {
+    border-color: var(--nrb-border);
+}
+
+.nrb-link {
+    color: var(--nrb-secondary);
+    text-decoration: none;
+}
+
+.nrb-link:hover {
+    color: var(--nrb-primary);
+}
+
+.nrb-focus:focus-visible {
+    outline: 2px solid var(--nrb-secondary);
+    outline-offset: 2px;
+}
+
+.nrb-footer {
+    background: var(--nrb-primary);
+    color: #FFFFFF;
+}
+
+.nrb-header {
+    background: var(--nrb-primary);
+    color: #FFFFFF;
+}
+
+.nrb-tab-chip {
+    border: 1px solid var(--nrb-border);
+    background: var(--nrb-surface);
+    color: var(--nrb-text-muted);
+}
+
+.nrb-tab-chip[aria-selected="true"] {
+    border-color: var(--nrb-primary);
+    background: var(--nrb-primary);
+    color: #FFFFFF;
+}
+
+.nrb-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(380px, 0.85fr);
+    gap: 2rem;
+}
+
+.nrb-elevated-card {
+    border: 1px solid var(--nrb-border);
+    background: var(--nrb-surface);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.nrb-breadcrumb {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #64748B;
+}
+
+.nrb-breadcrumb a {
+    color: #64748B;
+    text-decoration: none;
+}
+
+.nrb-breadcrumb a:hover {
+    color: var(--nrb-primary);
+}
+
+.nrb-page-hero {
+    border-bottom: 1px solid var(--nrb-border);
+    background: #FFFFFF;
+}
+
+.nrb-page-hero-inner {
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
+.nrb-local-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nrb-local-nav a,
+.nrb-local-nav button {
+    border: 1px solid var(--nrb-border);
+    background: #FFFFFF;
+    color: var(--nrb-text-muted);
+    border-radius: 9999px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-decoration: none;
+}
+
+.nrb-local-nav a[aria-current="page"],
+.nrb-local-nav button[aria-selected="true"] {
+    background: var(--nrb-primary);
+    border-color: var(--nrb-primary);
+    color: #FFFFFF;
+}
+
+.nrb-search-panel {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.12);
+}
+
+/* Global Smooth Scrolling & Offset */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for sticky local navigation */
+section[id], 
+div[id] {
+    scroll-margin-top: 140px;
+}
