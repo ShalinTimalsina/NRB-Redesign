@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
     <style>
-        .hub-card { transition: transform 150ms ease, box-shadow 150ms ease; }
-        .hub-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
+        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
         .about-local-nav a {
             position: relative; padding-bottom: 4px; font-size: 0.875rem;
             font-weight: 500; color: #64748B; text-decoration: none;
@@ -27,8 +27,8 @@
         .about-local-nav a:hover { color: #25295B; }
         .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
         .about-local-nav a[aria-current="page"]::after { background: #25295B; }
-        .dir-row-arrow { transition: transform 150ms ease; }
-        .dir-row:hover .dir-row-arrow { transform: translateX(3px); }
+        .dir-row-arrow { transition: transform 200ms ease-out, color 200ms ease-out; }
+        .dir-row:hover .dir-row-arrow { transform: translateX(2px); }
     </style>
 </head>
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
@@ -83,14 +83,15 @@
             </div>
         </header>
         <main>
-            
+            <!-- HERO -->
             <section class="border-b border-slate-200 bg-white">
                 <div class="nrb-section-shell py-10 lg:py-14">
-                    
                     <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
                         <a href="../../nrb.html" class="transition hover:text-[#25295B]">Home</a>
                         <span class="text-slate-300">/</span>
                         <a href="index.html" class="transition hover:text-[#25295B]">About NRB</a>
+                        <span class="text-slate-300">/</span>
+                        <a href="index.html#organization" class="transition hover:text-[#25295B]">Organization</a>
                         <span class="text-slate-300">/</span>
                         <span class="text-slate-700">Organogram</span>
                     </nav>
@@ -102,20 +103,147 @@
                         </a>
                     </div>
                     <span class="inline-block rounded-full border border-[#C59D5F]/25 bg-[#C59D5F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-5">About NRB</span>
-                    <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Organogram</h1>
-                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">The organizational chart of Nepal Rastra Bank illustrates the institutional hierarchy, reporting lines, and functional structure from the Board of Directors through to specialized departments and units.</p>
+                    <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Institutional Organogram</h1>
+                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">The official organizational chart of Nepal Rastra Bank illustrating the institutional hierarchy, decision-making bodies, executive management structure, and departmental divisions.</p>
                 </div>
             </section>
-            <section class="bg-slate-50 py-14">
+
+            <!-- ORGANIZATION NAVIGATION STRIP -->
+            <div class="border-b border-slate-200 bg-white sticky top-0 z-20 shadow-sm">
                 <div class="nrb-section-shell">
-                    <div class="nrb-elevated-card bg-white rounded-[24px] border border-slate-200 p-8 min-h-[500px] flex flex-col items-center justify-center">
-                        <div class="w-full h-96 bg-slate-100 rounded-[16px] flex items-center justify-center border border-slate-200">
-                            <span class="text-sm font-medium text-slate-500">[Full Organogram Diagram Placeholder]</span>
+                    <nav class="about-local-nav flex items-center gap-8 py-4" aria-label="Organization navigation">
+                        <a href="organogram.html" aria-current="page">Organogram</a>
+                        <a href="departments.html">Departments &amp; Divisions</a>
+                        <a href="provincial-offices.html">Provincial Offices</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- MAIN ORGANOGRAM VIEWER SECTION -->
+            <section class="bg-slate-50 py-14 border-b border-slate-200">
+                <div class="nrb-section-shell">
+                    <!-- Controls Header -->
+                    <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+                        <div>
+                            <p class="nrb-display-note">Official Diagram</p>
+                            <h2 class="nrb-section-title mt-1 text-slate-900">Nepal Rastra Bank Governance &amp; Executive Chart</h2>
+                            <p class="text-sm text-slate-500 mt-1">Official hierarchy established under the Nepal Rastra Bank Act, 2002.</p>
                         </div>
-                        <p class="text-xs text-slate-400 mt-4">Nepal Rastra Bank — Full Institutional Hierarchy</p>
+                        
+                        <!-- Language Switcher & Action Buttons -->
+                        <div class="flex items-center gap-3">
+                            <div class="bg-white p-1 rounded-full border border-slate-200 shadow-sm flex items-center">
+                                <button id="btn-lang-en" onclick="switchOrganogram('en')" class="px-4 py-1.5 rounded-full text-xs font-semibold transition-all bg-[#25295B] text-white">English Chart</button>
+                                <button id="btn-lang-ne" onclick="switchOrganogram('ne')" class="px-4 py-1.5 rounded-full text-xs font-semibold transition-all text-slate-600 hover:text-slate-900">नेपाली ढाँचा</button>
+                            </div>
+                            <a id="btn-download-img" href="https://www.nrb.org.np/contents/uploads/2026/08/Organogram-English-2083-05-04.png" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-700 shadow-sm hover:border-slate-300 hover:bg-slate-50 transition-colors">
+                                <svg class="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                                Full Resolution
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Organogram Image Viewer Box -->
+                    <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 lg:p-8 shadow-sm relative overflow-hidden">
+                        <div class="w-full overflow-x-auto min-h-[600px] flex items-center justify-center bg-slate-50/50 rounded-[16px] border border-slate-100 p-4">
+                            <img id="organogram-img"
+                                 src="https://www.nrb.org.np/contents/uploads/2026/08/Organogram-English-2083-05-04.png"
+                                 alt="Nepal Rastra Bank Official Organogram"
+                                 class="max-w-full h-auto object-contain transition-all duration-300 rounded-[8px]" />
+                        </div>
+                        <div class="mt-4 flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+                            <span>Last Updated: BS 2083-05-04</span>
+                            <span class="font-medium">Official Document • Nepal Rastra Bank</span>
+                        </div>
                     </div>
                 </div>
             </section>
+
+            <!-- KEY HIERARCHY STRUCTURE OVERVIEW -->
+            <section class="bg-white py-14 border-b border-slate-200">
+                <div class="nrb-section-shell">
+                    <header class="mb-10 text-center max-w-2xl mx-auto">
+                        <p class="nrb-display-note">Structural Layers</p>
+                        <h2 class="nrb-section-title mt-1 text-slate-900">Institutional Reporting Structure</h2>
+                        <p class="mt-2 text-sm text-slate-500">The clear division of responsibilities ensures effective governance, monetary policy implementation, and financial sector supervision.</p>
+                    </header>
+
+                    <div class="grid grid-cols-4 gap-6">
+                        <!-- Layer 1 -->
+                        <div class="bg-slate-50 rounded-[20px] p-6 border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <span class="inline-block px-3 py-1 rounded-full bg-[#25295B]/10 text-[#25295B] text-xs font-bold uppercase tracking-wider mb-3">Level 1</span>
+                                <h3 class="text-base font-bold text-slate-900 mb-2">Board of Directors</h3>
+                                <p class="text-xs text-slate-600 leading-relaxed mb-4">Apex governing body responsible for policy formulation, strategic direction, and overall oversight.</p>
+                            </div>
+                            <a href="board-of-directors.html" class="inline-flex items-center gap-1 text-xs font-semibold text-[#138496] hover:text-[#1E3A5F]">
+                                View Board Members
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+
+                        <!-- Layer 2 -->
+                        <div class="bg-slate-50 rounded-[20px] p-6 border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <span class="inline-block px-3 py-1 rounded-full bg-[#8B6A30]/10 text-[#25295B] text-xs font-bold uppercase tracking-wider mb-3">Level 2</span>
+                                <h3 class="text-base font-bold text-slate-900 mb-2">Office of the Governor</h3>
+                                <p class="text-xs text-slate-600 leading-relaxed mb-4">Executive leadership including the Governor and Deputy Governors managing central bank operations.</p>
+                            </div>
+                            <a href="index.html#leadership" class="inline-flex items-center gap-1 text-xs font-semibold text-[#138496] hover:text-[#1E3A5F]">
+                                View Leadership
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+
+                        <!-- Layer 3 -->
+                        <div class="bg-slate-50 rounded-[20px] p-6 border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <span class="inline-block px-3 py-1 rounded-full bg-[#138496]/10 text-[#138496] text-xs font-bold uppercase tracking-wider mb-3">Level 3</span>
+                                <h3 class="text-base font-bold text-slate-900 mb-2">Executive Departments</h3>
+                                <p class="text-xs text-slate-600 leading-relaxed mb-4">Specialized departments led by Executive Directors overseeing regulation, supervision, IT, and research.</p>
+                            </div>
+                            <a href="departments.html" class="inline-flex items-center gap-1 text-xs font-semibold text-[#138496] hover:text-[#1E3A5F]">
+                                Explore Departments
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+
+                        <!-- Layer 4 -->
+                        <div class="bg-slate-50 rounded-[20px] p-6 border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <span class="inline-block px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-bold uppercase tracking-wider mb-3">Level 4</span>
+                                <h3 class="text-base font-bold text-slate-900 mb-2">Provincial Offices</h3>
+                                <p class="text-xs text-slate-600 leading-relaxed mb-4">7 provincial offices ensuring nationwide presence, currency distribution, and banking operations.</p>
+                            </div>
+                            <a href="provincial-offices.html" class="inline-flex items-center gap-1 text-xs font-semibold text-[#138496] hover:text-[#1E3A5F]">
+                                View Offices Network
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                function switchOrganogram(lang) {
+                    const img = document.getElementById('organogram-img');
+                    const downloadBtn = document.getElementById('btn-download-img');
+                    const btnEn = document.getElementById('btn-lang-en');
+                    const btnNe = document.getElementById('btn-lang-ne');
+                    
+                    if (lang === 'ne') {
+                        img.src = 'https://www.nrb.org.np/contents/uploads/2026/08/Organogram-Nepali-2083-05-04-1.png';
+                        downloadBtn.href = 'https://www.nrb.org.np/contents/uploads/2026/08/Organogram-Nepali-2083-05-04-1.png';
+                        btnNe.className = 'px-4 py-1.5 rounded-full text-xs font-semibold transition-all bg-[#25295B] text-white';
+                        btnEn.className = 'px-4 py-1.5 rounded-full text-xs font-semibold transition-all text-slate-600 hover:text-slate-900';
+                    } else {
+                        img.src = 'https://www.nrb.org.np/contents/uploads/2026/08/Organogram-English-2083-05-04.png';
+                        downloadBtn.href = 'https://www.nrb.org.np/contents/uploads/2026/08/Organogram-English-2083-05-04.png';
+                        btnEn.className = 'px-4 py-1.5 rounded-full text-xs font-semibold transition-all bg-[#25295B] text-white';
+                        btnNe.className = 'px-4 py-1.5 rounded-full text-xs font-semibold transition-all text-slate-600 hover:text-slate-900';
+                    }
+                }
+            </script>
         </main>
 
         <!-- GLOBAL FOOTER -->

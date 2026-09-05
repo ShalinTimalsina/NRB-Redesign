@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_content = '''<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -834,4 +836,9 @@
     </script>
 </body>
 
-</html>
+</html>'''
+
+with open('pages/about/departments.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Redesigned departments.html cleanly without clutter or AI boxes!")

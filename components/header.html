@@ -1,33 +1,122 @@
-<header id="Header" class="nrb-header border-b border-slate-200 bg-[#25295B] text-white">
-    <div id="Header-Utility-Bar" class="border-b border-white/10">
-        <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-8 py-4">
-            <div id="Header-Brand-Block" class="flex items-center gap-4">
-                <div id="Header-Logo-Mark"
-                    class="flex h-12 w-12 items-center justify-center rounded-lg bg-white text-[#25295B]">
-                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M12 3l8 4v10l-8 4-8-4V7l8-4z" />
-                        <path d="M8 10h8" />
-                        <path d="M12 7v10" />
-                    </svg>
+<header id="Site-Header" class="bg-[#25295B] text-white shadow-sm font-['IBM_Plex_Sans'] relative z-50">
+    <style>
+        /* Active nav underline indicator */
+        #Primary-Navigation a {
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        #Primary-Navigation a::after {
+            content: '';
+            position: absolute;
+            bottom: -14px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: transparent;
+            border-radius: 2px 2px 0 0;
+            transition: background 150ms;
+        }
+
+        #Primary-Navigation a:hover::after,
+        #Primary-Navigation a.nrb-nav-active::after {
+            background: #C59D5F;
+        }
+
+        #Primary-Navigation a.nrb-nav-active {
+            color: #ffffff;
+        }
+
+        /* Dropdown menu */
+        .nrb-dropdown {
+            position: relative;
+        }
+
+        .nrb-dropdown-panel {
+            position: absolute;
+            top: calc(100% + 14px);
+            left: -16px;
+            min-width: 240px;
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12);
+            padding: 8px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-6px);
+            transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
+            z-index: 100;
+        }
+
+        .nrb-dropdown:hover .nrb-dropdown-panel,
+        .nrb-dropdown:focus-within .nrb-dropdown-panel {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .nrb-dropdown-panel a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #334155;
+            text-transform: none;
+            letter-spacing: 0;
+            text-decoration: none;
+            transition: background 120ms, color 120ms;
+        }
+
+        .nrb-dropdown-panel a:hover {
+            background: #F1F5F9;
+            color: #138496;
+        }
+
+        .nrb-dropdown-panel a::after {
+            display: none !important;
+        }
+
+        .nrb-dropdown-panel .nrb-dd-divider {
+            border: none;
+            border-top: 1px solid #E2E8F0;
+            margin: 6px 0;
+        }
+
+        .nrb-dropdown-chevron {
+            width: 12px;
+            height: 12px;
+            transition: transform 200ms;
+            flex-shrink: 0;
+        }
+
+        .nrb-dropdown:hover .nrb-dropdown-chevron {
+            transform: rotate(180deg);
+        }
+    </style>
+    <div class="bg-[#1E3A5F]">
+        <div class="nrb-section-shell flex items-center justify-between py-3">
+            <a id="Brand-Mark" href="nrb.html" class="flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+                    <img src="assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal"
+                        class="h-11 w-11 object-contain" />
                 </div>
-                <div id="Header-Brand-Text" class="flex flex-col">
-                    <span class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra
-                        Bank</span>
-                    <span class="text-sm text-slate-300">Central Bank of Nepal</span>
+                <div class="flex flex-col">
+                    <span class="text-sm font-bold uppercase tracking-wider text-slate-100">Nepal Rastra Bank</span>
+                    <span class="text-xs text-slate-300 font-medium">Central Bank of Nepal</span>
                 </div>
-            </div>
-            <div id="Header-Utility-Group" class="flex items-center gap-4">
-                <div id="Language-Switcher"
-                    class="flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-100">
-                    <span class="font-medium">EN</span>
+            </a>
+            <div class="flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-slate-200">
+                <div class="flex items-center gap-2">
+                    <span class="text-white">EN</span>
                     <span class="text-white/30">|</span>
-                    <span>Nepali</span>
+                    <a href="#" class="transition hover:text-white text-slate-400">NEP</a>
                 </div>
-                <button id="Btn-Search" type="button" aria-label="Open site search"
-                    class="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#138496]">
-                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <button type="button" aria-label="Site Search"
+                    class="flex items-center gap-2 transition hover:text-[#138496]">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                         <circle cx="11" cy="11" r="7" />
                         <path d="m20 20-3.5-3.5" />
                     </svg>
@@ -36,24 +125,86 @@
             </div>
         </div>
     </div>
-    <nav id="Nav-Bar" aria-label="Primary" class="bg-[#25295B]">
-        <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-8 py-4">
-            <div id="Nav-Links" class="flex items-center gap-8 text-sm font-medium text-slate-100">
-                <a id="Nav-About-NRB" href="../pages/about/index.html" class="transition hover:text-white">About NRB</a>
-                <a id="Nav-Monetary-Policy" href="../pages/monetary-policy/index.html"
-                    class="transition hover:text-white">Monetary Policy</a>
-                <a id="Nav-Bank-Supervision" href="../pages/bank-supervision/index.html"
-                    class="transition hover:text-white">Bank Supervision</a>
-                <a id="Nav-Forex-Management" href="../pages/forex-management/index.html"
-                    class="transition hover:text-white">Forex Management</a>
-                <a id="Nav-Statistics" href="../pages/statistics/index.html"
-                    class="transition hover:text-white">Statistics</a>
-                <a id="Nav-Publications" href="../pages/publications/index.html"
-                    class="transition hover:text-white">Publications</a>
-                <a id="Nav-Notices" href="../pages/notices/index.html" class="transition hover:text-white">Notices</a>
-                <a id="Nav-Careers" href="../pages/careers/index.html" class="transition hover:text-white">Careers</a>
-                <a id="Nav-Contact" href="../pages/contact/index.html" class="transition hover:text-white">Contact</a>
-            </div>
+    <div id="Main-Header" class="bg-[#25295B] border-b-2 border-[#C59D5F]">
+        <div class="nrb-section-shell py-3">
+            <nav id="Primary-Navigation" aria-label="Primary"
+                class="flex items-center justify-between text-[13px] font-semibold tracking-wide uppercase font-['Inter']">
+
+                <!-- About NRB with dropdown -->
+                <div class="nrb-dropdown">
+                    <a href="pages/about/index.html"
+                        class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]"
+                        data-nav-key="about">
+                        About NRB
+                        <svg class="nrb-dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="nrb-dropdown-panel">
+                        <a href="pages/about/index.html#overview">
+                            <svg class="w-4 h-4 text-[#138496] flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                            Institution Overview
+                        </a>
+                        <a href="pages/about/index.html#leadership">
+                            <svg class="w-4 h-4 text-[#138496] flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            Leadership & Governance
+                        </a>
+                        <a href="pages/about/index.html#organization">
+                            <svg class="w-4 h-4 text-[#138496] flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7" rx="1" />
+                                <rect x="14" y="3" width="7" height="7" rx="1" />
+                                <rect x="14" y="14" width="7" height="7" rx="1" />
+                                <rect x="3" y="14" width="7" height="7" rx="1" />
+                            </svg>
+                            Organizational Structure
+                        </a>
+                        <a href="pages/about/index.html#offices">
+                            <svg class="w-4 h-4 text-[#138496] flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            Offices & Network
+                        </a>
+                        <hr class="nrb-dd-divider">
+                        <a href="pages/about/financial-statements.html">
+                            <svg class="w-4 h-4 text-[#138496] flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Financial Statements
+                        </a>
+                    </div>
+                </div>
+
+                <a href="pages/monetary-policy/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="monetary-policy">Monetary Policy</a>
+                <a href="pages/bank-supervision/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="bank-supervision">Bank Supervision</a>
+                <a href="pages/forex-management/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="forex-management">Forex Management</a>
+                <a href="pages/statistics/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="statistics">Statistics</a>
+                <a href="pages/publications/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="publications">Publications</a>
+                <a href="pages/notices/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="notices">Notices</a>
+                <a href="pages/careers/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="careers">Careers</a>
+                <a href="pages/contact/index.html" class="text-slate-100 transition hover:text-[#138496]"
+                    data-nav-key="contact">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </div>
 </header>

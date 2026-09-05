@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="view-transition" content="same-origin" />
     <title>Information Officers | Nepal Rastra Bank</title>
-    <meta name="description" content="Designated officers responsible for public information disclosure and institutional transparency under the Right to Information Act." />
+    <meta name="description" content="Designated Information Officers and Spokesperson of Nepal Rastra Bank responsible for public information and RTI requests." />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
     <style>
-        .hub-card { transition: transform 150ms ease, box-shadow 150ms ease; }
-        .hub-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
+        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
         .about-local-nav a {
             position: relative; padding-bottom: 4px; font-size: 0.875rem;
             font-weight: 500; color: #64748B; text-decoration: none;
@@ -27,10 +27,12 @@
         .about-local-nav a:hover { color: #25295B; }
         .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
         .about-local-nav a[aria-current="page"]::after { background: #25295B; }
-        .dir-row-arrow { transition: transform 150ms ease; }
-        .dir-row:hover .dir-row-arrow { transform: translateX(3px); }
+        .dir-row-arrow { transition: transform 200ms ease-out, color 200ms ease-out; }
+        .dir-row:hover .dir-row-arrow { transform: translateX(2px); }
+        .officer-row:hover { background: #f8fafc; }
     </style>
 </head>
+
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
     <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
 
@@ -82,19 +84,21 @@
                 </div>
             </div>
         </header>
+
         <main>
-            
+
+            <!-- HERO — identical structure across all Leadership pages -->
             <section class="border-b border-slate-200 bg-white">
                 <div class="nrb-section-shell py-10 lg:py-14">
-                    
                     <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
                         <a href="../../nrb.html" class="transition hover:text-[#25295B]">Home</a>
                         <span class="text-slate-300">/</span>
                         <a href="index.html" class="transition hover:text-[#25295B]">About NRB</a>
                         <span class="text-slate-300">/</span>
+                        <a href="index.html#leadership" class="transition hover:text-[#25295B]">Leadership</a>
+                        <span class="text-slate-300">/</span>
                         <span class="text-slate-700">Information Officers</span>
                     </nav>
-                    
                     <div class="mb-5">
                         <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] transition-colors hover:text-[#1E3A5F]">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
@@ -103,52 +107,210 @@
                     </div>
                     <span class="inline-block rounded-full border border-[#C59D5F]/25 bg-[#C59D5F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-5">About NRB</span>
                     <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Information Officers</h1>
-                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">Designated information officers responsible for responding to public information requests under the Right to Information Act, 2007 and promoting institutional transparency.</p>
+                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">Designated officers responsible for public information, media relations, and Right to Information (RTI) requests at Nepal Rastra Bank's head office and provincial offices.</p>
                 </div>
             </section>
-            <section class="bg-slate-50 py-14">
+
+            <!-- LEADERSHIP NAVIGATION — same strip on all Leadership pages -->
+            <div class="border-b border-slate-200 bg-white">
                 <div class="nrb-section-shell">
-                    <div class="nrb-elevated-card bg-[#1E3A5F] rounded-[20px] p-8 text-white mb-8">
-                        <p class="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C59D5F] mb-2">Legal Basis</p>
-                        <p class="text-sm text-slate-300 leading-6 max-w-2xl">The Right to Information Act, 2007 mandates public bodies to designate information officers to facilitate citizens' access to public information. All requests should be directed to the designated officers listed below.</p>
+                    <nav class="about-local-nav flex items-center gap-8 py-4" aria-label="Leadership navigation">
+                        <a href="board-of-directors.html">Board of Directors</a>
+                        <a href="principal-officers.html">Principal Officers</a>
+                        <a href="information-officers.html" aria-current="page">Information Officers</a>
+                        <a href="governors-history.html">Governors History</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- HEAD OFFICE OFFICERS -->
+            <section class="bg-slate-50 py-14 border-b border-slate-200">
+                <div class="nrb-section-shell">
+                    <div class="mb-8">
+                        <p class="nrb-display-note">Head Office · Kathmandu</p>
+                        <h2 class="nrb-section-title mt-1 text-slate-900">Spokesperson &amp; Information Officers</h2>
+                        <p class="mt-2 text-sm text-slate-500">Primary contacts for media relations and public information at Nepal Rastra Bank head office.</p>
                     </div>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0"><span class="text-[9px] text-slate-400">Photo</span></div>
+
+                    <div class="grid grid-cols-3 gap-6">
+
+                        <!-- Spokesperson -->
+                        <div class="bg-white rounded-[20px] border border-slate-200 p-7 flex flex-col justify-between">
                             <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Chief Information Officer</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-1">[Officer Name]</h3>
-                                <p class="text-xs text-slate-500">[Designation] · [Department]</p>
-                                <p class="text-xs text-slate-500 mt-1">Email: info@nrb.org.np</p>
+                                <div class="w-32 h-32 rounded-full overflow-hidden bg-slate-100 mb-5 border-2 border-slate-200 shadow-sm">
+                                    <img src="https://www.nrb.org.np/contents/uploads/2025/11/GURU-SIR-NEW-1.jpg"
+                                         alt="Mr. Guru Prasad Paudel"
+                                         class="member-photo w-full h-full object-cover object-top"
+                                         onerror="this.style.display='none'" />
+                                </div>
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Spokesperson</p>
+                                <p class="text-xs text-slate-400 mb-3">प्रवक्ता</p>
+                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Mr. Guru Prasad Paudel</h3>
+                                <p class="text-sm text-slate-500 mb-5">श्री गुरुप्रसाद पौडेल</p>
                             </div>
-                        </div><div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0"><span class="text-[9px] text-slate-400">Photo</span></div>
-                            <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Deputy Information Officer</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-1">[Officer Name]</h3>
-                                <p class="text-xs text-slate-500">[Designation] · [Department]</p>
-                                <p class="text-xs text-slate-500 mt-1">Email: info@nrb.org.np</p>
-                            </div>
-                        </div><div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0"><span class="text-[9px] text-slate-400">Photo</span></div>
-                            <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Deputy Information Officer</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-1">[Officer Name]</h3>
-                                <p class="text-xs text-slate-500">[Designation] · [Department]</p>
-                                <p class="text-xs text-slate-500 mt-1">Email: info@nrb.org.np</p>
-                            </div>
-                        </div><div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0"><span class="text-[9px] text-slate-400">Photo</span></div>
-                            <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Deputy Information Officer</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-1">[Officer Name]</h3>
-                                <p class="text-xs text-slate-500">[Designation] · [Department]</p>
-                                <p class="text-xs text-slate-500 mt-1">Email: info@nrb.org.np</p>
+
+                            <div class="space-y-3 pt-4 border-t border-slate-100">
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Mobile</p>
+                                    <a href="tel:+9779767983232" class="text-sm text-slate-700 hover:text-[#138496] transition-colors">+977-9767983232</a>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Telephone</p>
+                                    <p class="text-sm text-slate-700">+977-1-5719641 (Ext: 1210)</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Email</p>
+                                    <a href="mailto:spokesperson@nrb.org.np" class="text-sm text-[#138496] hover:text-[#1E3A5F] transition-colors">spokesperson@nrb.org.np</a>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Deputy Spokesperson / Information Officer -->
+                        <div class="bg-white rounded-[20px] border border-slate-200 p-7 flex flex-col justify-between">
+                            <div>
+                                <div class="w-32 h-32 rounded-full overflow-hidden bg-slate-100 mb-5 border-2 border-slate-200 shadow-sm">
+                                    <img src="https://www.nrb.org.np/contents/uploads/2026/06/Sudha-Shrestha.jpg"
+                                         alt="Ms. Sudha Shrestha"
+                                         class="member-photo w-full h-full object-cover object-top"
+                                         onerror="this.style.display='none'" />
+                                </div>
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Deputy Spokesperson &amp; Information Officer</p>
+                                <p class="text-xs text-slate-400 mb-3">सह प्रवक्ता तथा सूचना अधिकारी</p>
+                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Ms. Sudha Shrestha</h3>
+                                <p class="text-sm text-slate-500 mb-5">श्री सुधा श्रेष्ठ</p>
+                            </div>
+
+                            <div class="space-y-3 pt-4 border-t border-slate-100">
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Mobile</p>
+                                    <a href="tel:+9779741803278" class="text-sm text-slate-700 hover:text-[#138496] transition-colors">+977-9741803278</a>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Telephone</p>
+                                    <p class="text-sm text-slate-700">977-01-5719603 (Ext: 2141)</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Email</p>
+                                    <a href="mailto:information@nrb.org.np" class="text-sm text-[#138496] hover:text-[#1E3A5F] transition-colors">information@nrb.org.np</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Assistant Information Officer -->
+                        <div class="bg-white rounded-[20px] border border-slate-200 p-7 flex flex-col justify-between">
+                            <div>
+                                <div class="w-32 h-32 rounded-full overflow-hidden bg-slate-100 mb-5 border-2 border-slate-200 shadow-sm flex items-center justify-center">
+                                    <svg class="w-10 h-10 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+                                </div>
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Assistant Information Officer</p>
+                                <p class="text-xs text-slate-400 mb-3">सहायक सूचना अधिकारी</p>
+                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Dr. Sanjay Prasad Mishra</h3>
+                                <p class="text-sm text-slate-500 mb-5">डा. संजय प्रसाद मिश्र</p>
+                            </div>
+
+                            <div class="space-y-3 pt-4 border-t border-slate-100">
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Mobile</p>
+                                    <a href="tel:+9779851107215" class="text-sm text-slate-700 hover:text-[#138496] transition-colors">+977-9851107215</a>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Telephone</p>
+                                    <p class="text-sm text-slate-700">+977-1-5719603 (Ext: 2139)</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">Email</p>
+                                    <a href="mailto:information@nrb.org.np" class="text-sm text-[#138496] hover:text-[#1E3A5F] transition-colors">information@nrb.org.np</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
+
+            <!-- PROVINCIAL OFFICES -->
+            <section class="bg-white py-14">
+                <div class="nrb-section-shell">
+                    <div class="mb-8">
+                        <p class="nrb-display-note">Provincial Coverage</p>
+                        <h2 class="nrb-section-title mt-1 text-slate-900">Province Office Information Officers</h2>
+                        <p class="mt-2 text-sm text-slate-500">Designated information officers at each Nepal Rastra Bank provincial office.</p>
+                    </div>
+
+                    <div class="bg-white rounded-[20px] border border-slate-200 overflow-hidden">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-slate-100 bg-slate-50">
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">Office</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">Officer</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">Mobile</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">Telephone</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">Email</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-50">
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Biratnagar</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Mr. Khil Bahadur Shrestha</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779842034166" class="hover:text-[#138496] transition-colors">+977-9842034166</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-21-535730</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:kbshrestha@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">kbshrestha@nrb.org.np</a></td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Janakpur</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Ms. Sneha Agrawal</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779841409904" class="hover:text-[#138496] transition-colors">+977-9841409904</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-41-426272 (Ext: 165)</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:snehaagrawal@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">snehaagrawal@nrb.org.np</a></td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Birgunj</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Mr. Jagdish Kumar</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779851120004" class="hover:text-[#138496] transition-colors">+977-9851120004</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-51-4386336</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:jagdishkumar@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">jagdishkumar@nrb.org.np</a></td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Pokhara</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Mr. Ram Kumar Karki</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779856002355" class="hover:text-[#138496] transition-colors">+977-9856002355</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-61-455565 (Ext: 120)</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:rkk@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">rkk@nrb.org.np</a></td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Siddharthanagar</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Mr. Jeevan Prakash Pandey</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779857020935" class="hover:text-[#138496] transition-colors">+977-9857020935</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-71-576393 (Ext: 108)</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:pandeyjp@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">pandeyjp@nrb.org.np</a></td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Nepalgunj</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Mr. Bhimarjun Shah</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779858062213" class="hover:text-[#138496] transition-colors">+977-9858062213</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-81-590170</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:shahbhim@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">shahbhim@nrb.org.np</a></td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Dhangadhi</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Mr. Narendrabahadur Chand</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779848425199" class="hover:text-[#138496] transition-colors">+977-9848425199</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-91-527706</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:narendrachand@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">narendrachand@nrb.org.np</a></td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">NRB Surkhet</td>
+                                    <td class="px-6 py-3.5 text-slate-700">Mr. Shrijan Rajbhandari</td>
+                                    <td class="px-6 py-3.5 text-slate-500"><a href="tel:+9779843147808" class="hover:text-[#138496] transition-colors">+977-9843147808</a></td>
+                                    <td class="px-6 py-3.5 text-slate-500">+977-83-525523</td>
+                                    <td class="px-6 py-3.5"><a href="mailto:shreejan.rajbhandari@nrb.org.np" class="text-[#138496] hover:text-[#1E3A5F] transition-colors">shreejan.rajbhandari@nrb.org.np</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <!-- GLOBAL FOOTER -->
@@ -206,7 +368,7 @@
                     </div>
                 </div>
                 <div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
-                    <p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+                    <p>&copy; 2026 Nepal Rastra Bank. All rights reserved.</p>
                     <div class="flex flex-wrap items-center gap-5">
                         <a href="#" class="transition hover:text-white">Privacy Policy</a>
                         <a href="#" class="transition hover:text-white">Accessibility</a>
@@ -216,6 +378,7 @@
                 </div>
             </div>
         </footer>
+
     </div>
 </body>
 

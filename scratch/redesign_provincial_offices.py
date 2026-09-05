@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_content = '''<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="view-transition" content="same-origin" />
     <title>Provincial Offices | Nepal Rastra Bank</title>
-    <meta name="description" content="Official directory and network of 8 Nepal Rastra Bank provincial offices across Koshi, Madhesh, Gandaki, Lumbini, Karnali, and Sudurpashchim provinces." />
+    <meta name="description" content="Official directory and network of Nepal Rastra Bank provincial offices across Koshi, Madhesh, Gandaki, Lumbini, Karnali, and Sudurpashchim provinces." />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
     <style>
-        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
-        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
+        .hub-card { transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease; }
+        .hub-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
         .about-local-nav a {
             position: relative; padding-bottom: 4px; font-size: 0.875rem;
             font-weight: 500; color: #64748B; text-decoration: none;
@@ -29,7 +31,7 @@
         .about-local-nav a[aria-current="page"]::after { background: #25295B; }
     </style>
 </head>
-<body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased font-['Inter',sans-serif]">
+<body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
     <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
 
         <!-- GLOBAL HEADER -->
@@ -102,7 +104,7 @@
                         </a>
                     </div>
                     <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Provincial Offices Network</h1>
-                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">Nepal Rastra Bank operates eight provincial offices strategically located across Nepal, extending central banking operations, currency management, government transaction clearing, and financial-sector oversight nationwide.</p>
+                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">Nepal Rastra Bank maintains seven provincial offices strategically located across Nepal's provinces, extending central banking, currency management, supervisory oversight, and public treasury services nationwide.</p>
                 </div>
             </section>
 
@@ -123,12 +125,12 @@
                     <div class="mb-8">
                         <p class="nrb-display-note">Nationwide Infrastructure</p>
                         <h2 class="nrb-section-title mt-1 text-slate-900">Regional Banking &amp; Treasury Network</h2>
-                        <p class="text-sm text-slate-500 mt-1">Empowered branch offices serving government agencies, banking institutions, and the public across all provinces.</p>
+                        <p class="text-sm text-slate-500 mt-1">Empowered branch offices serving government agencies, banking institutions, and the public across all 7 provinces.</p>
                     </div>
 
                     <div class="grid grid-cols-4 gap-6 mb-12">
                         <div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
-                            <p class="text-3xl font-bold text-[#25295B] mb-1">8</p>
+                            <p class="text-3xl font-bold text-[#25295B] mb-1">7</p>
                             <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Provincial Offices</p>
                         </div>
                         <div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
@@ -145,296 +147,260 @@
                         </div>
                     </div>
 
-                    <!-- PROVINCIAL OFFICE DIRECTORY GRID (8 OFFICES) -->
+                    <!-- PROVINCIAL OFFICE DIRECTORY GRID -->
                     <div class="mb-6 flex items-center justify-between">
                         <h3 class="text-xl font-bold text-slate-900">Provincial Office Directory</h3>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">8 Regional Branches</span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">7 Regional Branches</span>
                     </div>
 
                     <div class="grid grid-cols-2 gap-6">
                         
-                        <!-- 1. Biratnagar Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+                        <!-- 1. Biratnagar -->
+                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm hover:border-[#1E3A5F]/20 transition-all flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Koshi Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Operational</span>
                                 </div>
                                 <h4 class="text-xl font-bold text-slate-900 mb-2">Biratnagar Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Serves as the Nepal Rastra Bank provincial office for Koshi Province, supporting currency management, government transactions, banking operations, and financial-sector oversight.</p>
+                                <p class="text-sm text-slate-500 leading-relaxed mb-6">Manages currency chests, government accounts, and supervisory oversight for financial institutions across Koshi Province.</p>
                                 
                                 <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Biratnagar, Morang, Koshi Province</p>
+                                            <p class="text-slate-600">Main Road, Biratnagar, Morang</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-21-442221 / +977-21-442058 / +977-21-442152</p>
+                                            <p class="text-slate-600">+977-21-525284 / +977-21-525285</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbbrt@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbbrt@nrb.org.np</a>
+                                            <p class="text-[#138496] font-medium">biratnagar@nrb.org.np</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 2. Janakpur Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+                        <!-- 2. Janakpur -->
+                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm hover:border-[#1E3A5F]/20 transition-all flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Madhesh Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Operational</span>
                                 </div>
                                 <h4 class="text-xl font-bold text-slate-900 mb-2">Janakpur Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Serves Madhesh Province through banking operations, government transactions, currency management, and regulatory and supervisory functions.</p>
+                                <p class="text-sm text-slate-500 leading-relaxed mb-6">Provides currency distribution, government transaction clearing, and regulatory support for Madhesh Province.</p>
                                 
                                 <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Janakpurdham, Dhanusha, Madhesh Province</p>
+                                            <p class="text-slate-600">Station Road, Janakpurdham, Dhanusha</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-41-426172 / +977-41-426498</p>
+                                            <p class="text-slate-600">+977-41-524250 / +977-41-524251</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbjnp@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbjnp@nrb.org.np</a>
+                                            <p class="text-[#138496] font-medium">janakpur@nrb.org.np</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 3. Birgunj Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Madhesh Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Birgunj Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking and financial-sector operations in the Birgunj area, including currency management, government transactions, and regulatory functions.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Birgunj, Parsa, Madhesh Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-51-522137 / +977-51-522138</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbbirgunj@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbbirgunj@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 4. Pokhara Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+                        <!-- 3. Pokhara -->
+                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm hover:border-[#1E3A5F]/20 transition-all flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Gandaki Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Operational</span>
                                 </div>
                                 <h4 class="text-xl font-bold text-slate-900 mb-2">Pokhara Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking operations, government transactions, foreign-exchange-related activities, and financial-sector supervision across Gandaki Province.</p>
+                                <p class="text-sm text-slate-500 leading-relaxed mb-6">Executes foreign exchange clearances, banking supervision, and treasury management for Gandaki Province.</p>
                                 
                                 <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Pokhara, Kaski, Gandaki Province</p>
+                                            <p class="text-slate-600">Rastra Bank Chowk, Pokhara, Kaski</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-61-455115 / +977-61-453194</p>
+                                            <p class="text-slate-600">+977-61-520355 / +977-61-520356</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbpkr@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbpkr@nrb.org.np</a>
+                                            <p class="text-[#138496] font-medium">pokhara@nrb.org.np</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 5. Siddharthanagar Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+                        <!-- 4. Siddharthanagar -->
+                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm hover:border-[#1E3A5F]/20 transition-all flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Lumbini Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Operational</span>
                                 </div>
                                 <h4 class="text-xl font-bold text-slate-900 mb-2">Siddharthanagar Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking operations, government transactions, currency management, foreign-exchange activities, and financial-sector supervision in Lumbini Province.</p>
+                                <p class="text-sm text-slate-500 leading-relaxed mb-6">Facilitates border trade currency settlement, public treasury operations, and banking supervision in Lumbini Province.</p>
                                 
                                 <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Siddharthanagar, Rupandehi, Lumbini Province</p>
+                                            <p class="text-slate-600">Bank Road, Siddharthanagar, Rupandehi</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-71-590912 / +977-71-590913 / +977-71-590914</p>
+                                            <p class="text-slate-600">+977-71-520128 / +977-71-520129</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbsid@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbsid@nrb.org.np</a>
+                                            <p class="text-[#138496] font-medium">bhairahawa@nrb.org.np</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 6. Nepalgunj Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+                        <!-- 5. Nepalgunj -->
+                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm hover:border-[#1E3A5F]/20 transition-all flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Lumbini Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Operational</span>
                                 </div>
                                 <h4 class="text-xl font-bold text-slate-900 mb-2">Nepalgunj Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking and financial-sector operations in western Nepal, including currency management, government transactions, and supervisory functions.</p>
+                                <p class="text-sm text-slate-500 leading-relaxed mb-6">Serves regional currency distribution, government account management, and bank inspection across mid-western districts.</p>
                                 
                                 <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Nepalgunj, Banke, Lumbini Province</p>
+                                            <p class="text-slate-600">Dhamboji, Nepalgunj, Banke</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-81-590171 / +977-81-590170</p>
+                                            <p class="text-slate-600">+977-81-520241 / +977-81-520242</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbnep@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbnep@nrb.org.np</a>
+                                            <p class="text-[#138496] font-medium">nepalgunj@nrb.org.np</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 7. Surkhet Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+                        <!-- 6. Birendranagar -->
+                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm hover:border-[#1E3A5F]/20 transition-all flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Karnali Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Operational</span>
                                 </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Surkhet Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Serves Karnali Province through currency management, government transactions, banking operations, and financial-sector services.</p>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">Birendranagar Office</h4>
+                                <p class="text-sm text-slate-500 leading-relaxed mb-6">Manages currency availability, public access to financial services, and treasury operations for Karnali Province.</p>
                                 
                                 <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Birendranagar, Surkhet, Karnali Province</p>
+                                            <p class="text-slate-600">Airport Road, Birendranagar, Surkhet</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-83-520517 / +977-83-525523</p>
+                                            <p class="text-slate-600">+977-83-520126 / +977-83-520127</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbsurkhet@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbsurkhet@nrb.org.np</a>
+                                            <p class="text-[#138496] font-medium">surkhet@nrb.org.np</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 8. Dhangadhi Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+                        <!-- 7. Dhangadhi -->
+                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm hover:border-[#1E3A5F]/20 transition-all flex flex-col justify-between col-span-2">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Sudurpashchim Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Operational</span>
                                 </div>
                                 <h4 class="text-xl font-bold text-slate-900 mb-2">Dhangadhi Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports central banking operations, currency management, government transactions, and financial-sector supervision across Sudurpashchim Province.</p>
+                                <p class="text-sm text-slate-500 leading-relaxed mb-6">Extends central banking, currency chests, government accounting, and financial institution supervision across Sudurpashchim Province.</p>
                                 
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+                                <div class="grid grid-cols-3 gap-6 text-sm text-slate-600 border-t border-slate-100 pt-5">
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Dhangadhi, Kailali, Sudurpashchim Province</p>
+                                            <p class="text-slate-600">Main Street, Dhangadhi, Kailali</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-91-527701 / +977-91-527712 / +977-91-527702</p>
+                                            <p class="text-slate-600">+977-91-522194 / +977-91-522195</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                         <div>
                                             <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbdhn@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbdhn@nrb.org.np</a>
+                                            <p class="text-[#138496] font-medium">dhangadhi@nrb.org.np</p>
                                         </div>
                                     </div>
                                 </div>
@@ -514,4 +480,9 @@
     </div>
 </body>
 
-</html>
+</html>'''
+
+with open('pages/about/provincial-offices.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Redesigned provincial-offices.html successfully!")

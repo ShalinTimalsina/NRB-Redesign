@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+import os
+import re
+
+html_content = '''<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -514,4 +517,9 @@
     </div>
 </body>
 
-</html>
+</html>'''
+
+with open('pages/about/provincial-offices.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Updated provincial-offices.html with all 8 official provincial offices successfully!")

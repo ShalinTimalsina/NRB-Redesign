@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
     <style>
-        .hub-card { transition: transform 150ms ease, box-shadow 150ms ease; }
-        .hub-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
+        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
         .about-local-nav a {
             position: relative; padding-bottom: 4px; font-size: 0.875rem;
             font-weight: 500; color: #64748B; text-decoration: none;
@@ -27,10 +27,12 @@
         .about-local-nav a:hover { color: #25295B; }
         .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
         .about-local-nav a[aria-current="page"]::after { background: #25295B; }
-        .dir-row-arrow { transition: transform 150ms ease; }
-        .dir-row:hover .dir-row-arrow { transform: translateX(3px); }
+        .dir-row-arrow { transition: transform 200ms ease-out, color 200ms ease-out; }
+        .dir-row:hover .dir-row-arrow { transform: translateX(2px); }
+        .officer-row:hover { background: #f8fafc; }
     </style>
 </head>
+
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
     <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
 
@@ -61,7 +63,7 @@
                                 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
                             </a>
                             <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+                                <div class="bg-white rounded-[20px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
                                     <a href="../../pages/about/index.html#overview" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Institution Overview</a>
                                     <a href="../../pages/about/index.html#leadership" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Leadership &amp; Governance</a>
                                     <a href="../../pages/about/index.html#organization" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Organizational Structure</a>
@@ -82,19 +84,21 @@
                 </div>
             </div>
         </header>
+
         <main>
-            
+
+            <!-- HERO — identical structure across all Leadership pages -->
             <section class="border-b border-slate-200 bg-white">
                 <div class="nrb-section-shell py-10 lg:py-14">
-                    
                     <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
                         <a href="../../nrb.html" class="transition hover:text-[#25295B]">Home</a>
                         <span class="text-slate-300">/</span>
                         <a href="index.html" class="transition hover:text-[#25295B]">About NRB</a>
                         <span class="text-slate-300">/</span>
+                        <a href="index.html#leadership" class="transition hover:text-[#25295B]">Leadership</a>
+                        <span class="text-slate-300">/</span>
                         <span class="text-slate-700">Principal Officers</span>
                     </nav>
-                    
                     <div class="mb-5">
                         <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] transition-colors hover:text-[#1E3A5F]">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
@@ -103,56 +107,253 @@
                     </div>
                     <span class="inline-block rounded-full border border-[#C59D5F]/25 bg-[#C59D5F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-5">About NRB</span>
                     <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Principal Officers</h1>
-                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">The Principal Officers of Nepal Rastra Bank comprise the Governor, Deputy Governors, and Executive Directors who collectively lead the administration and operations of the Bank.</p>
+                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">The Principal Officers of Nepal Rastra Bank comprise Executive Directors, Directors, and Acting Directors who collectively lead the administration and operations of the Bank across all departments.</p>
                 </div>
             </section>
-            <section class="bg-slate-50 py-14">
+
+            <!-- LEADERSHIP NAVIGATION — same strip on all Leadership pages -->
+            <div class="border-b border-slate-200 bg-white">
                 <div class="nrb-section-shell">
-                    <div class="grid grid-cols-2 gap-6">
-                        
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-16 h-16 rounded-2xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400 font-medium">Photo</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Governor</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-2">[Officer Name]</h3>
-                                <p class="text-sm text-slate-500 leading-5">Chief executive and monetary authority of Nepal Rastra Bank.</p>
-                            </div>
+                    <nav class="about-local-nav flex items-center gap-8 py-4" aria-label="Leadership navigation">
+                        <a href="board-of-directors.html">Board of Directors</a>
+                        <a href="principal-officers.html" aria-current="page">Principal Officers</a>
+                        <a href="information-officers.html">Information Officers</a>
+                        <a href="governors-history.html">Governors History</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- EXECUTIVE DIRECTORS -->
+            <section class="bg-slate-50 py-14 border-b border-slate-200">
+                <div class="nrb-section-shell">
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <p class="nrb-display-note">Senior Management</p>
+                            <h2 class="nrb-section-title mt-1 text-slate-900">Executive Directors</h2>
+                            <p class="mt-2 text-sm text-slate-500">Senior officers heading key departments across Nepal Rastra Bank.</p>
                         </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-16 h-16 rounded-2xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400 font-medium">Photo</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Deputy Governor</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-2">[Officer Name]</h3>
-                                <p class="text-sm text-slate-500 leading-5">Supports the Governor in policy formulation and institutional management.</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-16 h-16 rounded-2xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400 font-medium">Photo</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Deputy Governor</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-2">[Officer Name]</h3>
-                                <p class="text-sm text-slate-500 leading-5">Oversees supervisory, regulatory and financial sector functions.</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-7 flex items-start gap-5">
-                            <div class="w-16 h-16 rounded-2xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400 font-medium">Photo</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-1">Executive Director</p>
-                                <h3 class="text-base font-semibold text-slate-900 mb-2">[Officer Name]</h3>
-                                <p class="text-sm text-slate-500 leading-5">Leads strategic departmental operations and policy implementation.</p>
-                            </div>
-                        </div>
+                        <span class="rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-semibold text-slate-600 shadow-sm">18 Executive Directors</span>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-slate-200 shadow-sm overflow-hidden">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-slate-200 bg-slate-50/80">
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500 w-12">#</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500">Name</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500">Department</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">1</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Revati Prasad Nepal</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Assets and Service Management Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">2</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Ramu Paudel</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Banks and Financial Institutions Regulation Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">3</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Vishrut Thapa</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Financial Institutions Supervision Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">4</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Daya Ram Sharma</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Monetary Management Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">5</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Guru Prasad Paudel</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Office of the Governor</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">6</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Satyendra Timilsina</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Economic Research Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">7</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Chet Prasad Uprety</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Internal Audit Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">8</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Ram Sharan Kharel</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Information Technology Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">9</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Dilli Ram Pokhrel</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Foreign Exchange Management Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">10</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Nishchal Adhikari</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Payment Systems Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">11</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Anuj Dahal</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Currency Management Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">12</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Dipak Raj Lamichhane</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Non Bank Financial Institutions Supervision Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">13</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Rajan Bikram Thapa</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Micro-Finance Institutions Supervision Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">14</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Rajendra Bhattarai</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Financial Management Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">15</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Hem Prasad Neupane</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Banking Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">16</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Mukti Nath Sapkota</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Corporate Planning and Risk Management Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">17</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Govinda Prasad Nagila</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Human Resource Management Department</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">18</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Meena Pandey</td>
+                                    <td class="px-6 py-3.5 text-slate-600">Bank Supervision Department</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
+
+            <!-- DIRECTORS -->
+            <section class="bg-white py-14 border-b border-slate-200">
+                <div class="nrb-section-shell">
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <p class="nrb-display-note">Management</p>
+                            <h2 class="nrb-section-title mt-1 text-slate-900">Directors</h2>
+                            <p class="mt-2 text-sm text-slate-500">Department directors responsible for operations across Nepal Rastra Bank.</p>
+                        </div>
+                        <span class="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-semibold text-slate-600 shadow-sm">53 Directors</span>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-slate-200 shadow-sm overflow-hidden">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-slate-200 bg-slate-50/80">
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500 w-12">#</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500">Name</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500">Department</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">1</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Shubhash Chandra Ghimire</td><td class="px-6 py-3.5 text-slate-600">Bank Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">2</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Shrijana Bastola</td><td class="px-6 py-3.5 text-slate-600">Banks and Financial Institutions Regulation Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">3</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Buddha Raj Sharma</td><td class="px-6 py-3.5 text-slate-600">Foreign Exchange Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">4</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Sudip Phuyal</td><td class="px-6 py-3.5 text-slate-600">Currency Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">5</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Niva Shrestha</td><td class="px-6 py-3.5 text-slate-600">Financial Institutions Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">6</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Dila Ram Subedi</td><td class="px-6 py-3.5 text-slate-600">Human Resource Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">7</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Keshab Bahadur K.C.</td><td class="px-6 py-3.5 text-slate-600">Corporate Planning and Risk Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">8</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Shailendra Regmi</td><td class="px-6 py-3.5 text-slate-600">Micro-Finance Institutions Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">9</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Birendra Datta Awasthi</td><td class="px-6 py-3.5 text-slate-600">Corporate Planning and Risk Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">10</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Devendra Gautam</td><td class="px-6 py-3.5 text-slate-600">Assets and Service Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">11</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Ishwari Prasad Bhattarai</td><td class="px-6 py-3.5 text-slate-600">Foreign Exchange Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">12</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Rajan Dev Bhattarai</td><td class="px-6 py-3.5 text-slate-600">Money Laundering Prevention Supervision Division</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">13</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Laxmi Prasad Prasai</td><td class="px-6 py-3.5 text-slate-600">Monetary Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">14</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Ramesh Acharya</td><td class="px-6 py-3.5 text-slate-600">Micro-Finance Institutions Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">15</td><td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Rajan Krishna Panta</td><td class="px-6 py-3.5 text-slate-600">Economic Research Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">16</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Durgesh Gopal Shrestha</td><td class="px-6 py-3.5 text-slate-600">Non Bank Financial Institutions Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">17</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Indra Chamlagai (Mainali)</td><td class="px-6 py-3.5 text-slate-600">Banks and Financial Institutions Regulation Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">18</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Ranjana Poudel</td><td class="px-6 py-3.5 text-slate-600">Banking Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">19</td><td class="px-6 py-3.5 font-semibold text-slate-900">Ms. Neera Talchabhadel</td><td class="px-6 py-3.5 text-slate-600">Legal Division</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">20</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Bigyan Raj Subedi</td><td class="px-6 py-3.5 text-slate-600">Economic Research Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">21</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Narayan Prasad Pokhrel</td><td class="px-6 py-3.5 text-slate-600">Banks and Financial Institutions Regulation Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">22</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Madhav Dangal</td><td class="px-6 py-3.5 text-slate-600">Economic Research Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">23</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Satyendra Raj Subedi</td><td class="px-6 py-3.5 text-slate-600">Statistics Division</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">24</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Arya Joshi</td><td class="px-6 py-3.5 text-slate-600">Financial Institutions Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">25</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Bashu Dev Bhattarai</td><td class="px-6 py-3.5 text-slate-600">Financial Intelligence Unit</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">26</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Ashok Ghimire</td><td class="px-6 py-3.5 text-slate-600">Internal Audit Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">27</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Binod Raj Lekhak</td><td class="px-6 py-3.5 text-slate-600">Banking Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">28</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Sharan Kumar Adhikar</td><td class="px-6 py-3.5 text-slate-600">Office of the Governor</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">29</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Girija Prasad Koirala</td><td class="px-6 py-3.5 text-slate-600">Foreign Exchange Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">30</td><td class="px-6 py-3.5 font-semibold text-slate-900">Er. Saurabh Dass Manandhar</td><td class="px-6 py-3.5 text-slate-600">Information Technology Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">31</td><td class="px-6 py-3.5 font-semibold text-slate-900">Er. Krishna Ram Dhunju</td><td class="px-6 py-3.5 text-slate-600">Information Technology Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">32</td><td class="px-6 py-3.5 font-semibold text-slate-900">Er. Tarun Kumar Jha</td><td class="px-6 py-3.5 text-slate-600">Information Technology Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">33</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Ajit Regmi</td><td class="px-6 py-3.5 text-slate-600">Payment Systems Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">34</td><td class="px-6 py-3.5 font-semibold text-slate-900">Er. Sahdev Chand</td><td class="px-6 py-3.5 text-slate-600">Information Technology Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">35</td><td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Tej Narayan Thakur</td><td class="px-6 py-3.5 text-slate-600">Information Technology Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">36</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Bina Dhakal Paudel</td><td class="px-6 py-3.5 text-slate-600">Assets and Service Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">37</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Subash Acharya</td><td class="px-6 py-3.5 text-slate-600">Payment Systems Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">38</td><td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Hari Kumar Nepal</td><td class="px-6 py-3.5 text-slate-600">Human Resource Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">39</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Sushil Poudel</td><td class="px-6 py-3.5 text-slate-600">Financial Inclusion and Consumer Protection Division</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">40</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Keshab Prasad Timilsina</td><td class="px-6 py-3.5 text-slate-600">Currency Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">41</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Rishiram Baral</td><td class="px-6 py-3.5 text-slate-600">Banking Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">42</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Samjhana Dhakal</td><td class="px-6 py-3.5 text-slate-600">Nepal Rastra Bank, Nepalgunj Office</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">43</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Nabina Dhakal</td><td class="px-6 py-3.5 text-slate-600">Nepal Rastra Bank, Siddharthanagar Office</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">44</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Sanjeev Kumar Jha</td><td class="px-6 py-3.5 text-slate-600">Nepal Rastra Bank, Birgunj Office</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">45</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Suman Neupane</td><td class="px-6 py-3.5 text-slate-600">Nepal Rastra Bank, Biratnagar Office</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">46</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Pushpa Adhikary</td><td class="px-6 py-3.5 text-slate-600">Nepal Rastra Bank, Janakpur Office</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">47</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Mohan Pudasaini</td><td class="px-6 py-3.5 text-slate-600">Nepal Rastra Bank, Dhangadhi Office</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">48</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Kamal Prakash Kalathoki</td><td class="px-6 py-3.5 text-slate-600">Financial Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">49</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Shikha Adhikari (Regmi)</td><td class="px-6 py-3.5 text-slate-600">Nepal Rastra Bank, Pokhara Office</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">50</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Nanda Kumar Dhakal</td><td class="px-6 py-3.5 text-slate-600">Human Resource Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">51</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Khageshor Bhandari</td><td class="px-6 py-3.5 text-slate-600">Bank Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">52</td><td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Guna Raj Bhatta</td><td class="px-6 py-3.5 text-slate-600">Economic Research Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">53</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Bibek Koirala</td><td class="px-6 py-3.5 text-slate-600">Banks and Financial Institutions Regulation Department</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACTING DIRECTORS -->
+            <section class="bg-slate-50 py-14 border-b border-slate-200">
+                <div class="nrb-section-shell">
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <p class="nrb-display-note">Acting Management</p>
+                            <h2 class="nrb-section-title mt-1 text-slate-900">Acting Directors</h2>
+                            <p class="mt-2 text-sm text-slate-500">Officers currently serving in acting director capacity.</p>
+                        </div>
+                        <span class="rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-semibold text-slate-600 shadow-sm">7 Acting Directors</span>
+                    </div>
+                    <div class="bg-white rounded-[20px] border border-slate-200 shadow-sm overflow-hidden">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-slate-200 bg-slate-50/80">
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500 w-12">#</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500">Name</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-500">Department</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">1</td><td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Birendra Bahadur Budha</td><td class="px-6 py-3.5 text-slate-600">Bank Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">2</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Prahlad Giri</td><td class="px-6 py-3.5 text-slate-600">Payment Systems Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">3</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Prativa Adhikary</td><td class="px-6 py-3.5 text-slate-600">Mint Division</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">4</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Priyanka Basnyat</td><td class="px-6 py-3.5 text-slate-600">Financial Management Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">5</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Milan Rai</td><td class="px-6 py-3.5 text-slate-600">Bank Supervision Department</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">6</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Imesh Poudel</td><td class="px-6 py-3.5 text-slate-600">Bankers' Training Centre</td></tr>
+                                <tr class="officer-row transition-colors"><td class="px-6 py-3.5 text-slate-400 font-medium">7</td><td class="px-6 py-3.5 font-semibold text-slate-900">Mrs. Sudha Shrestha</td><td class="px-6 py-3.5 text-slate-600">Office of the Governor</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <!-- GLOBAL FOOTER -->
@@ -210,7 +411,7 @@
                     </div>
                 </div>
                 <div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
-                    <p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+                    <p>&copy; 2026 Nepal Rastra Bank. All rights reserved.</p>
                     <div class="flex flex-wrap items-center gap-5">
                         <a href="#" class="transition hover:text-white">Privacy Policy</a>
                         <a href="#" class="transition hover:text-white">Accessibility</a>
@@ -220,6 +421,7 @@
                 </div>
             </div>
         </footer>
+
     </div>
 </body>
 

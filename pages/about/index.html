@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
     <style>
-        .hub-card { transition: transform 150ms ease, box-shadow 150ms ease; }
-        .hub-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
+        html { scroll-behavior: auto; } /* JS handles smooth scroll with offset */
+        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
         .about-local-nav a {
             position: relative; padding-bottom: 4px; font-size: 0.875rem;
             font-weight: 500; color: #64748B; text-decoration: none;
@@ -27,8 +28,8 @@
         .about-local-nav a:hover { color: #25295B; }
         .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
         .about-local-nav a[aria-current="page"]::after { background: #25295B; }
-        .dir-row-arrow { transition: transform 150ms ease; }
-        .dir-row:hover .dir-row-arrow { transform: translateX(3px); }
+        .dir-row-arrow { transition: transform 200ms ease-out, color 200ms ease-out; }
+        .dir-row:hover .dir-row-arrow { transform: translateX(2px); }
     </style>
 </head>
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
@@ -97,7 +98,7 @@
                     <div class="grid grid-cols-[1.2fr_1fr] gap-12 items-start">
                         <div class="flex flex-col gap-8">
                             <div>
-                                <span class="inline-block rounded-full border border-[#C59D5F]/25 bg-[#C59D5F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-5">The Central Bank of Nepal</span>
+                                <span class="inline-flex items-center gap-1.5 rounded-full bg-[#25295B]/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#25295B] mb-4">The Central Bank of Nepal</span>
                                 <h1 class="nrb-page-title text-[#1E3A5F] mb-5">Nepal Rastra Bank</h1>
                                 <p class="text-base text-slate-600 leading-relaxed max-w-xl">Nepal Rastra Bank is the central bank of Nepal and the country's monetary authority. Established in 1956, NRB is responsible for maintaining monetary and financial stability, formulating monetary and foreign exchange policies, promoting a secure payment system, and supporting sustainable economic development.</p>
                             </div>
@@ -108,28 +109,39 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-5">
-                            <div class="w-full h-52 rounded-[20px] bg-slate-200 flex items-center justify-center border border-slate-200">
-                                <span class="text-sm font-medium text-slate-500">[NRB Building Placeholder]</span>
+                            <div class="w-full rounded-[20px] bg-[#25295B] p-6 text-white border border-slate-200 flex flex-col justify-between relative overflow-hidden shadow-sm">
+                                <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Central Headquarters</span>
+                                    <span class="text-xs bg-white/10 px-2.5 py-1 rounded-md text-white font-medium">Baluwatar, Kathmandu</span>
+                                </div>
+                                <div class="space-y-2">
+                                    <p class="text-lg font-bold text-white">Nepal Rastra Bank Central Office</p>
+                                    <p class="text-xs text-slate-300 leading-relaxed">Formulated under the Nepal Rastra Bank Act 1955 (now Act 2002) as the supreme monetary & regulatory authority of the Federal Democratic Republic of Nepal.</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+                                    <span>Governor: Mr. Maha Prasad Adhikari</span>
+                                    <span class="text-[#138496] font-semibold">Est. 1956 AD</span>
+                                </div>
                             </div>
                             <aside class="overflow-hidden rounded-[20px] bg-[#1E3A5F] text-white">
                                 <div class="px-6 py-4 border-b border-white/10">
-                                    <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-300">Institution Snapshot</p>
+                                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">Institution Snapshot</p>
                                 </div>
                                 <div class="grid grid-cols-2 gap-px bg-white/10">
                                     <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-[10px] uppercase tracking-widest text-slate-400 mb-1">Established</p>
+                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Established</p>
                                         <p class="text-xl font-bold text-white">1956</p>
                                     </div>
                                     <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-[10px] uppercase tracking-widest text-slate-400 mb-1">Legal Framework</p>
+                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Legal Framework</p>
                                         <p class="text-sm font-semibold text-white leading-snug">NRB Act, 2002</p>
                                     </div>
                                     <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-[10px] uppercase tracking-widest text-slate-400 mb-1">Role</p>
+                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Role</p>
                                         <p class="text-sm font-semibold text-white">Central Bank</p>
                                     </div>
                                     <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-[10px] uppercase tracking-widest text-slate-400 mb-1">Mandate</p>
+                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Mandate</p>
                                         <p class="text-sm font-semibold text-white leading-snug">Financial Stability</p>
                                     </div>
                                 </div>
@@ -165,17 +177,17 @@
                                 <svg width="180" height="180" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2z"/></svg>
                             </div>
                             <div class="relative z-10">
-                                <span class="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C59D5F]">Guiding Principle</span>
+                                <span class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496]">Guiding Principle</span>
                                 <h3 class="text-2xl font-bold mt-3 mb-5 text-white">Vision</h3>
                                 <p class="text-lg leading-relaxed text-slate-200 font-medium">"A Modern, Dynamic, Credible and Effective Central Bank"</p>
                             </div>
                         </div>
-                        <div class="nrb-elevated-card rounded-[20px] bg-white p-10 border border-[#C59D5F]/25 relative overflow-hidden flex flex-col">
-                            <div class="absolute right-[-20px] top-[-20px] opacity-[0.04] text-[#C59D5F] pointer-events-none">
+                        <div class="nrb-elevated-card rounded-[20px] bg-white p-10 border border-slate-200 relative overflow-hidden flex flex-col">
+                            <div class="absolute right-[-20px] top-[-20px] opacity-[0.04] text-[#138496] pointer-events-none">
                                 <svg width="180" height="180" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
                             </div>
                             <div class="relative z-10">
-                                <span class="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8B6A30]">Core Purpose</span>
+                                <span class="text-xs font-semibold uppercase tracking-[0.22em] text-[#25295B]">Core Purpose</span>
                                 <h3 class="text-2xl font-bold mt-3 mb-5 text-[#1E3A5F]">Mission</h3>
                                 <p class="text-base leading-relaxed text-slate-700 font-medium">"Maintaining Macroeconomic and Financial Stability for Sustainable and Inclusive Economic Development through Effective Monetary, Foreign Exchange, Financial Sector and Payment System Policies"</p>
                             </div>
@@ -194,58 +206,61 @@
                                 <h2 class="nrb-section-title mt-1 text-slate-900">Leadership &amp; Governance</h2>
                                 <p class="mt-2 text-sm text-slate-500">The governance structure ensuring accountability, transparency, and effective policy decision-making.</p>
                             </header>
-                            <div class="w-full h-40 rounded-[16px] bg-slate-100 flex items-center justify-center border border-slate-200 mb-6">
-                                <span class="text-sm font-medium text-slate-500">[Leadership Image Placeholder]</span>
-                            </div>
-                            <div class="flex flex-col gap-3">
-                                <a href="board-of-directors.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-5 bg-slate-50 border border-slate-200 rounded-[16px] group">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white text-[#25295B] border border-slate-200 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <div class="flex flex-col gap-4">
+                                <a href="board-of-directors.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#1E3A5F]/20">
+                                    <div class="flex items-center gap-6">
+                                        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+                                            <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                                         </div>
                                         <div>
-                                            <p class="font-semibold text-sm text-slate-900 group-hover:text-[#138496] transition-colors">Board of Directors</p>
-                                            <p class="text-xs text-slate-500 mt-0.5">Strategic oversight, institutional governance, and policy direction.</p>
+                                            <p class="text-lg font-semibold text-[#1E3A5F] group-hover:text-[#138496] transition-colors">Board of Directors</p>
+                                            <p class="text-sm text-slate-600 mt-1">Strategic oversight, institutional governance, and policy direction.</p>
                                         </div>
                                     </div>
-                                    <svg class="dir-row-arrow h-4 w-4 text-[#138496] shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
+                                        <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                    </div>
                                 </a>
-                                <a href="principal-officers.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-5 bg-slate-50 border border-slate-200 rounded-[16px] group">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white text-[#25295B] border border-slate-200 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                                <a href="principal-officers.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#1E3A5F]/20">
+                                    <div class="flex items-center gap-6">
+                                        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+                                            <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
                                         </div>
                                         <div>
-                                            <p class="font-semibold text-sm text-slate-900 group-hover:text-[#138496] transition-colors">Principal Officers</p>
-                                            <p class="text-xs text-slate-500 mt-0.5">Senior leadership responsible for the administration of Nepal Rastra Bank.</p>
+                                            <p class="text-lg font-semibold text-[#1E3A5F] group-hover:text-[#138496] transition-colors">Principal Officers</p>
+                                            <p class="text-sm text-slate-600 mt-1">Senior leadership responsible for the administration of Nepal Rastra Bank.</p>
                                         </div>
                                     </div>
-                                    <svg class="dir-row-arrow h-4 w-4 text-[#138496] shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
+                                        <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                    </div>
                                 </a>
-                                <a href="information-officers.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-5 bg-slate-50 border border-slate-200 rounded-[16px] group">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white text-[#25295B] border border-slate-200 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                                <a href="information-officers.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#1E3A5F]/20">
+                                    <div class="flex items-center gap-6">
+                                        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+                                            <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                                         </div>
                                         <div>
-                                            <p class="font-semibold text-sm text-slate-900 group-hover:text-[#138496] transition-colors">Information Officers</p>
-                                            <p class="text-xs text-slate-500 mt-0.5">Officers responsible for public information and institutional transparency (RTI).</p>
+                                            <p class="text-lg font-semibold text-[#1E3A5F] group-hover:text-[#138496] transition-colors">Information Officers</p>
+                                            <p class="text-sm text-slate-600 mt-1">Officers responsible for public information and institutional transparency (RTI).</p>
                                         </div>
                                     </div>
-                                    <svg class="dir-row-arrow h-4 w-4 text-[#138496] shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
+                                        <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                    </div>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Leadership Legacy sidebar -->
-                        <aside class="rounded-[20px] bg-slate-50 border border-slate-200 p-7 flex flex-col h-full justify-between">
+                        <!-- Leadership Legacy sidebar (Entire box clickable, single arrow, smooth transition) -->
+                        <a href="governors-history.html" class="dir-row group rounded-[20px] bg-slate-50 border border-slate-200 p-7 flex flex-col h-full justify-between hover:border-[#1E3A5F]/20 hover:bg-slate-100/50 transition-all duration-300 ease-in-out">
                             <div>
-                                <h3 class="text-base font-bold mb-2 text-slate-900">Leadership Legacy</h3>
+                                <h3 class="text-base font-bold text-slate-900 group-hover:text-[#138496] transition-colors duration-300 mb-2">Leadership Legacy</h3>
                                 <p class="text-sm text-slate-500 mb-6 leading-relaxed">Nepal Rastra Bank has been led by distinguished governors shaping the nation's monetary history.</p>
                                 <div class="flex flex-col gap-8 relative before:absolute before:inset-y-1 before:left-1.5 before:w-px before:bg-slate-200">
                                     <div class="relative pl-6">
-                                        <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-[#C59D5F]"></div>
-                                        <p class="text-xs font-bold uppercase tracking-wider text-[#8B6A30] mb-0.5">1956</p>
+                                        <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-[#138496]"></div>
+                                        <p class="text-xs font-bold uppercase tracking-wider text-[#25295B] mb-0.5">1956</p>
                                         <p class="text-sm font-semibold text-slate-900">Himalaya Shumsher J.B. Rana</p>
                                     </div>
                                     <div class="relative pl-6">
@@ -270,14 +285,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-8 pt-5 border-t border-slate-200">
-                                <p class="text-xs font-semibold text-slate-500 mb-3">18 Governors • 1956–Present</p>
-                                <a href="governors-history.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496] transition-colors hover:text-[#1E3A5F]">
+                            <div class="mt-8 pt-5 border-t border-slate-200 flex items-center justify-between">
+                                <p class="text-xs font-semibold text-slate-500">18 Governors • 1956–Present</p>
+                                <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496] group-hover:text-[#1E3A5F] transition-colors duration-300">
                                     View Full Governors History 
-                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </a>
+                                    <svg class="dir-row-arrow w-4 h-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                                </span>
                             </div>
-                        </aside>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -292,46 +307,33 @@
                     </header>
                     <div class="grid grid-cols-3 gap-6">
                         <!-- Card 1: Organogram -->
-                        <a href="organogram.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 overflow-hidden">
-                            <div class="w-full h-44 bg-slate-100 flex items-center justify-center border-b border-slate-200 group-hover:bg-slate-50 transition-colors">
-                                <span class="text-sm font-medium text-slate-500">[Organogram Placeholder]</span>
+                        <a href="organogram.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#1E3A5F]/20 transition-all">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+                                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="4" rx="1"/><rect x="1" y="16" width="6" height="4" rx="1"/><rect x="9" y="16" width="6" height="4" rx="1"/><rect x="17" y="16" width="6" height="4" rx="1"/><path d="M4 16V9h16v7"/><path d="M12 6v3"/></svg>
                             </div>
-                            <div class="p-7 flex flex-col flex-grow">
-                                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-4 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="4" rx="1"/><rect x="1" y="16" width="6" height="4" rx="1"/><rect x="9" y="16" width="6" height="4" rx="1"/><rect x="17" y="16" width="6" height="4" rx="1"/><path d="M4 16V9h16v7"/><path d="M12 6v3"/></svg>
-                                </div>
-                                <h3 class="font-semibold text-base text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Organogram</h3>
-                                <p class="text-sm text-slate-500 leading-6 flex-grow">Explore the institutional hierarchy and reporting structure of Nepal Rastra Bank.</p>
-                                <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Organogram <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                            </div>
+                            <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Organogram</h3>
+                            <p class="text-sm text-slate-600 leading-6 flex-grow">Explore the institutional hierarchy, executive decision-making bodies, and reporting structure of Nepal Rastra Bank.</p>
+                            <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Organogram <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                         </a>
+
                         <!-- Card 2: Departments -->
-                        <a href="departments.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 overflow-hidden">
-                            <div class="w-full h-44 bg-slate-100 flex items-center justify-center border-b border-slate-200 group-hover:bg-slate-50 transition-colors">
-                                <span class="text-sm font-medium text-slate-500">[Department Structure Placeholder]</span>
+                        <a href="departments.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#1E3A5F]/20 transition-all">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+                                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M4 20V8l8-6 8 6v12"/><path d="M10 20v-6h4v6"/></svg>
                             </div>
-                            <div class="p-7 flex flex-col flex-grow">
-                                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-4 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M4 20V8l8-6 8 6v12"/><path d="M10 20v-6h4v6"/></svg>
-                                </div>
-                                <h3 class="font-semibold text-base text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Departments, Divisions &amp; Units</h3>
-                                <p class="text-sm text-slate-500 leading-6 flex-grow">Departments, divisions and specialized units supporting monetary policy, regulation, supervision, research, foreign exchange management and payment systems.</p>
-                                <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Departments <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                            </div>
+                            <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Departments, Divisions &amp; Units</h3>
+                            <p class="text-sm text-slate-600 leading-6 flex-grow">Directory of 17 specialized departments, 1 executive office, 6 division offices, and 1 unit supporting monetary policy, supervision, and payment systems.</p>
+                            <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Departments <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                         </a>
+
                         <!-- Card 3: Provincial Offices -->
-                        <a href="provincial-offices.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 overflow-hidden">
-                            <div class="w-full h-44 bg-slate-100 flex items-center justify-center border-b border-slate-200 group-hover:bg-slate-50 transition-colors">
-                                <span class="text-sm font-medium text-slate-500">[Provincial Office Network Placeholder]</span>
+                        <a href="provincial-offices.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#1E3A5F]/20 transition-all">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+                                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                             </div>
-                            <div class="p-7 flex flex-col flex-grow">
-                                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-4 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                </div>
-                                <h3 class="font-semibold text-base text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Provincial Offices</h3>
-                                <p class="text-sm text-slate-500 leading-6 flex-grow">Regional offices supporting Nepal Rastra Bank operations throughout Nepal.</p>
-                                <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Provincial Offices <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                            </div>
+                            <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Provincial Offices</h3>
+                            <p class="text-sm text-slate-600 leading-6 flex-grow">8 regional offices situated across Nepal's provinces extending regulatory, supervisory, currency management, and public treasury services nationwide.</p>
+                            <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Provincial Offices <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                         </a>
                     </div>
                 </div>
@@ -344,15 +346,32 @@
                         <div>
                             <p class="nrb-display-note">Network</p>
                             <h2 class="nrb-section-title mt-1 mb-4 text-slate-900">Offices &amp; Network</h2>
-                            <p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank maintains seven provincial offices strategically located across Nepal's provinces, extending the Bank's regulatory, supervisory and public service functions to all regions of the country.</p>
+                            <p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank maintains eight provincial offices strategically located across Nepal's provinces, extending the Bank's regulatory, supervisory and public service functions to all regions of the country.</p>
                             <a href="provincial-offices.html" class="inline-flex items-center gap-2 rounded-full bg-[#25295B] text-white px-6 py-3 text-sm font-semibold transition hover:bg-[#1E3A5F]">
                                 View Provincial Offices
                                 <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                             </a>
                         </div>
-                        <div class="w-full h-64 rounded-[20px] bg-slate-100 flex items-center justify-center border border-slate-200">
-                            <span class="text-sm font-medium text-slate-500">[Office Network Placeholder]</span>
-                        </div>
+                        <div class="w-full rounded-[20px] bg-white border border-slate-200 p-6 shadow-sm flex flex-col justify-between">
+                                <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-[#138496]">Presence Summary</span>
+                                    <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-semibold">77 Districts</span>
+                                </div>
+                                <div class="space-y-3 text-sm text-slate-600">
+                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                                        <span class="font-semibold text-slate-900">Central Office (Baluwatar)</span>
+                                        <span class="text-xs font-medium text-slate-500">Kathmandu</span>
+                                    </div>
+                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                                        <span class="font-semibold text-slate-900">Banking &amp; Mint Division</span>
+                                        <span class="text-xs font-medium text-slate-500">Sundhara, KTM</span>
+                                    </div>
+                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                                        <span class="font-semibold text-slate-900">8 Provincial Offices</span>
+                                        <span class="text-xs font-medium text-slate-500">Nationwide</span>
+                                    </div>
+                                </div>
+                        </div></div>
                     </div>
                 </div>
             </section>
@@ -371,7 +390,7 @@
                             </a>
                         </div>
                         <div class="nrb-elevated-card bg-[#1E3A5F] rounded-[20px] p-8 text-white">
-                            <p class="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C59D5F] mb-3">Featured Report</p>
+                            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496] mb-3">Featured Report</p>
                             <h3 class="text-xl font-bold text-white mb-2">Annual Report 2024/25</h3>
                             <p class="text-sm text-slate-300 leading-6 mb-6">Comprehensive review of Nepal Rastra Bank's operations, financial performance, and policy implementation for fiscal year 2024/25.</p>
                             <a href="financial-statements.html" class="inline-flex items-center gap-2 rounded-[10px] border border-white/20 bg-white/10 px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-white hover:text-[#1E3A5F]">
@@ -455,6 +474,8 @@
     <script>
         (function () {
             const sections = ['overview', 'leadership', 'organization', 'offices', 'statements'];
+
+            /* ── Active indicator ───────────────────────────────────────── */
             const navLinks = {};
             sections.forEach(id => {
                 const key = 'LocalNav-' + id.charAt(0).toUpperCase() + id.slice(1);
@@ -465,13 +486,58 @@
                 sections.forEach(s => {
                     const link = navLinks[s];
                     if (!link) return;
-                    s === id ? link.setAttribute('aria-current', 'page') : link.removeAttribute('aria-current');
+                    s === id
+                        ? link.setAttribute('aria-current', 'page')
+                        : link.removeAttribute('aria-current');
                 });
             }
+
+            /* ── Sticky offset helper ───────────────────────────────────── */
+            /* Site-Header is NOT sticky — it scrolls away.                  */
+            /* Only the Local-Navigation bar stays pinned at the top.        */
+            function getStickyOffset() {
+                const localNav = document.getElementById('Local-Navigation');
+                const localNavH = localNav ? localNav.getBoundingClientRect().height : 56;
+                return localNavH + 12; /* +12px breathing room */
+            }
+
+            /* ── Smooth-scroll with correct offset ──────────────────────── */
+            function scrollToSection(id) {
+                const target = document.getElementById(id);
+                if (!target) return;
+                const absoluteTop = target.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: Math.max(0, absoluteTop - getStickyOffset()), behavior: 'smooth' });
+            }
+
+            /* ── Intercept local nav clicks ─────────────────────────────── */
+            document.querySelectorAll('.about-local-nav a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const id = this.getAttribute('href').slice(1);
+                    setActive(id);
+                    scrollToSection(id);
+                    history.replaceState(null, '', '#' + id);
+                });
+            });
+
+            /* ── IntersectionObserver keeps indicator in sync on free scroll */
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
-            }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
-            sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el); });
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) setActive(entry.target.id);
+                });
+            }, { rootMargin: '-10% 0px -75% 0px', threshold: 0 });
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) observer.observe(el);
+            });
+
+            /* ── Handle deep-link on page load (e.g. URL has #leadership) ─ */
+            window.addEventListener('load', () => {
+                const hash = window.location.hash.slice(1);
+                if (hash && sections.includes(hash)) {
+                    setTimeout(() => scrollToSection(hash), 100);
+                }
+            });
         })();
     </script>
 </body>

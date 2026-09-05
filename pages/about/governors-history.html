@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="view-transition" content="same-origin" />
     <title>Governors History | Nepal Rastra Bank</title>
-    <meta name="description" content="A complete record of all Governors who have led Nepal Rastra Bank since its establishment in 1956." />
+    <meta name="description" content="History of Governors of Nepal Rastra Bank since its establishment in 1956." />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
     <style>
-        .hub-card { transition: transform 150ms ease, box-shadow 150ms ease; }
-        .hub-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
+        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
         .about-local-nav a {
             position: relative; padding-bottom: 4px; font-size: 0.875rem;
             font-weight: 500; color: #64748B; text-decoration: none;
@@ -27,10 +27,12 @@
         .about-local-nav a:hover { color: #25295B; }
         .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
         .about-local-nav a[aria-current="page"]::after { background: #25295B; }
-        .dir-row-arrow { transition: transform 150ms ease; }
-        .dir-row:hover .dir-row-arrow { transform: translateX(3px); }
+        .dir-row-arrow { transition: transform 200ms ease-out, color 200ms ease-out; }
+        .dir-row:hover .dir-row-arrow { transform: translateX(2px); }
+        .officer-row:hover { background: #f8fafc; }
     </style>
 </head>
+
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
     <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
 
@@ -82,19 +84,21 @@
                 </div>
             </div>
         </header>
+
         <main>
-            
+
+            <!-- HERO — identical structure across all Leadership pages -->
             <section class="border-b border-slate-200 bg-white">
                 <div class="nrb-section-shell py-10 lg:py-14">
-                    
                     <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
                         <a href="../../nrb.html" class="transition hover:text-[#25295B]">Home</a>
                         <span class="text-slate-300">/</span>
                         <a href="index.html" class="transition hover:text-[#25295B]">About NRB</a>
                         <span class="text-slate-300">/</span>
+                        <a href="index.html#leadership" class="transition hover:text-[#25295B]">Leadership</a>
+                        <span class="text-slate-300">/</span>
                         <span class="text-slate-700">Governors History</span>
                     </nav>
-                    
                     <div class="mb-5">
                         <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] transition-colors hover:text-[#1E3A5F]">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
@@ -103,176 +107,137 @@
                     </div>
                     <span class="inline-block rounded-full border border-[#C59D5F]/25 bg-[#C59D5F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-5">About NRB</span>
                     <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Governors History</h1>
-                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">Nepal Rastra Bank has been led by distinguished governors since its establishment in 1956. Each governor has contributed significantly to the development of Nepal's monetary and financial system.</p>
+                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">A historical record of the Governors who have led Nepal Rastra Bank since its establishment in 1956.</p>
                 </div>
             </section>
-            <section class="bg-slate-50 py-14">
+
+            <!-- LEADERSHIP NAVIGATION — same strip on all Leadership pages -->
+            <div class="border-b border-slate-200 bg-white">
                 <div class="nrb-section-shell">
-                    <div class="grid grid-cols-3 gap-5">
-                        
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">1st Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Himalaya Shumsher J.B. Rana</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1956 – 1961</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">2nd Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Laxmi Nath Gautam</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1961 – 1965</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">3rd Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Kul Shekhar Sharma</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1965 – 1973</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">4th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Yadav Prasad Pant</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1973 – 1978</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">5th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Ganga Prasad Upadhyaya</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1978 – 1983</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">6th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Hari Shankar Tripathi</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1983 – 1988</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">7th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Dipendra Bahadur Chhetri</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1988 – 1991</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">8th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Satyendra Pyara Shrestha</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1991 – 1996</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">9th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Tilak Bahadur Rawal</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">1996 – 2001</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">10th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Bijaya Nath Bhattacharya</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">2001 – 2002</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">11th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Bijay Kumar Nepal</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">2002 – 2007</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">12th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Krishnahari Baskota</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">2007 – 2010</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">13th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Deependra Bahadur Kshetry</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">2010 – 2015</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">14th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Chiranjibi Nepal</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">2015 – 2020</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">15th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">Maha Prasad Adhikari</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">2020 – 2025</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 flex items-center gap-4 hover:border-[#138496] transition-colors">
-                            <div class="w-14 h-14 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0">
-                                <span class="text-[9px] text-slate-400">Img</span>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-semibold text-[#C59D5F] uppercase tracking-[0.18em]">16th Governor</p>
-                                <h3 class="text-sm font-semibold text-slate-900 mt-0.5">[Current Governor]</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">2025 – Present</p>
-                            </div>
-                        </div>
+                    <nav class="about-local-nav flex items-center gap-8 py-4" aria-label="Leadership navigation">
+                        <a href="board-of-directors.html">Board of Directors</a>
+                        <a href="principal-officers.html">Principal Officers</a>
+                        <a href="information-officers.html">Information Officers</a>
+                        <a href="governors-history.html" aria-current="page">Governors History</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- GOVERNORS HISTORY LIST -->
+            <section class="bg-slate-50 py-14 border-b border-slate-200">
+                <div class="nrb-section-shell">
+                    <div class="mb-8">
+                        <p class="nrb-display-note">Historical Record</p>
+                        <h2 class="nrb-section-title mt-1 text-slate-900">NRB Governors over the years</h2>
+                        <p class="mt-2 text-sm text-slate-500">List of Governors who have served as the chief executive of the central bank.</p>
+                    </div>
+
+                    <div class="bg-white rounded-[20px] border border-slate-200 overflow-hidden">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-slate-100 bg-slate-50">
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400 w-10">S.no.</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">Name of Governor</th>
+                                    <th class="text-left px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-slate-400">Term of office</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-50">
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">1.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Himalaya Shumsher J.B. Rana</td>
+                                    <td class="px-6 py-3.5 text-slate-600">April 26, 1956 - February 7, 1961</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">2.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Laxmi Nath Gautam</td>
+                                    <td class="px-6 py-3.5 text-slate-600">February 8, 1961 - June 17, 1965</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">3.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Pradyuma Lal Rajbhandari</td>
+                                    <td class="px-6 py-3.5 text-slate-600">June 18, 1965 - August 13, 1966</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">4.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Bhekh Bahadur Thapa</td>
+                                    <td class="px-6 py-3.5 text-slate-600">August 14, 1966 - July 26, 1967</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">5.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Yadav Prasad Pant</td>
+                                    <td class="px-6 py-3.5 text-slate-600">April 24, 1968 - April 28, 1973</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">6.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Kul Shekhar Sharma</td>
+                                    <td class="px-6 py-3.5 text-slate-600">April 29, 1973 - December 12, 1978</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">7.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Kalyana Bikram Adhikary</td>
+                                    <td class="px-6 py-3.5 text-slate-600">June 13, 1979 - December 8, 1984</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">8.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Ganesh Bahadur Thapa</td>
+                                    <td class="px-6 py-3.5 text-slate-600">March 25, 1985 - May 22, 1990</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">9.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Hari Shankar Tripathi</td>
+                                    <td class="px-6 py-3.5 text-slate-600">August 10, 1990 - January 17, 1995</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">10.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Satyendra Pyara Shrestha</td>
+                                    <td class="px-6 py-3.5 text-slate-600">January 18, 1995 - January 17, 2000</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">11.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Tilak Bahadur Rawal</td>
+                                    <td class="px-6 py-3.5 text-slate-600">January 18, 2000 - January 17, 2005</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">12.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Deependra Purush Dhakal</td>
+                                    <td class="px-6 py-3.5 text-slate-600">August 29, 2000 - April 27, 2001</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">13.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Bijaya Nath Bhattarai</td>
+                                    <td class="px-6 py-3.5 text-slate-600">January 31, 2005 - January 30, 2010</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">14.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Deependra Bahadur Kshetry</td>
+                                    <td class="px-6 py-3.5 text-slate-600">January 15, 2009 - July 26, 2009</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">15.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Yuba Raj Khatiwada</td>
+                                    <td class="px-6 py-3.5 text-slate-600">March 22, 2010 - March 19, 2015</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">16.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Dr. Chiranjibi Nepal</td>
+                                    <td class="px-6 py-3.5 text-slate-600">March 22, 2015 - March 18, 2020</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">17.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Mr. Maha Prasad Adhikari</td>
+                                    <td class="px-6 py-3.5 text-slate-600">April 6, 2020 - April 5, 2025</td>
+                                </tr>
+                                <tr class="officer-row transition-colors">
+                                    <td class="px-6 py-3.5 text-slate-400 font-medium">18.</td>
+                                    <td class="px-6 py-3.5 font-semibold text-slate-900">Prof. Dr. Biswo Nath Poudel</td>
+                                    <td class="px-6 py-3.5 text-slate-600">May 20, 2025 - Present</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
+
         </main>
 
         <!-- GLOBAL FOOTER -->
@@ -330,7 +295,7 @@
                     </div>
                 </div>
                 <div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
-                    <p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+                    <p>&copy; 2026 Nepal Rastra Bank. All rights reserved.</p>
                     <div class="flex flex-wrap items-center gap-5">
                         <a href="#" class="transition hover:text-white">Privacy Policy</a>
                         <a href="#" class="transition hover:text-white">Accessibility</a>
@@ -340,6 +305,7 @@
                 </div>
             </div>
         </footer>
+
     </div>
 </body>
 

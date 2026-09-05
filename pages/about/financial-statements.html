@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
     <style>
-        .hub-card { transition: transform 150ms ease, box-shadow 150ms ease; }
-        .hub-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
+        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
         .about-local-nav a {
             position: relative; padding-bottom: 4px; font-size: 0.875rem;
             font-weight: 500; color: #64748B; text-decoration: none;
@@ -27,8 +27,8 @@
         .about-local-nav a:hover { color: #25295B; }
         .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
         .about-local-nav a[aria-current="page"]::after { background: #25295B; }
-        .dir-row-arrow { transition: transform 150ms ease; }
-        .dir-row:hover .dir-row-arrow { transform: translateX(3px); }
+        .dir-row-arrow { transition: transform 200ms ease-out, color 200ms ease-out; }
+        .dir-row:hover .dir-row-arrow { transform: translateX(2px); }
     </style>
 </head>
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
@@ -110,7 +110,7 @@
                 <div class="nrb-section-shell">
                     <div class="nrb-elevated-card bg-[#1E3A5F] rounded-[20px] p-8 text-white mb-10 grid grid-cols-[1fr_auto] gap-8 items-center">
                         <div>
-                            <p class="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C59D5F] mb-2">Featured Report</p>
+                            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496] mb-2">Featured Report</p>
                             <h2 class="text-2xl font-bold text-white mb-2">Annual Report 2024/25</h2>
                             <p class="text-sm text-slate-300 leading-6 max-w-xl">Comprehensive review of Nepal Rastra Bank's operations, financial performance, monetary policy implementation, and outlook for fiscal year 2024/25.</p>
                         </div>
