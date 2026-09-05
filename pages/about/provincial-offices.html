@@ -1,517 +1,676 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="view-transition" content="same-origin" />
-    <title>Provincial Offices | Nepal Rastra Bank</title>
-    <meta name="description" content="Official directory and network of 8 Nepal Rastra Bank provincial offices across Koshi, Madhesh, Gandaki, Lumbini, Karnali, and Sudurpashchim provinces." />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
-    <style>
-        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
-        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Provincial Offices | Nepal Rastra Bank</title>
+<meta content="Official directory and network of 8 Nepal Rastra Bank provincial offices across Koshi, Madhesh, Gandaki, Lumbini, Karnali, and Sudurpashchim provinces." name="description"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/nrb-core.css" rel="stylesheet"/>
+<style>
+        .hub-card {
+            transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+        }
+
+        .hub-card:hover {
+            border-color: rgba(30, 58, 95, 0.2);
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+        }
+
         .about-local-nav a {
-            position: relative; padding-bottom: 4px; font-size: 0.875rem;
-            font-weight: 500; color: #64748B; text-decoration: none;
-            white-space: nowrap; transition: color 150ms;
+            position: relative;
+            padding-bottom: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #64748B;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: color 150ms;
         }
+
         .about-local-nav a::after {
-            content: ''; position: absolute; bottom: -1px; left: 0; right: 0;
-            height: 2px; background: transparent; border-radius: 2px; transition: background 150ms;
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: transparent;
+            border-radius: 2px;
+            transition: background 150ms;
         }
-        .about-local-nav a:hover { color: #25295B; }
-        .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
-        .about-local-nav a[aria-current="page"]::after { background: #25295B; }
+
+        .about-local-nav a:hover {
+            color: #25295B;
+        }
+
+        .about-local-nav a[aria-current="page"] {
+            color: #25295B;
+            font-weight: 600;
+        }
+
+        .about-local-nav a[aria-current="page"]::after {
+            background: #25295B;
+        }
     </style>
 </head>
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased font-['Inter',sans-serif]">
-    <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
-
-        <!-- GLOBAL HEADER -->
-        <header id="Site-Header" class="bg-[#25295B] text-white shadow-sm">
-            <div class="border-b border-white/10">
-                <div class="nrb-section-shell flex items-center justify-between py-6">
-                    <a id="Brand-Mark" href="../../nrb.html" class="flex items-center gap-4">
-                        <div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="../../assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" />
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra Bank</span>
-                            <span class="text-sm text-slate-300">Central Bank of Nepal</span>
-                        </div>
-                    </a>
-                    <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
-                        <a href="#" class="transition hover:text-white">EN / NEP</a>
-                    </div>
-                </div>
-            </div>
-            <div id="Main-Header">
-                <div class="nrb-section-shell py-4">
-                    <nav id="Primary-Navigation" aria-label="Primary" class="flex items-center justify-between text-sm font-medium">
-                        <div class="relative group">
-                            <a id="Nav-About-NRB" href="../../pages/about/index.html" class="flex items-center gap-1.5 text-white border-b-2 border-white pb-0.5">
+<div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
+<!-- GLOBAL HEADER -->
+<header class="bg-[#25295B] text-white shadow-sm" id="Site-Header">
+<div class="border-b border-white/10">
+<div class="nrb-section-shell flex items-center justify-between py-6">
+<a class="flex items-center gap-4" href="../../nrb.html" id="Brand-Mark">
+<div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" src="../../assets/images/nrb-logo.png"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra
+                                Bank</span>
+<span class="text-sm text-slate-300">Central Bank of Nepal</span>
+</div>
+</a>
+<div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
+<a class="transition hover:text-white" href="#">EN / NEP</a>
+</div>
+</div>
+</div>
+<div id="Main-Header">
+<div class="nrb-section-shell py-4">
+<nav aria-label="Primary" class="flex items-center justify-between text-sm font-medium" id="Primary-Navigation">
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-white border-b-2 border-white pb-0.5" href="../../pages/about/index.html" id="Nav-About-NRB">
                                 About NRB
-                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                            </a>
-                            <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <div class="bg-white rounded-[20px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
-                                    <a href="../../pages/about/index.html#overview" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Institution Overview</a>
-                                    <a href="../../pages/about/index.html#leadership" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Leadership &amp; Governance</a>
-                                    <a href="../../pages/about/index.html#organization" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Organizational Structure</a>
-                                    <a href="../../pages/about/index.html#offices" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Offices &amp; Network</a>
-                                    <a href="../../pages/about/index.html#statements" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Financial Statements</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a id="Nav-Monetary-Policy" href="../../pages/monetary-policy/index.html" class="text-slate-100 transition hover:text-[#138496]">Monetary Policy</a>
-                        <a id="Nav-Bank-Supervision" href="../../pages/bank-supervision/index.html" class="text-slate-100 transition hover:text-[#138496]">Bank Supervision</a>
-                        <a id="Nav-Forex-Management" href="../../pages/forex-management/index.html" class="text-slate-100 transition hover:text-[#138496]">Forex Management</a>
-                        <a id="Nav-Statistics" href="../../pages/statistics/index.html" class="text-slate-100 transition hover:text-[#138496]">Statistics</a>
-                        <a id="Nav-Publications" href="../../pages/publications/index.html" class="text-slate-100 transition hover:text-[#138496]">Publications</a>
-                        <a id="Nav-Notices" href="../../pages/notices/index.html" class="text-slate-100 transition hover:text-[#138496]">Notices</a>
-                        <a id="Nav-Careers" href="../../pages/careers/index.html" class="text-slate-100 transition hover:text-[#138496]">Careers</a>
-                        <a id="Nav-Contact" href="../../pages/contact/index.html" class="text-slate-100 transition hover:text-[#138496]">Contact</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <!-- HERO -->
-            <section class="border-b border-slate-200 bg-white">
-                <div class="nrb-section-shell py-10 lg:py-14">
-                    <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-                        <a href="../../nrb.html" class="transition hover:text-[#25295B]">Home</a>
-                        <span class="text-slate-300">/</span>
-                        <a href="index.html" class="transition hover:text-[#25295B]">About NRB</a>
-                        <span class="text-slate-300">/</span>
-                        <a href="index.html#organization" class="transition hover:text-[#25295B]">Organization</a>
-                        <span class="text-slate-300">/</span>
-                        <span class="text-slate-700">Provincial Offices</span>
-                    </nav>
-                    
-                    <div class="mb-5">
-                        <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] transition-colors hover:text-[#1E3A5F]">
-                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                            Back to About Overview
-                        </a>
-                    </div>
-                    <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Provincial Offices Network</h1>
-                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">Nepal Rastra Bank operates eight provincial offices strategically located across Nepal, extending central banking operations, currency management, government transaction clearing, and financial-sector oversight nationwide.</p>
-                </div>
-            </section>
-
-            <!-- ORGANIZATION NAVIGATION STRIP -->
-            <div class="border-b border-slate-200 bg-white sticky top-0 z-20 shadow-sm">
-                <div class="nrb-section-shell">
-                    <nav class="about-local-nav flex items-center gap-8 py-4" aria-label="Organization navigation">
-                        <a href="organogram.html">Organogram</a>
-                        <a href="departments.html">Departments &amp; Divisions</a>
-                        <a href="provincial-offices.html" aria-current="page">Provincial Offices</a>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- NETWORK OVERVIEW STATS -->
-            <section class="bg-slate-50 py-14 border-b border-slate-200">
-                <div class="nrb-section-shell">
-                    <div class="mb-8">
-                        <p class="nrb-display-note">Nationwide Infrastructure</p>
-                        <h2 class="nrb-section-title mt-1 text-slate-900">Regional Banking &amp; Treasury Network</h2>
-                        <p class="text-sm text-slate-500 mt-1">Empowered branch offices serving government agencies, banking institutions, and the public across all provinces.</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 gap-6 mb-12">
-                        <div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
-                            <p class="text-3xl font-bold text-[#25295B] mb-1">8</p>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Provincial Offices</p>
-                        </div>
-                        <div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
-                            <p class="text-3xl font-bold text-[#25295B] mb-1">77</p>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Districts Served</p>
-                        </div>
-                        <div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
-                            <p class="text-3xl font-bold text-[#25295B] mb-1">100%</p>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Currency Distribution</p>
-                        </div>
-                        <div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
-                            <p class="text-3xl font-bold text-[#25295B] mb-1">24/7</p>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Treasury Clearing</p>
-                        </div>
-                    </div>
-
-                    <!-- PROVINCIAL OFFICE DIRECTORY GRID (8 OFFICES) -->
-                    <div class="mb-6 flex items-center justify-between">
-                        <h3 class="text-xl font-bold text-slate-900">Provincial Office Directory</h3>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">8 Regional Branches</span>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-6">
-                        
-                        <!-- 1. Biratnagar Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Koshi Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Biratnagar Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Serves as the Nepal Rastra Bank provincial office for Koshi Province, supporting currency management, government transactions, banking operations, and financial-sector oversight.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Biratnagar, Morang, Koshi Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-21-442221 / +977-21-442058 / +977-21-442152</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbbrt@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbbrt@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 2. Janakpur Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Madhesh Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Janakpur Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Serves Madhesh Province through banking operations, government transactions, currency management, and regulatory and supervisory functions.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Janakpurdham, Dhanusha, Madhesh Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-41-426172 / +977-41-426498</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbjnp@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbjnp@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 3. Birgunj Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Madhesh Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Birgunj Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking and financial-sector operations in the Birgunj area, including currency management, government transactions, and regulatory functions.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Birgunj, Parsa, Madhesh Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-51-522137 / +977-51-522138</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbbirgunj@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbbirgunj@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 4. Pokhara Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Gandaki Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Pokhara Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking operations, government transactions, foreign-exchange-related activities, and financial-sector supervision across Gandaki Province.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Pokhara, Kaski, Gandaki Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-61-455115 / +977-61-453194</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbpkr@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbpkr@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 5. Siddharthanagar Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Lumbini Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Siddharthanagar Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking operations, government transactions, currency management, foreign-exchange activities, and financial-sector supervision in Lumbini Province.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Siddharthanagar, Rupandehi, Lumbini Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-71-590912 / +977-71-590913 / +977-71-590914</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbsid@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbsid@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 6. Nepalgunj Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Lumbini Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Nepalgunj Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking and financial-sector operations in western Nepal, including currency management, government transactions, and supervisory functions.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Nepalgunj, Banke, Lumbini Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-81-590171 / +977-81-590170</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbnep@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbnep@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 7. Surkhet Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Karnali Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Surkhet Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Serves Karnali Province through currency management, government transactions, banking operations, and financial-sector services.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Birendranagar, Surkhet, Karnali Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-83-520517 / +977-83-525523</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbsurkhet@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbsurkhet@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 8. Dhangadhi Office -->
-                        <div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Sudurpashchim Province</span>
-                                    <span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-900 mb-2">Dhangadhi Office</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed mb-6">Supports central banking operations, currency management, government transactions, and financial-sector supervision across Sudurpashchim Province.</p>
-                                
-                                <div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Address</p>
-                                            <p class="text-slate-600">Dhangadhi, Kailali, Sudurpashchim Province</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Telephone</p>
-                                            <p class="text-slate-600">+977-91-527701 / +977-91-527712 / +977-91-527702</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start gap-3">
-                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                        <div>
-                                            <p class="font-semibold text-slate-900">Email</p>
-                                            <a href="mailto:nrbdhn@nrb.org.np" class="text-[#138496] font-medium hover:underline">nrbdhn@nrb.org.np</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- GLOBAL FOOTER -->
-        <footer id="Footer" class="nrb-footer bg-[#25295B] text-white">
-            <div class="nrb-section-shell py-16">
-                <div class="flex flex-col gap-6 border-b border-white/10 pb-10">
-                    <div class="flex items-center gap-4">
-                        <div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="../../assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" />
-                        </div>
-                        <div>
-                            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra Bank</p>
-                            <p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
-                        </div>
-                    </div>
-                    <p class="max-w-3xl text-sm leading-6 text-slate-300">
-                        The official digital headquarters for Nepal's central bank, bringing together monetary policy, economic data, financial regulation, research publications, notices, and public services in one authoritative portal.
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[20px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#overview">Institution Overview</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#leadership">Leadership &amp; Governance</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#organization">Organizational Structure</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#offices">Offices &amp; Network</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#statements">Financial Statements</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/regulations/index.html" id="Nav-Regulations">
+Regulations
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Laws &amp; Legislation</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/acts.html">Acts</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors mb-1" href="../../pages/regulations/rules-and-bylaws.html">Rules and Bylaws</a>
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-t border-slate-100 mb-1 mt-1">Policies &amp; Guidelines</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/notices.html">Notices</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/guidelines-and-manuals.html">Guidelines &amp; Manuals</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/other-policies.html">Other Policies</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/monetary-policy.html">Monetary Policy</a>
+</div>
+</div>
+</div>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/monetary-policy/index.html" id="Nav-Monetary-Policy">Monetary Policy</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/bank-supervision/index.html" id="Nav-Bank-Supervision">Bank
+                            Supervision</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/forex-management/index.html" id="Nav-Forex-Management">Forex
+                            Management</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/publications/index.html" id="Nav-Publications">Publications</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/notices/index.html" id="Nav-Notices">Notices</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/careers/index.html" id="Nav-Careers">Careers</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/contact/index.html" id="Nav-Contact">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<main>
+<!-- HERO -->
+<section class="border-b border-slate-200 bg-white">
+<div class="nrb-section-shell py-10 lg:py-14">
+<nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+<a class="transition hover:text-[#25295B]" href="../../nrb.html">Home</a>
+<span class="text-slate-300">/</span>
+<a class="transition hover:text-[#25295B]" href="index.html">About NRB</a>
+<span class="text-slate-300">/</span>
+<a class="transition hover:text-[#25295B]" href="index.html#organization">Organization</a>
+<span class="text-slate-300">/</span>
+<span class="text-slate-700">Provincial Offices Network</span>
+</nav>
+<h1 class="text-2xl font-bold text-slate-900 mb-4">Provincial Offices Network</h1>
+<p class="text-base text-slate-600 leading-relaxed max-w-2xl">Nepal Rastra Bank operates eight
+                        provincial offices strategically located across Nepal, extending central banking operations,
+                        currency management, government transaction clearing, and financial-sector oversight nationwide.
                     </p>
-                </div>
-                <div class="mt-10 grid grid-cols-5 gap-8">
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
-                        <a href="../../pages/about/index.html" class="text-sm text-slate-300 transition hover:text-white">Overview</a>
-                        <a href="../../pages/about/index.html#leadership" class="text-sm text-slate-300 transition hover:text-white">Leadership</a>
-                        <a href="../../pages/about/index.html#organization" class="text-sm text-slate-300 transition hover:text-white">Departments</a>
-                        <a href="../../pages/about/index.html#offices" class="text-sm text-slate-300 transition hover:text-white">Offices</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp; Data</h3>
-                        <a href="../../pages/statistics/index.html" class="text-sm text-slate-300 transition hover:text-white">Economic indicators</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Exchange rates</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial stability</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Open data</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
-                        <a href="../../pages/publications/index.html" class="text-sm text-slate-300 transition hover:text-white">Reports</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Research</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Working papers</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Annual reports</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services</h3>
-                        <a href="../../pages/consumer-services/index.html" class="text-sm text-slate-300 transition hover:text-white">Consumer protection</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Complaints</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial literacy</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">FAQ</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
-                        <p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
-                        <p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
-                        <p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
-                        <p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
-                    </div>
-                </div>
-                <div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
-                    <p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
-                    <div class="flex flex-wrap items-center gap-5">
-                        <a href="#" class="transition hover:text-white">Privacy Policy</a>
-                        <a href="#" class="transition hover:text-white">Accessibility</a>
-                        <a href="#" class="transition hover:text-white">Terms of Use</a>
-                        <a href="#Footer" class="transition hover:text-white">Sitemap</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+</div>
+</section>
+<!-- ORGANIZATION NAVIGATION STRIP -->
+<div class="border-b border-slate-200 bg-white sticky top-0 z-20 shadow-sm">
+<div class="nrb-section-shell">
+<nav aria-label="Organization navigation" class="about-local-nav flex items-center gap-8 py-4">
+<a href="organogram.html">Organogram</a>
+<a href="departments.html">Departments &amp; Divisions</a>
+<a aria-current="page" href="provincial-offices.html">Provincial Offices</a>
+</nav>
+</div>
+</div>
+<!-- NETWORK OVERVIEW STATS -->
+<section class="bg-slate-50 py-14 border-b border-slate-200">
+<div class="nrb-section-shell">
+<div class="mb-8">
+<p class="nrb-display-note">Nationwide Infrastructure</p>
+<h2 class="nrb-section-title mt-1 text-slate-900">Regional Banking &amp; Treasury Network</h2>
+<p class="text-sm text-slate-500 mt-1">Empowered branch offices serving government agencies,
+                            banking institutions, and the public across all provinces.</p>
+</div>
+<div class="grid grid-cols-4 gap-6 mb-12">
+<div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
+<p class="text-3xl font-bold text-[#25295B] mb-1">8</p>
+<p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Provincial Offices
+                            </p>
+</div>
+<div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
+<p class="text-3xl font-bold text-[#25295B] mb-1">77</p>
+<p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Districts Served
+                            </p>
+</div>
+<div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
+<p class="text-3xl font-bold text-[#25295B] mb-1">100%</p>
+<p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Currency
+                                Distribution</p>
+</div>
+<div class="bg-white rounded-[20px] border border-slate-200 p-6 text-center shadow-sm">
+<p class="text-3xl font-bold text-[#25295B] mb-1">24/7</p>
+<p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Treasury Clearing
+                            </p>
+</div>
+</div>
+<!-- NETWORK MAP -->
+<div class="mb-12 rounded-[20px] overflow-hidden border border-slate-200 bg-white shadow-sm">
+<div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between bg-white">
+<h3 class="font-semibold text-slate-900">Provincial Offices Locations:</h3>
+<span class="inline-flex items-center rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Interactive</span>
+</div>
+<div class="w-full h-[450px] bg-slate-100 relative">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/d/embed?mid=113X8Zm_LTAR-6h4-NnLMn4_dNhwLvKJi&amp;hl=en&amp;femb=1&amp;ll=28.592198158327573%2C81.62820379999998&amp;z=16" style="border:0;" title="NRB Provincial Offices Map" width="100%">
+</iframe>
+</div>
+</div>
+<!-- PROVINCIAL OFFICE DIRECTORY GRID (8 OFFICES) -->
+<div class="mb-6 flex items-center justify-between">
+<h3 class="text-xl font-bold text-slate-900">Provincial Office Directory</h3>
+<span class="text-xs font-semibold uppercase tracking-wider text-slate-500">8 Regional
+                            Branches</span>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<!-- 1. Biratnagar Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Koshi
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Biratnagar Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Serves as the Nepal Rastra Bank
+                                    provincial office for Koshi Province, supporting currency management, government
+                                    transactions, banking operations, and financial-sector oversight.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Biratnagar, Morang, Koshi Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-21-442221 / +977-21-442058 / +977-21-442152
+                                            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbbrt@nrb.org.np">nrbbrt@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Janakpur Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Madhesh
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Janakpur Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Serves Madhesh Province through
+                                    banking operations, government transactions, currency management, and regulatory and
+                                    supervisory functions.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Janakpurdham, Dhanusha, Madhesh Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-41-426172 / +977-41-426498</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbjnp@nrb.org.np">nrbjnp@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Birgunj Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Madhesh
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Birgunj Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking and
+                                    financial-sector operations in the Birgunj area, including currency management,
+                                    government transactions, and regulatory functions.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Birgunj, Parsa, Madhesh Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-51-522137 / +977-51-522138</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbbirgunj@nrb.org.np">nrbbirgunj@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Pokhara Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Gandaki
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Pokhara Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking operations,
+                                    government transactions, foreign-exchange-related activities, and financial-sector
+                                    supervision across Gandaki Province.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Pokhara, Kaski, Gandaki Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-61-455115 / +977-61-453194</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbpkr@nrb.org.np">nrbpkr@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Siddharthanagar Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Lumbini
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Siddharthanagar Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking operations,
+                                    government transactions, currency management, foreign-exchange activities, and
+                                    financial-sector supervision in Lumbini Province.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Siddharthanagar, Rupandehi, Lumbini Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-71-590912 / +977-71-590913 / +977-71-590914
+                                            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbsid@nrb.org.np">nrbsid@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 6. Nepalgunj Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Lumbini
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Nepalgunj Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Supports banking and
+                                    financial-sector operations in western Nepal, including currency management,
+                                    government transactions, and supervisory functions.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Nepalgunj, Banke, Lumbini Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-81-590171 / +977-81-590170</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbnep@nrb.org.np">nrbnep@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 7. Surkhet Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Karnali
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Surkhet Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Serves Karnali Province through
+                                    currency management, government transactions, banking operations, and
+                                    financial-sector services.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Birendranagar, Surkhet, Karnali Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-83-520517 / +977-83-525523</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbsurkhet@nrb.org.np">nrbsurkhet@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 8. Dhangadhi Office -->
+<div class="hub-card bg-white rounded-[20px] border border-slate-200 p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-semibold text-[#25295B]">Sudurpashchim
+                                        Province</span>
+<span class="inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Operational</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-2">Dhangadhi Office</h4>
+<p class="text-sm text-slate-600 leading-relaxed mb-6">Supports central banking
+                                    operations, currency management, government transactions, and financial-sector
+                                    supervision across Sudurpashchim Province.</p>
+<div class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Address</p>
+<p class="text-slate-600">Dhangadhi, Kailali, Sudurpashchim Province</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Telephone</p>
+<p class="text-slate-600">+977-91-527701 / +977-91-527712 / +977-91-527702
+                                            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<svg class="h-5 w-5 text-[#138496] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<p class="font-semibold text-slate-900">Email</p>
+<a class="text-[#138496] font-medium hover:underline" href="mailto:nrbdhn@nrb.org.np">nrbdhn@nrb.org.np</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- GLOBAL FOOTER -->
+<footer class="nrb-footer bg-[#25295B] text-white" id="Footer">
+<div class="nrb-section-shell py-16">
+<div class="flex flex-col gap-6 border-b border-white/10 pb-10">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" src="../../assets/images/nrb-logo.png"/>
+</div>
+<div>
+<p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra
+                                Bank</p>
+<p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
+</div>
+</div>
+<p class="max-w-3xl text-sm leading-6 text-slate-300">
+                        The official digital headquarters for Nepal's central bank, bringing together monetary policy,
+                        economic data, financial regulation, research publications, notices, and public services in one
+                        authoritative portal.
+                    </p>
+</div>
+<div class="mt-10 grid grid-cols-5 gap-8">
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html">Overview</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#leadership">Leadership</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#organization">Departments</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#offices">Offices</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp;
+                            Data</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/statistics/index.html">Economic indicators</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Exchange rates</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial stability</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Open data</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/publications/index.html">Reports</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Research</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Working papers</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Annual reports</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services
+                        </h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/consumer-services/index.html">Consumer protection</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Complaints</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial literacy</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
+<p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
+<p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
+<p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
+<p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
+</div>
+</div>
+<div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
+<p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+<div class="flex flex-wrap items-center gap-5">
+<a class="transition hover:text-white" href="#">Privacy Policy</a>
+<a class="transition hover:text-white" href="#">Accessibility</a>
+<a class="transition hover:text-white" href="#">Terms of Use</a>
+<a class="transition hover:text-white" href="#Footer">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
 </body>
-
 </html>

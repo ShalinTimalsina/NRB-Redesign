@@ -1,0 +1,14 @@
+# Notices Archives - the official site of the Central Bank of Nepal
+
+Notices
+
+- [विपद्‍बाट प्रभावित क्षेत्रमा बैंकिङ सेवाको निरन्तरता सम्बन्धमा जारी गरिएको प्रेस विज्ञप्ति (२०८३-०५-१३)](https://www.nrb.org.np/ofg/%e0%a4%b5%e0%a4%bf%e0%a4%aa%e0%a4%a6%e0%a5%8d%e2%80%8d%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%ad%e0%a4%be%e0%a4%b5%e0%a4%bf%e0%a4%a4-%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a5%87%e0%a4%a4/) August 29, 2026 71.09 kb
+- [नेपाल इन्भेष्टमेण्ट मेगा बैंक लिमिटेडको सम्बन्धमा जारी गरिएको प्रेस विज्ञप्ति (२०८३-०४-२८)](https://www.nrb.org.np/ofg/%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2-%e0%a4%87%e0%a4%a8%e0%a5%8d%e0%a4%ad%e0%a5%87%e0%a4%b7%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%87%e0%a4%a3%e0%a5%8d%e0%a4%9f-%e0%a4%ae%e0%a5%87%e0%a4%97%e0%a4%be/) August 13, 2026 33.85 kb
+- [आर्थिक वर्ष २०८३-८४ को मौद्रिक नीति](https://www.nrb.org.np/ofg/%e0%a4%86%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%bf%e0%a4%95-%e0%a4%b5%e0%a4%b0%e0%a5%8d%e0%a4%b7-%e0%a5%a8%e0%a5%a6%e0%a5%ae%e0%a5%a9-%e0%a5%ae%e0%a5%aa-%e0%a4%95%e0%a5%8b-%e0%a4%ae%e0%a5%8c%e0%a4%a6/) July 7, 2026 426.33 kb
+- [Macroeconomic Report July 2026](https://www.nrb.org.np/ofg/macroeconomic-report-july-2026/) July 7, 2026 5.71 mb
+- [Monetary Policy 2082-83 Annual Review](https://www.nrb.org.np/ofg/monetary-policy-2082-83-annual-review/) July 7, 2026 307.42 kb
+- [वित्तीय ग्राहक सन्तुष्टि सर्वेक्षण २०८३](https://www.nrb.org.np/ofg/%e0%a4%b5%e0%a4%bf%e0%a4%a4%e0%a5%8d%e0%a4%a4%e0%a5%80%e0%a4%af-%e0%a4%97%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%b9%e0%a4%95-%e0%a4%b8%e0%a4%a8%e0%a5%8d%e0%a4%a4%e0%a5%81%e0%a4%b7%e0%a5%8d%e0%a4%9f%e0%a4%bf/) July 1, 2026 340.45 kb
+- [सह–प्रवक्ता र सूचना अधिकारी तोकिएको सम्बन्धमा (२०८३/०२/१८)।](https://www.nrb.org.np/ofg/%e0%a4%b8%e0%a4%b9-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%b5%e0%a4%95%e0%a5%8d%e0%a4%a4%e0%a4%be-%e0%a4%b0-%e0%a4%b8%e0%a5%82%e0%a4%9a%e0%a4%a8%e0%a4%be-%e0%a4%85%e0%a4%a7%e0%a4%bf%e0%a4%95/) June 1, 2026 788.09 kb
+- [‘मिर्मिरे’ आर्थिक अङ्क : वर्ष – ५४ अङ्क – १ पूर्णाङ्क – ३६३](https://www.nrb.org.np/ofg/%e0%a4%ae%e0%a4%bf%e0%a4%b0%e0%a5%8d%e0%a4%ae%e0%a4%bf%e0%a4%b0%e0%a5%87-%e0%a4%86%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%bf%e0%a4%95-%e0%a4%85%e0%a4%99%e0%a5%8d%e0%a4%95-%e0%a4%b5%e0%a4%b0%e0%a5%8d-3/) May 25, 2026 7.42 mb
+- [Monetary Policy 2082-83 3rd Quarter Review](https://www.nrb.org.np/ofg/monetary-policy-2082-83-3rd-quarter-review/) May 15, 2026 303.70 kb
+- [नेपाल राष्ट्र बैंक समाचार ७१ औं वार्षिकोत्सव विशेषाङ्क](https://www.nrb.org.np/ofg/%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2-%e0%a4%b0%e0%a4%be%e0%a4%b7%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0-%e0%a4%ac%e0%a5%88%e0%a4%82%e0%a4%95-%e0%a4%b8%e0%a4%ae%e0%a4%be%e0%a4%9a%e0%a4%be-143/) April 27, 2026 3.80 mb

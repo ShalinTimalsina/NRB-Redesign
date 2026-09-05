@@ -1,0 +1,14 @@
+# Acts Archives - the official site of the Central Bank of Nepal
+
+Acts
+
+- [विदेशी विनिमय (नियमित गर्ने) ऐन, २०१९](https://www.nrb.org.np/lgd/%e0%a4%b5%e0%a4%bf%e0%a4%a6%e0%a5%87%e0%a4%b6%e0%a5%80-%e0%a4%b5%e0%a4%bf%e0%a4%a8%e0%a4%bf%e0%a4%ae%e0%a4%af-%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%ae%e0%a4%bf%e0%a4%a4-%e0%a4%97%e0%a4%b0%e0%a5%8d-2/) July 22, 2025 1.07 mb
+- [विनिमेय अधिकारपत्र ऐन, २०३४](https://www.nrb.org.np/lgd/%e0%a4%b5%e0%a4%bf%e0%a4%a8%e0%a4%bf%e0%a4%ae%e0%a5%87%e0%a4%af-%e0%a4%85%e0%a4%a7%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a4%aa%e0%a4%a4%e0%a5%8d%e0%a4%b0-%e0%a4%90%e0%a4%a8-%e0%a5%a8%e0%a5%a6-2/) July 22, 2025 865.53 kb
+- [भुक्तानी तथा फर्स्यौट ऐन, २०७५](https://www.nrb.org.np/lgd/%e0%a4%ad%e0%a5%81%e0%a4%95%e0%a5%8d%e0%a4%a4%e0%a4%be%e0%a4%a8%e0%a5%80-%e0%a4%a4%e0%a4%a5%e0%a4%be-%e0%a4%ab%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a5%8d%e0%a4%af%e0%a5%8c%e0%a4%9f-%e0%a4%90%e0%a4%a8-2/) July 22, 2025 753.46 kb
+- [सार्वजनिक खरिद ऐन, २०६३](https://www.nrb.org.np/lgd/%e0%a4%b8%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%b5%e0%a4%9c%e0%a4%a8%e0%a4%bf%e0%a4%95-%e0%a4%96%e0%a4%b0%e0%a4%bf%e0%a4%a6-%e0%a4%90%e0%a4%a8-%e0%a5%a8%e0%a5%a6%e0%a5%ac%e0%a5%a9-2/) July 22, 2025 1.66 mb
+- [सूचनाको हक सम्बन्धी ऐन, २०६४](https://www.nrb.org.np/lgd/%e0%a4%b8%e0%a5%82%e0%a4%9a%e0%a4%a8%e0%a4%be%e0%a4%95%e0%a5%8b-%e0%a4%b9%e0%a4%95-%e0%a4%b8%e0%a4%ae%e0%a5%8d%e0%a4%ac%e0%a4%a8%e0%a5%8d%e0%a4%a7%e0%a5%80-%e0%a4%90%e0%a4%a8-%e0%a5%a8%e0%a5%a6-2/) July 22, 2025 795.14 kb
+- [बैंकिङ्ग कसूर तथा सजाय ऐन, २०६४](https://www.nrb.org.np/lgd/%e0%a4%ac%e0%a5%88%e0%a4%82%e0%a4%95%e0%a4%bf%e0%a4%99%e0%a5%8d%e0%a4%97-%e0%a4%95%e0%a4%b8%e0%a5%82%e0%a4%b0-%e0%a4%a4%e0%a4%a5%e0%a4%be-%e0%a4%b8%e0%a4%9c%e0%a4%be%e0%a4%af-%e0%a4%90%e0%a4%a8/) July 18, 2025 862.34 kb
+- [सम्पत्ति शुद्धीकरण (मनी लाउन्डरिङ्ग) निवारण ऐन, २०६४](https://www.nrb.org.np/lgd/%e0%a4%b8%e0%a4%ae%e0%a5%8d%e0%a4%aa%e0%a4%a4%e0%a5%8d%e0%a4%a4%e0%a4%bf-%e0%a4%b6%e0%a5%81%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a5%80%e0%a4%95%e0%a4%b0%e0%a4%a3-%e0%a4%ae%e0%a4%a8%e0%a5%80-%e0%a4%b2/) July 18, 2025 2.96 mb
+- [बैंक तथा वित्तीय संस्था सम्बन्धी ऐन, २०७३](https://www.nrb.org.np/lgd/%e0%a4%ac%e0%a5%88%e0%a4%82%e0%a4%95-%e0%a4%a4%e0%a4%a5%e0%a4%be-%e0%a4%b5%e0%a4%bf%e0%a4%a4%e0%a5%8d%e0%a4%a4%e0%a5%80%e0%a4%af-%e0%a4%b8%e0%a4%82%e0%a4%b8%e0%a5%8d%e0%a4%a5%e0%a4%be-%e0%a4%b8-3/) July 18, 2025 2.77 mb
+- [नेपाल राष्ट्र बैंक ऐन, २०५८](https://www.nrb.org.np/lgd/%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2-%e0%a4%b0%e0%a4%be%e0%a4%b7%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0-%e0%a4%ac%e0%a5%88%e0%a4%82%e0%a4%95-%e0%a4%90%e0%a4%a8-%e0%a5%a8%e0%a5%a6%e0%a5%ab-3/) July 18, 2025 2.23 mb
+- [नेपाल राष्ट्र बैंक ऐन, २०१२](https://www.nrb.org.np/lgd/%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2-%e0%a4%b0%e0%a4%be%e0%a4%b7%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0-%e0%a4%ac%e0%a5%88%e0%a4%82%e0%a4%95-%e0%a4%90%e0%a4%a8-%e0%a5%a8%e0%a5%a6%e0%a5%a7/) March 9, 2023 12.60 mb

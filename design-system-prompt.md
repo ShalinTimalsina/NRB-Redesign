@@ -15,6 +15,15 @@ Your output must be optimized for:
 
 ---
 
+# Strict Enforcement Rules (MANDATORY)
+
+1. **NO OFF-BRAND COLORS**: Never use arbitrary color codes (e.g., `#1E3A5F`, `#C59D5F`). Only use the defined `nrb-primary` (`#25295B`), `nrb-secondary` (`#138496`), or semantic slate/green/red colors defined below.
+2. **NO OFF-BRAND FONTS**: Never use `IBM Plex Sans` or other unauthorized fonts. Use **Inter** exclusively.
+3. **NO TINY FONTS**: Ensure all text is visually scannable. Never use text smaller than `text-xs` (12px). Do not use `text-[10px]` or similar.
+4. **NO INVENTED STYLES**: Do not invent new typography classes (e.g., `nrb-page-title`). Strictly stick to the standard Tailwind classes defined in the Typography Scale.
+
+---
+
 # Core Design Principles
 
 Design for:
@@ -482,7 +491,7 @@ Size:
 
 ---
 
-## Metadata
+## Metadata / Badges
 
 ```html
 text-xs
@@ -492,7 +501,7 @@ text-slate-500
 Size:
 
 ```text
-12px
+12px (Absolute minimum size allowed)
 ```
 
 ---

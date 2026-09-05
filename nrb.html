@@ -1,1083 +1,954 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nepal Rastra Bank | Homepage Redesign</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/nrb-core.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nepal Rastra Bank | Homepage Redesign</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="assets/css/nrb-core.css" rel="stylesheet"/>
 </head>
-
 <body class="min-w-[1440px] bg-[#F8FAFC] text-slate-900 antialiased">
-    <div id="Page-Frame" class="nrb-page-frame mx-auto w-full max-w-[1440px] bg-[#F8FAFC]">
-        <header id="Site-Header" class="bg-[#25295B] text-white shadow-sm">
-            <!-- Top Section: Logo and Utilities -->
-            <div class="border-b border-white/10">
-                <div class="nrb-section-shell flex items-center justify-between py-6">
-                    <a id="Brand-Mark" href="nrb.html" class="flex items-center gap-4">
-                        <div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" />
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra Bank</span>
-                            <span class="text-sm text-slate-300">Central Bank of Nepal</span>
-                        </div>
-                    </a>
-
-                    <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
-                        <a href="#" class="transition hover:text-white">EN / NEP</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Section: Primary Navigation -->
-            <div id="Main-Header">
-                <div class="nrb-section-shell py-4">
-                    <nav id="Primary-Navigation" aria-label="Primary" class="flex items-center justify-between text-sm font-medium">
-                        <div class="relative group">
-                            <a id="Nav-About-NRB" href="pages/about/index.html" class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]">
+<div class="nrb-page-frame mx-auto w-full max-w-[1440px] bg-[#F8FAFC]" id="Page-Frame">
+<header class="bg-[#25295B] text-white shadow-sm" id="Site-Header">
+<!-- Top Section: Logo and Utilities -->
+<div class="border-b border-white/10">
+<div class="nrb-section-shell flex items-center justify-between py-6">
+<a class="flex items-center gap-4" href="nrb.html" id="Brand-Mark">
+<div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" src="assets/images/nrb-logo.png"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra Bank</span>
+<span class="text-sm text-slate-300">Central Bank of Nepal</span>
+</div>
+</a>
+<div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
+<a class="transition hover:text-white" href="#">EN / NEP</a>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Primary Navigation -->
+<div id="Main-Header">
+<div class="nrb-section-shell py-4">
+<nav aria-label="Primary" class="flex items-center justify-between text-sm font-medium" id="Primary-Navigation">
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="pages/about/index.html" id="Nav-About-NRB">
                                 About NRB
-                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                            </a>
-                            <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
-                                    <a href="pages/about/index.html#overview" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Institution Overview</a>
-                                    <a href="pages/about/index.html#leadership" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Leadership & Governance</a>
-                                    <a href="pages/about/index.html#organization" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Organizational Structure</a>
-                                    <a href="pages/about/index.html#offices" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Departments & Offices</a>
-                                    <a href="pages/about/index.html#statements" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Financial Statements</a>
-                                    <a href="pages/about/index.html#contact" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Contact & Locations</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a id="Nav-Monetary-Policy" href="pages/monetary-policy/index.html" class="text-slate-100 transition hover:text-[#138496]">Monetary Policy</a>
-                        <a id="Nav-Bank-Supervision" href="pages/bank-supervision/index.html" class="text-slate-100 transition hover:text-[#138496]">Bank Supervision</a>
-                        <a id="Nav-Forex-Management" href="pages/forex-management/index.html" class="text-slate-100 transition hover:text-[#138496]">Forex Management</a>
-                        <a id="Nav-Statistics" href="pages/statistics/index.html" class="text-slate-100 transition hover:text-[#138496]">Statistics</a>
-                        <a id="Nav-Publications" href="pages/publications/index.html" class="text-slate-100 transition hover:text-[#138496]">Publications</a>
-                        <a id="Nav-Notices" href="pages/notices/index.html" class="text-slate-100 transition hover:text-[#138496]">Notices</a>
-                        <a id="Nav-Careers" href="pages/careers/index.html" class="text-slate-100 transition hover:text-[#138496]">Careers</a>
-                        <a id="Nav-Contact" href="pages/contact/index.html" class="text-slate-100 transition hover:text-[#138496]">Contact</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <main id="Main-Content">
-            <section id="Hero-Banner" class="border-b border-slate-200 bg-white">
-                <div class="nrb-section-shell py-10 lg:py-14">
-                    <nav id="Breadcrumb-Home" aria-label="Breadcrumb"
-                        class="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/about/index.html#overview">Institution Overview</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/about/index.html#leadership">Leadership &amp; Governance</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/about/index.html#organization">Organizational Structure</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/about/index.html#offices">Departments &amp; Offices</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/about/index.html#statements">Financial Statements</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/about/index.html#contact">Contact &amp; Locations</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="pages/regulations/index.html" id="Nav-Regulations">
+Regulations
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Laws &amp; Legislation</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/regulations/acts.html">Acts</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors mb-1" href="pages/regulations/rules-and-bylaws.html">Rules and Bylaws</a>
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-t border-slate-100 mb-1 mt-1">Policies &amp; Guidelines</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/regulations/notices.html">Notices</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/regulations/guidelines-and-manuals.html">Guidelines &amp; Manuals</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/regulations/other-policies.html">Other Policies</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="pages/regulations/monetary-policy.html">Monetary Policy</a>
+</div>
+</div>
+</div>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/monetary-policy/index.html" id="Nav-Monetary-Policy">Monetary Policy</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/bank-supervision/index.html" id="Nav-Bank-Supervision">Bank Supervision</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/forex-management/index.html" id="Nav-Forex-Management">Forex Management</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/publications/index.html" id="Nav-Publications">Publications</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/notices/index.html" id="Nav-Notices">Notices</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/careers/index.html" id="Nav-Careers">Careers</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="pages/contact/index.html" id="Nav-Contact">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<main id="Main-Content">
+<section class="border-b border-slate-200 bg-white" id="Hero-Banner">
+<div class="nrb-section-shell py-10 lg:py-14">
+<nav aria-label="Breadcrumb" class="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500" id="Breadcrumb-Home">
                         Home / Digital headquarters
                     </nav>
-
-                    <div class="nrb-hero-grid">
-                        <div id="Hero-Content" class="flex flex-col justify-between gap-8">
-                            <div class="flex flex-col gap-6">
-                                <span
-                                    class="w-fit rounded-full border border-[#C59D5F]/25 bg-[#C59D5F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B6A30]">
+<div class="nrb-hero-grid">
+<div class="flex flex-col justify-between gap-8" id="Hero-Content">
+<div class="flex flex-col gap-6">
+<span class="w-fit rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">
                                     Central bank of Nepal
                                 </span>
-                                <div class="flex flex-col gap-4 max-w-3xl">
-                                    <h1 id="Hero-Title" class="nrb-page-title text-[#1E3A5F]">Nepal Rastra Bank</h1>
-                                    <div class="flex items-baseline gap-4">
-                                        <p class="text-[28px] font-medium tracking-[-0.03em] text-[#25295B]">Central
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-2xl font-bold text-slate-900 mb-4" id="Hero-Title">Nepal Rastra Bank</h1>
+<div class="flex items-baseline gap-4">
+<p class="text-[28px] font-medium tracking-[-0.03em] text-[#25295B]">Central
                                             Bank of Nepal</p>
-                                        <span class="h-px flex-1 bg-slate-200"></span>
-                                    </div>
-                                    <p id="Hero-Description" class="nrb-body-text max-w-2xl text-[17px] text-slate-600">
+<span class="h-px flex-1 bg-slate-200"></span>
+</div>
+<p class="nrb-body-text max-w-2xl text-[17px] text-slate-600" id="Hero-Description">
                                         The official digital headquarters for Nepal’s central bank, bringing together
                                         monetary policy, economic data, financial regulation, research publications,
                                         notices, and public services in one authoritative portal.
                                     </p>
-                                    <form class="mt-4 flex items-center max-w-lg" action="#" method="get" aria-label="Site search">
-                                        <div class="flex h-12 w-full items-center gap-3 rounded-full border border-[#25295B] bg-white px-5 text-slate-700 shadow-sm focus-within:ring-2 focus-within:ring-[#138496]">
-                                            <svg viewBox="0 0 24 24" class="h-5 w-5 flex-none text-[#25295B]" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                                <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" />
-                                            </svg>
-                                            <input type="search" aria-label="Search" placeholder="Search publications, reports, statistics..." class="w-full bg-transparent text-sm text-slate-900 placeholder:text-slate-500 focus:outline-none" />
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <div id="Hero-Action-Row" class="flex flex-wrap items-center gap-3">
-                                <a id="Hero-CTA-Monetary-Policy" href="pages/monetary-policy/index.html"
-                                    class="inline-flex items-center gap-2 rounded-full bg-[#25295B] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1E3A5F] focus:outline-none focus:ring-2 focus:ring-[#138496]">
+<form action="#" aria-label="Site search" class="mt-4 flex items-center max-w-lg" method="get">
+<div class="flex h-12 w-full items-center gap-3 rounded-full border border-[#25295B] bg-white px-5 text-slate-700 shadow-sm focus-within:ring-2 focus-within:ring-[#138496]">
+<svg aria-hidden="true" class="h-5 w-5 flex-none text-[#25295B]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path>
+</svg>
+<input aria-label="Search" class="w-full bg-transparent text-sm text-slate-900 placeholder:text-slate-500 focus:outline-none" placeholder="Search publications, reports, statistics..." type="search"/>
+</div>
+</form>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3" id="Hero-Action-Row">
+<a class="inline-flex items-center gap-2 rounded-full bg-[#25295B] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#25295B] focus:outline-none focus:ring-2 focus:ring-[#138496]" href="pages/monetary-policy/index.html" id="Hero-CTA-Monetary-Policy">
                                     View Monetary Policy
-                                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M5 12h14" />
-                                        <path d="m12 5 7 7-7 7" />
-                                    </svg>
-                                </a>
-                                <a id="Hero-CTA-Statistics" href="pages/statistics/index.html"
-                                    class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#138496]">
+                                    <svg aria-hidden="true" class="h-4 w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M5 12h14"></path>
+<path d="m12 5 7 7-7 7"></path>
+</svg>
+</a>
+<a class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#138496]" href="pages/statistics/index.html" id="Hero-CTA-Statistics">
                                     Explore Statistics
                                 </a>
-                                <a id="Hero-CTA-Forex" href="pages/forex-management/index.html"
-                                    class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#138496]">
+<a class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#138496]" href="pages/forex-management/index.html" id="Hero-CTA-Forex">
                                     Daily Exchange Rates
                                 </a>
-                            </div>
-                        </div>
-
-                        <aside id="Hero-Spotlight"
-                            class="nrb-elevated-card overflow-hidden rounded-[24px] bg-[#1E3A5F] text-white">
-                            <div class="flex items-center justify-between border-b border-white/10 px-6 py-5">
-                                <div>
-                                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">Economic
+</div>
+</div>
+<aside class="nrb-elevated-card overflow-hidden rounded-[24px] bg-[#25295B] text-white" id="Hero-Spotlight">
+<div class="flex items-center justify-between border-b border-white/10 px-6 py-5">
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">Economic
                                         snapshot</p>
-                                    <h2 class="mt-2 text-xl font-semibold text-white">Live institutional overview</h2>
-                                </div>
-                                <span
-                                    class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-slate-200">
+<h2 class="mt-2 text-xl font-semibold text-white">Live institutional overview</h2>
+</div>
+<span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-slate-200">
                                     Updated 09:00 NST
                                 </span>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-3 px-6 py-5">
-                                <article id="Snapshot-Policy-Rate"
-                                    class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                                    <p class="text-xs uppercase tracking-[0.18em] text-slate-300">Policy rate</p>
-                                    <p class="mt-4 text-3xl font-semibold text-white">6.50%</p>
-                                    <p class="mt-3 text-sm text-slate-300">Standing liquidity support unchanged.</p>
-                                </article>
-                                <article id="Snapshot-FX-Reserve"
-                                    class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                                    <p class="text-xs uppercase tracking-[0.18em] text-slate-300">FX reserves</p>
-                                    <p class="mt-4 text-3xl font-semibold text-white">USD 15.2B</p>
-                                    <p class="mt-3 text-sm text-slate-300">Import coverage remains comfortable.</p>
-                                </article>
-                                <article id="Snapshot-Inflation"
-                                    class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                                    <p class="text-xs uppercase tracking-[0.18em] text-slate-300">Inflation</p>
-                                    <p class="mt-4 text-3xl font-semibold text-white">4.8%</p>
-                                    <p class="mt-3 text-sm text-slate-300">Price growth stays within the policy band.
+</div>
+<div class="grid grid-cols-2 gap-3 px-6 py-5">
+<article class="rounded-2xl border border-white/10 bg-white/5 p-4" id="Snapshot-Policy-Rate">
+<p class="text-xs uppercase tracking-[0.18em] text-slate-300">Policy rate</p>
+<p class="mt-4 text-3xl font-semibold text-white">6.50%</p>
+<p class="mt-3 text-sm text-slate-300">Standing liquidity support unchanged.</p>
+</article>
+<article class="rounded-2xl border border-white/10 bg-white/5 p-4" id="Snapshot-FX-Reserve">
+<p class="text-xs uppercase tracking-[0.18em] text-slate-300">FX reserves</p>
+<p class="mt-4 text-3xl font-semibold text-white">USD 15.2B</p>
+<p class="mt-3 text-sm text-slate-300">Import coverage remains comfortable.</p>
+</article>
+<article class="rounded-2xl border border-white/10 bg-white/5 p-4" id="Snapshot-Inflation">
+<p class="text-xs uppercase tracking-[0.18em] text-slate-300">Inflation</p>
+<p class="mt-4 text-3xl font-semibold text-white">4.8%</p>
+<p class="mt-3 text-sm text-slate-300">Price growth stays within the policy band.
                                     </p>
-                                </article>
-                                <article id="Snapshot-Remittance"
-                                    class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                                    <p class="text-xs uppercase tracking-[0.18em] text-slate-300">Remittance</p>
-                                    <p class="mt-4 text-3xl font-semibold text-white">NPR 142B</p>
-                                    <p class="mt-3 text-sm text-slate-300">Monthly inflows continue to support external
+</article>
+<article class="rounded-2xl border border-white/10 bg-white/5 p-4" id="Snapshot-Remittance">
+<p class="text-xs uppercase tracking-[0.18em] text-slate-300">Remittance</p>
+<p class="mt-4 text-3xl font-semibold text-white">NPR 142B</p>
+<p class="mt-3 text-sm text-slate-300">Monthly inflows continue to support external
                                         buffers.</p>
-                                </article>
-                            </div>
-
-                            <div class="border-t border-white/10 px-6 py-5">
-                                <div class="flex items-start justify-between gap-6">
-                                    <div>
-                                        <p class="text-sm font-semibold text-white">Market position</p>
-                                        <p class="mt-2 text-sm leading-6 text-slate-300">
+</article>
+</div>
+<div class="border-t border-white/10 px-6 py-5">
+<div class="flex items-start justify-between gap-6">
+<div>
+<p class="text-sm font-semibold text-white">Market position</p>
+<p class="mt-2 text-sm leading-6 text-slate-300">
                                             The homepage emphasizes trusted access to policy decisions, economic data,
                                             and public services—without turning the institution into a marketing site.
                                         </p>
-                                    </div>
-                                    <div class="text-right">
-                                        <p class="text-xs uppercase tracking-[0.2em] text-slate-300">Market status</p>
-                                        <p class="mt-2 text-lg font-semibold text-white">Stable</p>
-                                        <p class="mt-1 text-sm text-slate-300">Balanced liquidity conditions.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Popular-Services" class="border-b border-slate-200 bg-slate-50 py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Quick access</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">Popular Services</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+</div>
+<div class="text-right">
+<p class="text-xs uppercase tracking-[0.2em] text-slate-300">Market status</p>
+<p class="mt-2 text-lg font-semibold text-white">Stable</p>
+<p class="mt-1 text-sm text-slate-300">Balanced liquidity conditions.</p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-slate-50 py-16" id="Popular-Services">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Quick access</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">Popular Services</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 Direct access to the most used institutional services, arranged as a premium service
                                 matrix rather than a generic app-style dashboard.
                             </p>
-                        </div>
-                        <a href="pages/consumer-services/index.html"
-                            class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]">
+</div>
+<a class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]" href="pages/consumer-services/index.html">
                             View all services
                         </a>
-                    </div>
-
-                    <div class="grid grid-cols-3 gap-4">
-                        <a id="Service-Exchange-Rates" href="pages/forex-management/index.html"
-                            class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
-                            <div class="flex items-center justify-between">
-                                <div
-                                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
-                                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M7 7h10" />
-                                        <path d="M7 17h10" />
-                                        <path d="m7 7 4-4" />
-                                        <path d="m7 17 4 4" />
-                                    </svg>
-                                </div>
-                                <span
-                                    class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Rates</span>
-                            </div>
-                            <h3 class="mt-8 text-xl font-semibold text-slate-900">Daily Exchange Rates</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Official reference rates for major
+</div>
+<div class="grid grid-cols-3 gap-4">
+<a class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md" href="pages/forex-management/index.html" id="Service-Exchange-Rates">
+<div class="flex items-center justify-between">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M7 7h10"></path>
+<path d="M7 17h10"></path>
+<path d="m7 7 4-4"></path>
+<path d="m7 17 4 4"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Rates</span>
+</div>
+<h3 class="mt-8 text-xl font-semibold text-slate-900">Daily Exchange Rates</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Official reference rates for major
                                 currencies and market transparency.</p>
-                        </a>
-
-                        <a id="Service-Monetary-Policy" href="pages/monetary-policy/index.html"
-                            class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
-                            <div class="flex items-center justify-between">
-                                <div
-                                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
-                                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M5 12h14" />
-                                        <path d="m12 5 7 7-7 7" />
-                                    </svg>
-                                </div>
-                                <span
-                                    class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Policy</span>
-                            </div>
-                            <h3 class="mt-8 text-xl font-semibold text-slate-900">Monetary Policy</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Latest policy stance, tools, decisions, and
+</a>
+<a class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md" href="pages/monetary-policy/index.html" id="Service-Monetary-Policy">
+<div class="flex items-center justify-between">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M5 12h14"></path>
+<path d="m12 5 7 7-7 7"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Policy</span>
+</div>
+<h3 class="mt-8 text-xl font-semibold text-slate-900">Monetary Policy</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Latest policy stance, tools, decisions, and
                                 implementation notes.</p>
-                        </a>
-
-                        <a id="Service-Statistics" href="pages/statistics/index.html"
-                            class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
-                            <div class="flex items-center justify-between">
-                                <div
-                                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
-                                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M4 19V5" />
-                                        <path d="M8 17V9" />
-                                        <path d="M12 19V7" />
-                                        <path d="M16 13V11" />
-                                        <path d="M20 19V4" />
-                                    </svg>
-                                </div>
-                                <span
-                                    class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Data</span>
-                            </div>
-                            <h3 class="mt-8 text-xl font-semibold text-slate-900">Statistics Dashboard</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Macroeconomic indicators, series, and
+</a>
+<a class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md" href="pages/statistics/index.html" id="Service-Statistics">
+<div class="flex items-center justify-between">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 19V5"></path>
+<path d="M8 17V9"></path>
+<path d="M12 19V7"></path>
+<path d="M16 13V11"></path>
+<path d="M20 19V4"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Data</span>
+</div>
+<h3 class="mt-8 text-xl font-semibold text-slate-900">Statistics Dashboard</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Macroeconomic indicators, series, and
                                 downloadable datasets.</p>
-                        </a>
-
-                        <a id="Service-Publications" href="pages/publications/index.html"
-                            class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
-                            <div class="flex items-center justify-between">
-                                <div
-                                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
-                                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M6 2h9l5 5v15H6z" />
-                                        <path d="M14 2v6h6" />
-                                    </svg>
-                                </div>
-                                <span
-                                    class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Library</span>
-                            </div>
-                            <h3 class="mt-8 text-xl font-semibold text-slate-900">Research Publications</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Reports, bulletins, studies, and
+</a>
+<a class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md" href="pages/publications/index.html" id="Service-Publications">
+<div class="flex items-center justify-between">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M6 2h9l5 5v15H6z"></path>
+<path d="M14 2v6h6"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Library</span>
+</div>
+<h3 class="mt-8 text-xl font-semibold text-slate-900">Research Publications</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Reports, bulletins, studies, and
                                 publications with clear document metadata.</p>
-                        </a>
-
-                        <a id="Service-Notices" href="pages/notices/index.html"
-                            class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
-                            <div class="flex items-center justify-between">
-                                <div
-                                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
-                                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M5 3h14v18H5z" />
-                                        <path d="M8 7h8" />
-                                        <path d="M8 11h8" />
-                                        <path d="M8 15h5" />
-                                    </svg>
-                                </div>
-                                <span
-                                    class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Alerts</span>
-                            </div>
-                            <h3 class="mt-8 text-xl font-semibold text-slate-900">Circulars & Notices</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Official notices, circulars, and public
+</a>
+<a class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md" href="pages/notices/index.html" id="Service-Notices">
+<div class="flex items-center justify-between">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M5 3h14v18H5z"></path>
+<path d="M8 7h8"></path>
+<path d="M8 11h8"></path>
+<path d="M8 15h5"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Alerts</span>
+</div>
+<h3 class="mt-8 text-xl font-semibold text-slate-900">Circulars &amp; Notices</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Official notices, circulars, and public
                                 debt announcements.</p>
-                        </a>
-
-                        <a id="Service-Consumer-Protection" href="pages/consumer-services/index.html"
-                            class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md">
-                            <div class="flex items-center justify-between">
-                                <div
-                                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
-                                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M12 20v-6" />
-                                        <path d="M6 20h12" />
-                                        <path d="M12 4a6 6 0 0 1 6 6v4H6v-4a6 6 0 0 1 6-6Z" />
-                                    </svg>
-                                </div>
-                                <span
-                                    class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Support</span>
-                            </div>
-                            <h3 class="mt-8 text-xl font-semibold text-slate-900">Consumer Protection</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Complaints, literacy guidance, FAQs, and
+</a>
+<a class="nrb-elevated-card group rounded-[20px] bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md" href="pages/consumer-services/index.html" id="Service-Consumer-Protection">
+<div class="flex items-center justify-between">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] group-hover:bg-[#25295B] group-hover:text-white">
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 20v-6"></path>
+<path d="M6 20h12"></path>
+<path d="M12 4a6 6 0 0 1 6 6v4H6v-4a6 6 0 0 1 6-6Z"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Support</span>
+</div>
+<h3 class="mt-8 text-xl font-semibold text-slate-900">Consumer Protection</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Complaints, literacy guidance, FAQs, and
                                 public support channels.</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Economic-Overview" class="border-b border-slate-200 bg-white py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Macro snapshot</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">Economic Overview</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+</a>
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-white py-16" id="Economic-Overview">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Macro snapshot</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">Economic Overview</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 A structured overview of key national indicators, presented with the discipline of a
                                 government report rather than a crypto dashboard.
                             </p>
-                        </div>
-                        <div
-                            class="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-600">
+</div>
+<div class="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-600">
                             Latest economic bulletin available now
                         </div>
-                    </div>
-
-                    <div class="grid grid-cols-[0.9fr_1.1fr] gap-6">
-                        <article class="nrb-elevated-card rounded-[24px] bg-slate-50 p-8">
-                            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496]">National context
+</div>
+<div class="grid grid-cols-[0.9fr_1.1fr] gap-6">
+<article class="nrb-elevated-card rounded-[24px] bg-slate-50 p-8">
+<p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496]">National context
                             </p>
-                            <h3 class="mt-4 text-2xl font-semibold text-slate-900">Stable price signals, measured
+<h3 class="mt-4 text-2xl font-semibold text-slate-900">Stable price signals, measured
                                 external buffers, and ongoing credit expansion.</h3>
-                            <p class="mt-4 text-sm leading-6 text-slate-600">
+<p class="mt-4 text-sm leading-6 text-slate-600">
                                 The dashboard is designed to help citizens, analysts, and market participants understand
                                 the broader policy environment at a glance, with links to series definitions and source
                                 documents.
                             </p>
-
-                            <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5">
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+<div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
                                             Bulletin focus</p>
-                                        <p class="mt-2 text-lg font-semibold text-slate-900">Price stability and
+<p class="mt-2 text-lg font-semibold text-slate-900">Price stability and
                                             external resilience</p>
-                                    </div>
-                                    <span
-                                        class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">Within
+</div>
+<span class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">Within
                                         watch range</span>
-                                </div>
-                                <p class="mt-4 text-sm leading-6 text-slate-600">
+</div>
+<p class="mt-4 text-sm leading-6 text-slate-600">
                                     Recent indicators suggest moderated inflation, steady remittance inflow, and reserve
                                     coverage that continues to support market confidence.
                                 </p>
-                            </div>
-                        </article>
-
-                        <div class="grid grid-cols-2 gap-4">
-                            <article id="Indicator-Inflation" class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                                <div class="flex items-center justify-between gap-4">
-                                    <h3 class="text-lg font-semibold text-slate-900">Inflation</h3>
-                                    <span
-                                        class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">-0.3%</span>
-                                </div>
-                                <p class="mt-6 text-3xl font-semibold text-slate-900">4.8%</p>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Consumer prices remain inside the
+</div>
+</article>
+<div class="grid grid-cols-2 gap-4">
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6" id="Indicator-Inflation">
+<div class="flex items-center justify-between gap-4">
+<h3 class="text-lg font-semibold text-slate-900">Inflation</h3>
+<span class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">-0.3%</span>
+</div>
+<p class="mt-6 text-3xl font-semibold text-slate-900">4.8%</p>
+<p class="mt-3 text-sm leading-6 text-slate-600">Consumer prices remain inside the
                                     official band with easing food pressure.</p>
-                            </article>
-
-                            <article id="Indicator-Reserves" class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                                <div class="flex items-center justify-between gap-4">
-                                    <h3 class="text-lg font-semibold text-slate-900">Foreign Reserves</h3>
-                                    <span
-                                        class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+2.1%</span>
-                                </div>
-                                <p class="mt-6 text-3xl font-semibold text-slate-900">USD 15.2B</p>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Reserve coverage remains comfortable
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6" id="Indicator-Reserves">
+<div class="flex items-center justify-between gap-4">
+<h3 class="text-lg font-semibold text-slate-900">Foreign Reserves</h3>
+<span class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+2.1%</span>
+</div>
+<p class="mt-6 text-3xl font-semibold text-slate-900">USD 15.2B</p>
+<p class="mt-3 text-sm leading-6 text-slate-600">Reserve coverage remains comfortable
                                     relative to import demand.</p>
-                            </article>
-
-                            <article id="Indicator-GDP" class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                                <div class="flex items-center justify-between gap-4">
-                                    <h3 class="text-lg font-semibold text-slate-900">GDP Growth</h3>
-                                    <span
-                                        class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-600">Forecast</span>
-                                </div>
-                                <p class="mt-6 text-3xl font-semibold text-slate-900">5.7%</p>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Broad-based expansion supported by
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6" id="Indicator-GDP">
+<div class="flex items-center justify-between gap-4">
+<h3 class="text-lg font-semibold text-slate-900">GDP Growth</h3>
+<span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-600">Forecast</span>
+</div>
+<p class="mt-6 text-3xl font-semibold text-slate-900">5.7%</p>
+<p class="mt-3 text-sm leading-6 text-slate-600">Broad-based expansion supported by
                                     services, trade, and agriculture.</p>
-                            </article>
-
-                            <article id="Indicator-Remittance" class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                                <div class="flex items-center justify-between gap-4">
-                                    <h3 class="text-lg font-semibold text-slate-900">Remittance Inflow</h3>
-                                    <span
-                                        class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+8.4%</span>
-                                </div>
-                                <p class="mt-6 text-3xl font-semibold text-slate-900">NPR 142B</p>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">A continuing external support for
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6" id="Indicator-Remittance">
+<div class="flex items-center justify-between gap-4">
+<h3 class="text-lg font-semibold text-slate-900">Remittance Inflow</h3>
+<span class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+8.4%</span>
+</div>
+<p class="mt-6 text-3xl font-semibold text-slate-900">NPR 142B</p>
+<p class="mt-3 text-sm leading-6 text-slate-600">A continuing external support for
                                     households and the balance of payments.</p>
-                            </article>
-
-                            <article id="Indicator-Deposits" class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                                <div class="flex items-center justify-between gap-4">
-                                    <h3 class="text-lg font-semibold text-slate-900">Banking Deposits</h3>
-                                    <span
-                                        class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+7.1%</span>
-                                </div>
-                                <p class="mt-6 text-3xl font-semibold text-slate-900">NPR 6.8T</p>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Deposit mobilization remains healthy
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6" id="Indicator-Deposits">
+<div class="flex items-center justify-between gap-4">
+<h3 class="text-lg font-semibold text-slate-900">Banking Deposits</h3>
+<span class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+7.1%</span>
+</div>
+<p class="mt-6 text-3xl font-semibold text-slate-900">NPR 6.8T</p>
+<p class="mt-3 text-sm leading-6 text-slate-600">Deposit mobilization remains healthy
                                     across the banking system.</p>
-                            </article>
-
-                            <article id="Indicator-Lending" class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                                <div class="flex items-center justify-between gap-4">
-                                    <h3 class="text-lg font-semibold text-slate-900">Lending Growth</h3>
-                                    <span
-                                        class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+4.2%</span>
-                                </div>
-                                <p class="mt-6 text-3xl font-semibold text-slate-900">NPR 5.4T</p>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Credit continues to expand at a
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6" id="Indicator-Lending">
+<div class="flex items-center justify-between gap-4">
+<h3 class="text-lg font-semibold text-slate-900">Lending Growth</h3>
+<span class="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">+4.2%</span>
+</div>
+<p class="mt-6 text-3xl font-semibold text-slate-900">NPR 5.4T</p>
+<p class="mt-3 text-sm leading-6 text-slate-600">Credit continues to expand at a
                                     measured pace across productive sectors.</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Foreign-Exchange-Snapshot" class="border-b border-slate-200 bg-slate-50 py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Market reference</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">Foreign Exchange Snapshot</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-slate-50 py-16" id="Foreign-Exchange-Snapshot">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Market reference</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">Foreign Exchange Snapshot</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 Professional exchange rate reference table with clear buy/sell values and trend
                                 indicators for major currencies.
                             </p>
-                        </div>
-                        <a href="pages/forex-management/index.html"
-                            class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]">
+</div>
+<a class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]" href="pages/forex-management/index.html">
                             View Full Forex Dashboard
                         </a>
-                    </div>
-
-                    <div id="Forex-Table-Wrapper"
-                        class="overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-sm">
-                        <table id="Forex-Table" class="w-full border-collapse text-left">
-                            <thead class="bg-slate-100">
-                                <tr
-                                    class="border-b border-slate-200 text-xs uppercase tracking-[0.16em] text-slate-500">
-                                    <th class="px-6 py-4 font-semibold">Currency</th>
-                                    <th class="px-6 py-4 font-semibold">Units</th>
-                                    <th class="px-6 py-4 font-semibold">Buy Rate</th>
-                                    <th class="px-6 py-4 font-semibold">Sell Rate</th>
-                                    <th class="px-6 py-4 font-semibold">Trend</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-slate-200">
-                                <tr id="Forex-USD" class="text-sm text-slate-700">
-                                    <td class="px-6 py-4 font-semibold text-slate-900">USD</td>
-                                    <td class="px-6 py-4">1</td>
-                                    <td class="px-6 py-4">133.42</td>
-                                    <td class="px-6 py-4">133.96</td>
-                                    <td class="px-6 py-4 text-green-600">↗ Stable</td>
-                                </tr>
-                                <tr id="Forex-EUR" class="text-sm text-slate-700">
-                                    <td class="px-6 py-4 font-semibold text-slate-900">EUR</td>
-                                    <td class="px-6 py-4">1</td>
-                                    <td class="px-6 py-4">146.28</td>
-                                    <td class="px-6 py-4">146.87</td>
-                                    <td class="px-6 py-4 text-red-600">↘ Mild softening</td>
-                                </tr>
-                                <tr id="Forex-GBP" class="text-sm text-slate-700">
-                                    <td class="px-6 py-4 font-semibold text-slate-900">GBP</td>
-                                    <td class="px-6 py-4">1</td>
-                                    <td class="px-6 py-4">170.22</td>
-                                    <td class="px-6 py-4">170.92</td>
-                                    <td class="px-6 py-4 text-green-600">↗ Positive</td>
-                                </tr>
-                                <tr id="Forex-INR" class="text-sm text-slate-700">
-                                    <td class="px-6 py-4 font-semibold text-slate-900">INR</td>
-                                    <td class="px-6 py-4">100</td>
-                                    <td class="px-6 py-4">213.00</td>
-                                    <td class="px-6 py-4">213.20</td>
-                                    <td class="px-6 py-4 text-green-600">→ Flat</td>
-                                </tr>
-                                <tr id="Forex-AUD" class="text-sm text-slate-700">
-                                    <td class="px-6 py-4 font-semibold text-slate-900">AUD</td>
-                                    <td class="px-6 py-4">1</td>
-                                    <td class="px-6 py-4">88.61</td>
-                                    <td class="px-6 py-4">89.00</td>
-                                    <td class="px-6 py-4 text-red-600">↘ Slightly lower</td>
-                                </tr>
-                                <tr id="Forex-JPY" class="text-sm text-slate-700">
-                                    <td class="px-6 py-4 font-semibold text-slate-900">JPY</td>
-                                    <td class="px-6 py-4">10</td>
-                                    <td class="px-6 py-4">9.02</td>
-                                    <td class="px-6 py-4">9.06</td>
-                                    <td class="px-6 py-4 text-green-600">↗ Slightly stronger</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between gap-6 text-sm text-slate-500">
-                        <p>Official reference rates published by NRB for public and institutional use.</p>
-                        <p>Values shown here are presented for layout demonstration and can later be wired to live data.
+</div>
+<div class="overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-sm" id="Forex-Table-Wrapper">
+<table class="w-full border-collapse text-left" id="Forex-Table">
+<thead class="bg-slate-100">
+<tr class="border-b border-slate-200 text-xs uppercase tracking-[0.16em] text-slate-500">
+<th class="px-6 py-4 font-semibold">Currency</th>
+<th class="px-6 py-4 font-semibold">Units</th>
+<th class="px-6 py-4 font-semibold">Buy Rate</th>
+<th class="px-6 py-4 font-semibold">Sell Rate</th>
+<th class="px-6 py-4 font-semibold">Trend</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-200">
+<tr class="text-sm text-slate-700" id="Forex-USD">
+<td class="px-6 py-4 font-semibold text-slate-900">USD</td>
+<td class="px-6 py-4">1</td>
+<td class="px-6 py-4">133.42</td>
+<td class="px-6 py-4">133.96</td>
+<td class="px-6 py-4 text-green-600">↗ Stable</td>
+</tr>
+<tr class="text-sm text-slate-700" id="Forex-EUR">
+<td class="px-6 py-4 font-semibold text-slate-900">EUR</td>
+<td class="px-6 py-4">1</td>
+<td class="px-6 py-4">146.28</td>
+<td class="px-6 py-4">146.87</td>
+<td class="px-6 py-4 text-red-600">↘ Mild softening</td>
+</tr>
+<tr class="text-sm text-slate-700" id="Forex-GBP">
+<td class="px-6 py-4 font-semibold text-slate-900">GBP</td>
+<td class="px-6 py-4">1</td>
+<td class="px-6 py-4">170.22</td>
+<td class="px-6 py-4">170.92</td>
+<td class="px-6 py-4 text-green-600">↗ Positive</td>
+</tr>
+<tr class="text-sm text-slate-700" id="Forex-INR">
+<td class="px-6 py-4 font-semibold text-slate-900">INR</td>
+<td class="px-6 py-4">100</td>
+<td class="px-6 py-4">213.00</td>
+<td class="px-6 py-4">213.20</td>
+<td class="px-6 py-4 text-green-600">→ Flat</td>
+</tr>
+<tr class="text-sm text-slate-700" id="Forex-AUD">
+<td class="px-6 py-4 font-semibold text-slate-900">AUD</td>
+<td class="px-6 py-4">1</td>
+<td class="px-6 py-4">88.61</td>
+<td class="px-6 py-4">89.00</td>
+<td class="px-6 py-4 text-red-600">↘ Slightly lower</td>
+</tr>
+<tr class="text-sm text-slate-700" id="Forex-JPY">
+<td class="px-6 py-4 font-semibold text-slate-900">JPY</td>
+<td class="px-6 py-4">10</td>
+<td class="px-6 py-4">9.02</td>
+<td class="px-6 py-4">9.06</td>
+<td class="px-6 py-4 text-green-600">↗ Slightly stronger</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-4 flex items-center justify-between gap-6 text-sm text-slate-500">
+<p>Official reference rates published by NRB for public and institutional use.</p>
+<p>Values shown here are presented for layout demonstration and can later be wired to live data.
                         </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Featured-Publications" class="border-b border-slate-200 bg-white py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Research library</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">Featured Publications</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-white py-16" id="Featured-Publications">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Research library</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">Featured Publications</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 A publication library layout that feels academic, carefully curated, and easy to scan.
                             </p>
-                        </div>
-                        <a href="pages/publications/index.html"
-                            class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]">
+</div>
+<a class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]" href="pages/publications/index.html">
                             Browse publications
                         </a>
-                    </div>
-
-                    <div class="grid grid-cols-[1.15fr_0.85fr] gap-6">
-                        <article id="Publication-Featured"
-                            class="nrb-elevated-card rounded-[24px] overflow-hidden bg-slate-50">
-                            <div class="grid grid-cols-[210px_1fr] gap-0">
-                                <div class="flex items-center justify-center bg-[#25295B] p-8 text-white">
-                                    <div
-                                        class="flex h-40 w-28 flex-col justify-between rounded-2xl border border-white/15 bg-white/10 p-4">
-                                        <div
-                                            class="text-[10px] font-semibold uppercase tracking-[0.22em] text-slate-200">
+</div>
+<div class="grid grid-cols-[1.15fr_0.85fr] gap-6">
+<article class="nrb-elevated-card rounded-[24px] overflow-hidden bg-slate-50" id="Publication-Featured">
+<div class="grid grid-cols-[210px_1fr] gap-0">
+<div class="flex items-center justify-center bg-[#25295B] p-8 text-white">
+<div class="flex h-40 w-28 flex-col justify-between rounded-2xl border border-white/15 bg-white/10 p-4">
+<div class="text-[10px] font-semibold uppercase tracking-[0.22em] text-slate-200">
                                             NRB</div>
-                                        <div class="space-y-2">
-                                            <span class="block h-1.5 w-16 rounded-full bg-[#C59D5F]"></span>
-                                            <span class="block h-1.5 w-20 rounded-full bg-white/60"></span>
-                                            <span class="block h-1.5 w-14 rounded-full bg-white/40"></span>
-                                        </div>
-                                        <div class="text-[10px] uppercase tracking-[0.22em] text-slate-200">Report</div>
-                                    </div>
-                                </div>
-                                <div class="p-8">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#138496]">Featured
+<div class="space-y-2">
+<span class="block h-1.5 w-16 rounded-full bg-[#138496]"></span>
+<span class="block h-1.5 w-20 rounded-full bg-white/60"></span>
+<span class="block h-1.5 w-14 rounded-full bg-white/40"></span>
+</div>
+<div class="text-[10px] uppercase tracking-[0.22em] text-slate-200">Report</div>
+</div>
+</div>
+<div class="p-8">
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#138496]">Featured
                                         publication</p>
-                                    <h3 class="mt-4 text-3xl font-semibold text-slate-900">Monetary Policy Report</h3>
-                                    <p class="mt-4 max-w-2xl text-sm leading-6 text-slate-600">
+<h3 class="mt-4 text-3xl font-semibold text-slate-900">Monetary Policy Report</h3>
+<p class="mt-4 max-w-2xl text-sm leading-6 text-slate-600">
                                         The featured document highlights current policy stance, macroeconomic outlook,
                                         and implementation considerations in a format aligned with institutional
                                         publishing standards.
                                     </p>
-
-                                    <div class="mt-8 grid grid-cols-2 gap-4 text-sm">
-                                        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-                                            <p class="text-xs uppercase tracking-[0.18em] text-slate-500">Publication
+<div class="mt-8 grid grid-cols-2 gap-4 text-sm">
+<div class="rounded-2xl border border-slate-200 bg-white p-4">
+<p class="text-xs uppercase tracking-[0.18em] text-slate-500">Publication
                                                 type</p>
-                                            <p class="mt-2 font-semibold text-slate-900">Policy report</p>
-                                        </div>
-                                        <div class="rounded-2xl border border-slate-200 bg-white p-4">
-                                            <p class="text-xs uppercase tracking-[0.18em] text-slate-500">Release date
+<p class="mt-2 font-semibold text-slate-900">Policy report</p>
+</div>
+<div class="rounded-2xl border border-slate-200 bg-white p-4">
+<p class="text-xs uppercase tracking-[0.18em] text-slate-500">Release date
                                             </p>
-                                            <p class="mt-2 font-semibold text-slate-900">August 2026</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-8 flex flex-wrap gap-3">
-                                        <a href="#"
-                                            class="inline-flex items-center gap-2 rounded-full bg-[#25295B] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1E3A5F]">Download</a>
-                                        <a href="#"
-                                            class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <div class="flex flex-col gap-4">
-                            <article
-                                class="nrb-elevated-card grid grid-cols-[120px_1fr] gap-4 rounded-[20px] bg-slate-50 p-4">
-                                <div class="flex items-center justify-center rounded-2xl bg-white text-[#25295B]">
-                                    <svg viewBox="0 0 24 24" class="h-8 w-8" fill="none" stroke="currentColor"
-                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M6 2h9l5 5v15H6z" />
-                                        <path d="M14 2v6h6" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Economic
+<p class="mt-2 font-semibold text-slate-900">August 2026</p>
+</div>
+</div>
+<div class="mt-8 flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-2 rounded-full bg-[#25295B] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#25295B]" href="#">Download</a>
+<a class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50" href="#">Details</a>
+</div>
+</div>
+</div>
+</article>
+<div class="flex flex-col gap-4">
+<article class="nrb-elevated-card grid grid-cols-[120px_1fr] gap-4 rounded-[20px] bg-slate-50 p-4">
+<div class="flex items-center justify-center rounded-2xl bg-white text-[#25295B]">
+<svg aria-hidden="true" class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M6 2h9l5 5v15H6z"></path>
+<path d="M14 2v6h6"></path>
+</svg>
+</div>
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Economic
                                         bulletin</p>
-                                    <h3 class="mt-3 text-lg font-semibold text-slate-900">Quarterly Economic Bulletin
+<h3 class="mt-3 text-lg font-semibold text-slate-900">Quarterly Economic Bulletin
                                     </h3>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Concise macro commentary with
+<p class="mt-2 text-sm leading-6 text-slate-600">Concise macro commentary with
                                         charts, note highlights, and citations.</p>
-                                    <div class="mt-4 flex gap-3 text-sm font-semibold text-[#138496]">
-                                        <a href="#">Download</a>
-                                        <a href="#">Details</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article
-                                class="nrb-elevated-card grid grid-cols-[120px_1fr] gap-4 rounded-[20px] bg-slate-50 p-4">
-                                <div class="flex items-center justify-center rounded-2xl bg-white text-[#25295B]">
-                                    <svg viewBox="0 0 24 24" class="h-8 w-8" fill="none" stroke="currentColor"
-                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M4 4h16v16H4z" />
-                                        <path d="M8 8h8" />
-                                        <path d="M8 12h8" />
-                                        <path d="M8 16h5" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Working
+<div class="mt-4 flex gap-3 text-sm font-semibold text-[#138496]">
+<a href="#">Download</a>
+<a href="#">Details</a>
+</div>
+</div>
+</article>
+<article class="nrb-elevated-card grid grid-cols-[120px_1fr] gap-4 rounded-[20px] bg-slate-50 p-4">
+<div class="flex items-center justify-center rounded-2xl bg-white text-[#25295B]">
+<svg aria-hidden="true" class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M4 4h16v16H4z"></path>
+<path d="M8 8h8"></path>
+<path d="M8 12h8"></path>
+<path d="M8 16h5"></path>
+</svg>
+</div>
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Working
                                         paper</p>
-                                    <h3 class="mt-3 text-lg font-semibold text-slate-900">Research Working Paper Series
+<h3 class="mt-3 text-lg font-semibold text-slate-900">Research Working Paper Series
                                     </h3>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Analytical studies from NRB
+<p class="mt-2 text-sm leading-6 text-slate-600">Analytical studies from NRB
                                         economists and technical staff.</p>
-                                    <div class="mt-4 flex gap-3 text-sm font-semibold text-[#138496]">
-                                        <a href="#">Download</a>
-                                        <a href="#">Details</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article
-                                class="nrb-elevated-card grid grid-cols-[120px_1fr] gap-4 rounded-[20px] bg-slate-50 p-4">
-                                <div class="flex items-center justify-center rounded-2xl bg-white text-[#25295B]">
-                                    <svg viewBox="0 0 24 24" class="h-8 w-8" fill="none" stroke="currentColor"
-                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                                        aria-hidden="true">
-                                        <path d="M5 3h14v18H5z" />
-                                        <path d="M8 7h8" />
-                                        <path d="M8 11h8" />
-                                        <path d="M8 15h5" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">
+<div class="mt-4 flex gap-3 text-sm font-semibold text-[#138496]">
+<a href="#">Download</a>
+<a href="#">Details</a>
+</div>
+</div>
+</article>
+<article class="nrb-elevated-card grid grid-cols-[120px_1fr] gap-4 rounded-[20px] bg-slate-50 p-4">
+<div class="flex items-center justify-center rounded-2xl bg-white text-[#25295B]">
+<svg aria-hidden="true" class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M5 3h14v18H5z"></path>
+<path d="M8 7h8"></path>
+<path d="M8 11h8"></path>
+<path d="M8 15h5"></path>
+</svg>
+</div>
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">
                                         Statistical release</p>
-                                    <h3 class="mt-3 text-lg font-semibold text-slate-900">Monthly Statistics Digest</h3>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Downloadable tables, metadata
+<h3 class="mt-3 text-lg font-semibold text-slate-900">Monthly Statistics Digest</h3>
+<p class="mt-2 text-sm leading-6 text-slate-600">Downloadable tables, metadata
                                         notes, and series updates.</p>
-                                    <div class="mt-4 flex gap-3 text-sm font-semibold text-[#138496]">
-                                        <a href="#">Download</a>
-                                        <a href="#">Details</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Latest-Notices-Circulars" class="border-b border-slate-200 bg-slate-50 py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Official updates</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">Latest Notices & Circulars</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+<div class="mt-4 flex gap-3 text-sm font-semibold text-[#138496]">
+<a href="#">Download</a>
+<a href="#">Details</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-slate-50 py-16" id="Latest-Notices-Circulars">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Official updates</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">Latest Notices &amp; Circulars</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 A tabbed notice center that keeps alerts, circulars, and debt notices visible without
                                 forcing users into long text lists.
                             </p>
-                        </div>
-                        <a href="pages/notices/index.html"
-                            class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]">
+</div>
+<a class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]" href="pages/notices/index.html">
                             View all updates
                         </a>
-                    </div>
-
-                    <div role="tablist" aria-label="Latest notices categories" class="flex flex-wrap gap-3">
-                        <button type="button" role="tab" aria-selected="true"
-                            class="nrb-tab-chip rounded-full px-5 py-2.5 text-sm font-semibold transition">
+</div>
+<div aria-label="Latest notices categories" class="flex flex-wrap gap-3" role="tablist">
+<button aria-selected="true" class="nrb-tab-chip rounded-full px-5 py-2.5 text-sm font-semibold transition" role="tab" type="button">
                             Notices
                         </button>
-                        <button type="button" role="tab" aria-selected="false"
-                            class="nrb-tab-chip rounded-full px-5 py-2.5 text-sm font-semibold transition">
+<button aria-selected="false" class="nrb-tab-chip rounded-full px-5 py-2.5 text-sm font-semibold transition" role="tab" type="button">
                             Circulars
                         </button>
-                        <button type="button" role="tab" aria-selected="false"
-                            class="nrb-tab-chip rounded-full px-5 py-2.5 text-sm font-semibold transition">
+<button aria-selected="false" class="nrb-tab-chip rounded-full px-5 py-2.5 text-sm font-semibold transition" role="tab" type="button">
                             Public Debt Notices
                         </button>
-                    </div>
-
-                    <div class="mt-6 grid grid-cols-3 gap-4">
-                        <section role="tabpanel" aria-label="Notices"
-                            class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-semibold text-slate-900">Notices</h3>
-                                <span class="text-xs font-medium text-slate-500">Updated today</span>
-                            </div>
-                            <div class="mt-5 space-y-4">
-                                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">
+</div>
+<div class="mt-6 grid grid-cols-3 gap-4">
+<section aria-label="Notices" class="nrb-elevated-card rounded-[20px] bg-white p-6" role="tabpanel">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-semibold text-slate-900">Notices</h3>
+<span class="text-xs font-medium text-slate-500">Updated today</span>
+</div>
+<div class="mt-5 space-y-4">
+<article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">
                                         Important</p>
-                                    <h4 class="mt-3 text-lg font-semibold text-slate-900">FX submission deadlines for
+<h4 class="mt-3 text-lg font-semibold text-slate-900">FX submission deadlines for
                                         regulated institutions</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Revised schedule and supporting
+<p class="mt-2 text-sm leading-6 text-slate-600">Revised schedule and supporting
                                         document requirements for reporting.</p>
-                                    <p class="mt-4 text-xs font-medium text-slate-500">18 Aug 2026</p>
-                                </article>
-                                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">
+<p class="mt-4 text-xs font-medium text-slate-500">18 Aug 2026</p>
+</article>
+<article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">
                                         Procurement</p>
-                                    <h4 class="mt-3 text-lg font-semibold text-slate-900">Invitation for sealed
+<h4 class="mt-3 text-lg font-semibold text-slate-900">Invitation for sealed
                                         quotation</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Office equipment procurement for
+<p class="mt-2 text-sm leading-6 text-slate-600">Office equipment procurement for
                                         central administrative use.</p>
-                                    <p class="mt-4 text-xs font-medium text-slate-500">15 Aug 2026</p>
-                                </article>
-                            </div>
-                        </section>
-
-                        <section role="tabpanel" aria-label="Circulars"
-                            class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-semibold text-slate-900">Circulars</h3>
-                                <span class="text-xs font-medium text-slate-500">Operational guidance</span>
-                            </div>
-                            <div class="mt-5 space-y-4">
-                                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Banking
+<p class="mt-4 text-xs font-medium text-slate-500">15 Aug 2026</p>
+</article>
+</div>
+</section>
+<section aria-label="Circulars" class="nrb-elevated-card rounded-[20px] bg-white p-6" role="tabpanel">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-semibold text-slate-900">Circulars</h3>
+<span class="text-xs font-medium text-slate-500">Operational guidance</span>
+</div>
+<div class="mt-5 space-y-4">
+<article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Banking
                                     </p>
-                                    <h4 class="mt-3 text-lg font-semibold text-slate-900">Branchless banking reporting
+<h4 class="mt-3 text-lg font-semibold text-slate-900">Branchless banking reporting
                                         update</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">New reporting template and
+<p class="mt-2 text-sm leading-6 text-slate-600">New reporting template and
                                         submission cycle for supervised institutions.</p>
-                                    <p class="mt-4 text-xs font-medium text-slate-500">11 Aug 2026</p>
-                                </article>
-                                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Market
+<p class="mt-4 text-xs font-medium text-slate-500">11 Aug 2026</p>
+</article>
+<article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Market
                                     </p>
-                                    <h4 class="mt-3 text-lg font-semibold text-slate-900">Currency exchange operations
+<h4 class="mt-3 text-lg font-semibold text-slate-900">Currency exchange operations
                                         schedule</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Official opening hours and
+<p class="mt-2 text-sm leading-6 text-slate-600">Official opening hours and
                                         settlement guidance for the holiday period.</p>
-                                    <p class="mt-4 text-xs font-medium text-slate-500">08 Aug 2026</p>
-                                </article>
-                            </div>
-                        </section>
-
-                        <section role="tabpanel" aria-label="Public Debt Notices"
-                            class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-semibold text-slate-900">Public Debt Notices</h3>
-                                <span class="text-xs font-medium text-slate-500">Treasury updates</span>
-                            </div>
-                            <div class="mt-5 space-y-4">
-                                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Auction
+<p class="mt-4 text-xs font-medium text-slate-500">08 Aug 2026</p>
+</article>
+</div>
+</section>
+<section aria-label="Public Debt Notices" class="nrb-elevated-card rounded-[20px] bg-white p-6" role="tabpanel">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-semibold text-slate-900">Public Debt Notices</h3>
+<span class="text-xs font-medium text-slate-500">Treasury updates</span>
+</div>
+<div class="mt-5 space-y-4">
+<article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Auction
                                     </p>
-                                    <h4 class="mt-3 text-lg font-semibold text-slate-900">Government securities issuance
+<h4 class="mt-3 text-lg font-semibold text-slate-900">Government securities issuance
                                         calendar</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Tender windows and maturity details
+<p class="mt-2 text-sm leading-6 text-slate-600">Tender windows and maturity details
                                         for upcoming issues.</p>
-                                    <p class="mt-4 text-xs font-medium text-slate-500">05 Aug 2026</p>
-                                </article>
-                                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Debt</p>
-                                    <h4 class="mt-3 text-lg font-semibold text-slate-900">Treasury bill settlement
+<p class="mt-4 text-xs font-medium text-slate-500">05 Aug 2026</p>
+</article>
+<article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Debt</p>
+<h4 class="mt-3 text-lg font-semibold text-slate-900">Treasury bill settlement
                                         notice</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Settlement timeline and account
+<p class="mt-2 text-sm leading-6 text-slate-600">Settlement timeline and account
                                         confirmation instructions.</p>
-                                    <p class="mt-4 text-xs font-medium text-slate-500">01 Aug 2026</p>
-                                </article>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Media-Centre" class="border-b border-slate-200 bg-white py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Communications</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">Media Centre</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+<p class="mt-4 text-xs font-medium text-slate-500">01 Aug 2026</p>
+</article>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-white py-16" id="Media-Centre">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Communications</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">Media Centre</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 Editorial-style coverage for official communication: releases, speeches, and
                                 newsletters.
                             </p>
-                        </div>
-                        <a href="pages/media-releases/index.html"
-                            class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]">
+</div>
+<a class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]" href="pages/media-releases/index.html">
                             Press center
                         </a>
-                    </div>
-
-                    <div class="grid grid-cols-3 gap-4">
-                        <article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
-                            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Media release
+</div>
+<div class="grid grid-cols-3 gap-4">
+<article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Media release
                             </p>
-                            <h3 class="mt-4 text-xl font-semibold text-slate-900">Liquidity coordination framework
+<h3 class="mt-4 text-xl font-semibold text-slate-900">Liquidity coordination framework
                                 reviewed with commercial banks</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Officials discussed coordination, reserve
+<p class="mt-3 text-sm leading-6 text-slate-600">Officials discussed coordination, reserve
                                 adequacy, and market communication practices.</p>
-                            <div class="mt-6 flex items-center justify-between text-sm text-slate-500">
-                                <span>20 Aug 2026</span>
-                                <a href="#" class="font-semibold text-[#138496]">Read item</a>
-                            </div>
-                        </article>
-
-                        <article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
-                            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Speech</p>
-                            <h3 class="mt-4 text-xl font-semibold text-slate-900">Governor remarks on price stability
+<div class="mt-6 flex items-center justify-between text-sm text-slate-500">
+<span>20 Aug 2026</span>
+<a class="font-semibold text-[#138496]" href="#">Read item</a>
+</div>
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Speech</p>
+<h3 class="mt-4 text-xl font-semibold text-slate-900">Governor remarks on price stability
                                 and inclusive finance</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">A concise public statement on inflation
+<p class="mt-3 text-sm leading-6 text-slate-600">A concise public statement on inflation
                                 containment, resilience, and consumer protection.</p>
-                            <div class="mt-6 flex items-center justify-between text-sm text-slate-500">
-                                <span>14 Aug 2026</span>
-                                <a href="#" class="font-semibold text-[#138496]">Read item</a>
-                            </div>
-                        </article>
-
-                        <article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
-                            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Newsletter</p>
-                            <h3 class="mt-4 text-xl font-semibold text-slate-900">Foreign exchange outlook for the
+<div class="mt-6 flex items-center justify-between text-sm text-slate-500">
+<span>14 Aug 2026</span>
+<a class="font-semibold text-[#138496]" href="#">Read item</a>
+</div>
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Newsletter</p>
+<h3 class="mt-4 text-xl font-semibold text-slate-900">Foreign exchange outlook for the
                                 coming quarter</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Reserve trends, import coverage, and
+<p class="mt-3 text-sm leading-6 text-slate-600">Reserve trends, import coverage, and
                                 external-sector considerations in digest form.</p>
-                            <div class="mt-6 flex items-center justify-between text-sm text-slate-500">
-                                <span>09 Aug 2026</span>
-                                <a href="#" class="font-semibold text-[#138496]">Read item</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Consumer-Services" class="border-b border-slate-200 bg-slate-50 py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Public support</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">Consumer Services</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+<div class="mt-6 flex items-center justify-between text-sm text-slate-500">
+<span>09 Aug 2026</span>
+<a class="font-semibold text-[#138496]" href="#">Read item</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-slate-50 py-16" id="Consumer-Services">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Public support</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">Consumer Services</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 A public-service gateway for complaints, literacy, guidance, and frequently asked
                                 questions.
                             </p>
-                        </div>
-                        <a href="pages/consumer-services/index.html"
-                            class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]">
+</div>
+<a class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]" href="pages/consumer-services/index.html">
                             Explore support services
                         </a>
-                    </div>
-
-                    <div class="grid grid-cols-4 gap-4">
-                        <article class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                            <h3 class="text-lg font-semibold text-slate-900">Financial Consumer Protection</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Standards, complaint guidance, and
+</div>
+<div class="grid grid-cols-4 gap-4">
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6">
+<h3 class="text-lg font-semibold text-slate-900">Financial Consumer Protection</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Standards, complaint guidance, and
                                 institutional responsibilities.</p>
-                        </article>
-                        <article class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                            <h3 class="text-lg font-semibold text-slate-900">Complaint Portal</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">A structured route for complaints,
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6">
+<h3 class="text-lg font-semibold text-slate-900">Complaint Portal</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">A structured route for complaints,
                                 escalation, and follow-up status.</p>
-                        </article>
-                        <article class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                            <h3 class="text-lg font-semibold text-slate-900">Financial Literacy</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Learning resources on saving, borrowing,
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6">
+<h3 class="text-lg font-semibold text-slate-900">Financial Literacy</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Learning resources on saving, borrowing,
                                 and payment safety.</p>
-                        </article>
-                        <article class="nrb-elevated-card rounded-[20px] bg-white p-6">
-                            <h3 class="text-lg font-semibold text-slate-900">FAQ</h3>
-                            <p class="mt-3 text-sm leading-6 text-slate-600">Clear answers to common questions about
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-white p-6">
+<h3 class="text-lg font-semibold text-slate-900">FAQ</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Clear answers to common questions about
                                 services, rules, and support.
                             </p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Institutional-Network" class="border-b border-slate-200 bg-white py-16">
-                <div class="nrb-section-shell">
-                    <div class="mb-7 flex items-end justify-between gap-8">
-                        <div class="max-w-3xl">
-                            <p class="nrb-display-note">Directory</p>
-                            <h2 class="nrb-section-title mt-2 text-slate-900">NRB Institutional Network</h2>
-                            <p class="mt-3 nrb-body-text max-w-2xl">
+</article>
+</div>
+</div>
+</section>
+<section class="border-b border-slate-200 bg-white py-16" id="Institutional-Network">
+<div class="nrb-section-shell">
+<div class="mb-7 flex items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="nrb-display-note">Directory</p>
+<h2 class="nrb-section-title mt-2 text-slate-900">NRB Institutional Network</h2>
+<p class="mt-3 nrb-body-text max-w-2xl">
                                 An interactive directory-style section that helps users navigate the head office,
                                 provincial offices, and departments.
                             </p>
-                        </div>
-                        <a href="pages/contact/index.html"
-                            class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]">
+</div>
+<a class="text-sm font-semibold text-[#138496] transition hover:text-[#25295B]" href="pages/contact/index.html">
                             Find contacts
                         </a>
-                    </div>
-
-                    <div class="grid grid-cols-[0.8fr_1.2fr] gap-6">
-                        <div class="space-y-4">
-                            <article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
-                                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Head Office
+</div>
+<div class="grid grid-cols-[0.8fr_1.2fr] gap-6">
+<div class="space-y-4">
+<article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Head Office
                                 </p>
-                                <h3 class="mt-4 text-xl font-semibold text-slate-900">Baluwatar, Kathmandu</h3>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Primary administrative and policy
+<h3 class="mt-4 text-xl font-semibold text-slate-900">Baluwatar, Kathmandu</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Primary administrative and policy
                                     coordination center for NRB.</p>
-                            </article>
-                            <article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
-                                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Provincial
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Provincial
                                     Offices</p>
-                                <h3 class="mt-4 text-xl font-semibold text-slate-900">Regional service points</h3>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Support coordination, outreach, and
+<h3 class="mt-4 text-xl font-semibold text-slate-900">Regional service points</h3>
+<p class="mt-3 text-sm leading-6 text-slate-600">Support coordination, outreach, and
                                     public-facing institutional access.</p>
-                            </article>
-                            <article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
-                                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Departments
+</article>
+<article class="nrb-elevated-card rounded-[20px] bg-slate-50 p-6">
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#138496]">Departments
                                 </p>
-                                <h3 class="mt-4 text-xl font-semibold text-slate-900">Specialized administrative units
+<h3 class="mt-4 text-xl font-semibold text-slate-900">Specialized administrative units
                                 </h3>
-                                <p class="mt-3 text-sm leading-6 text-slate-600">Policy, supervision, statistics,
+<p class="mt-3 text-sm leading-6 text-slate-600">Policy, supervision, statistics,
                                     research, and public service units.</p>
-                            </article>
-                        </div>
-
-                        <div class="nrb-elevated-card rounded-[24px] bg-slate-50 p-8">
-                            <div class="flex items-center justify-between gap-6">
-                                <div>
-                                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Directory
+</article>
+</div>
+<div class="nrb-elevated-card rounded-[24px] bg-slate-50 p-8">
+<div class="flex items-center justify-between gap-6">
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Directory
                                         view</p>
-                                    <h3 class="mt-3 text-2xl font-semibold text-slate-900">Institutional access points
+<h3 class="mt-3 text-2xl font-semibold text-slate-900">Institutional access points
                                     </h3>
-                                </div>
-                                <div
-                                    class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600">
+</div>
+<div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600">
                                     Browse by office or department
                                 </div>
-                            </div>
-
-                            <div class="mt-8 grid grid-cols-2 gap-4">
-                                <article class="rounded-2xl border border-slate-200 bg-white p-5">
-                                    <h4 class="text-lg font-semibold text-slate-900">Monetary Management Department</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Policy formulation, liquidity
+</div>
+<div class="mt-8 grid grid-cols-2 gap-4">
+<article class="rounded-2xl border border-slate-200 bg-white p-5">
+<h4 class="text-lg font-semibold text-slate-900">Monetary Management Department</h4>
+<p class="mt-2 text-sm leading-6 text-slate-600">Policy formulation, liquidity
                                         tools, and market operations.</p>
-                                </article>
-                                <article class="rounded-2xl border border-slate-200 bg-white p-5">
-                                    <h4 class="text-lg font-semibold text-slate-900">Supervision Department</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Prudential oversight, licensing,
+</article>
+<article class="rounded-2xl border border-slate-200 bg-white p-5">
+<h4 class="text-lg font-semibold text-slate-900">Supervision Department</h4>
+<p class="mt-2 text-sm leading-6 text-slate-600">Prudential oversight, licensing,
                                         and regulatory guidance.</p>
-                                </article>
-                                <article class="rounded-2xl border border-slate-200 bg-white p-5">
-                                    <h4 class="text-lg font-semibold text-slate-900">Research Department</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Publications, analysis, and
+</article>
+<article class="rounded-2xl border border-slate-200 bg-white p-5">
+<h4 class="text-lg font-semibold text-slate-900">Research Department</h4>
+<p class="mt-2 text-sm leading-6 text-slate-600">Publications, analysis, and
                                         evidence support for policy decisions.</p>
-                                </article>
-                                <article class="rounded-2xl border border-slate-200 bg-white p-5">
-                                    <h4 class="text-lg font-semibold text-slate-900">Statistics Department</h4>
-                                    <p class="mt-2 text-sm leading-6 text-slate-600">Official data series, methodology,
+</article>
+<article class="rounded-2xl border border-slate-200 bg-white p-5">
+<h4 class="text-lg font-semibold text-slate-900">Statistics Department</h4>
+<p class="mt-2 text-sm leading-6 text-slate-600">Official data series, methodology,
                                         and economic dashboards.</p>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer id="Footer" class="nrb-footer bg-[#25295B] text-white">
-            <div class="nrb-section-shell py-16">
-                <div class="flex flex-col gap-6 border-b border-white/10 pb-10">
-                    <div class="flex items-center gap-4">
-                        <div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" />
-                        </div>
-                        <div>
-                            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="nrb-footer bg-[#25295B] text-white" id="Footer">
+<div class="nrb-section-shell py-16">
+<div class="flex flex-col gap-6 border-b border-white/10 pb-10">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" src="assets/images/nrb-logo.png"/>
+</div>
+<div>
+<p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra
                                 Bank</p>
-                            <p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
-                        </div>
-                    </div>
-                    <p class="max-w-3xl text-sm leading-6 text-slate-300">
+<p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
+</div>
+</div>
+<p class="max-w-3xl text-sm leading-6 text-slate-300">
                         The homepage is designed as an institutional gateway for policy, data, publications, and public
                         service access across NRB’s digital ecosystem.
                     </p>
-                </div>
-
-                <div class="mt-10 grid grid-cols-5 gap-8">
-                    <div id="Footer-About-NRB" class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
-                        <a href="pages/about/index.html"
-                            class="text-sm text-slate-300 transition hover:text-white">Overview</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Leadership</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Departments</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Offices</a>
-                    </div>
-
-                    <div id="Footer-Statistics" class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics & Data
+</div>
+<div class="mt-10 grid grid-cols-5 gap-8">
+<div class="flex flex-col gap-4" id="Footer-About-NRB">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="pages/about/index.html">Overview</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Leadership</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Departments</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Offices</a>
+</div>
+<div class="flex flex-col gap-4" id="Footer-Statistics">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp; Data
                         </h3>
-                        <a href="pages/statistics/index.html"
-                            class="text-sm text-slate-300 transition hover:text-white">Economic indicators</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Exchange rates</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial stability</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Open data</a>
-                    </div>
-
-                    <div id="Footer-Publications" class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
-                        <a href="pages/publications/index.html"
-                            class="text-sm text-slate-300 transition hover:text-white">Reports</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Research</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Working papers</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Annual reports</a>
-                    </div>
-
-                    <div id="Footer-Consumer-Services" class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services
+<a class="text-sm text-slate-300 transition hover:text-white" href="pages/statistics/index.html">Economic indicators</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Exchange rates</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial stability</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Open data</a>
+</div>
+<div class="flex flex-col gap-4" id="Footer-Publications">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="pages/publications/index.html">Reports</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Research</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Working papers</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Annual reports</a>
+</div>
+<div class="flex flex-col gap-4" id="Footer-Consumer-Services">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services
                         </h3>
-                        <a href="pages/consumer-services/index.html"
-                            class="text-sm text-slate-300 transition hover:text-white">Consumer protection</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Complaints</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial literacy</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">FAQ</a>
-                    </div>
-
-                    <div id="Footer-Contact" class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
-                        <p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
-                        <p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
-                        <p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
-                        <p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
-                    </div>
-                </div>
-
-                <div
-                    class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
-                    <p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
-                    <div class="flex flex-wrap items-center gap-5">
-                        <a href="#" class="transition hover:text-white">Privacy Policy</a>
-                        <a href="#" class="transition hover:text-white">Accessibility</a>
-                        <a href="#" class="transition hover:text-white">Terms of Use</a>
-                        <a href="#Footer" class="transition hover:text-white">Sitemap</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+<a class="text-sm text-slate-300 transition hover:text-white" href="pages/consumer-services/index.html">Consumer protection</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Complaints</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial literacy</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-4" id="Footer-Contact">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
+<p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
+<p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
+<p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
+<p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
+</div>
+</div>
+<div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
+<p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+<div class="flex flex-wrap items-center gap-5">
+<a class="transition hover:text-white" href="#">Privacy Policy</a>
+<a class="transition hover:text-white" href="#">Accessibility</a>
+<a class="transition hover:text-white" href="#">Terms of Use</a>
+<a class="transition hover:text-white" href="#Footer">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
 </body>
-
 </html>

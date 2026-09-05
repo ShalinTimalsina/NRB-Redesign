@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="view-transition" content="same-origin" />
-    <title>Board of Directors | Nepal Rastra Bank</title>
-    <meta name="description" content="The Board of Directors of Nepal Rastra Bank — seven members responsible for strategic oversight, institutional governance, and policy direction." />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Board of Directors | Nepal Rastra Bank</title>
+<meta content="The Board of Directors of Nepal Rastra Bank — seven members responsible for strategic oversight, institutional governance, and policy direction." name="description"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/nrb-core.css" rel="stylesheet"/>
+<style>
         .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
         .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
         .about-local-nav a {
@@ -32,381 +31,348 @@
         .member-photo { object-fit: cover; object-position: top center; }
     </style>
 </head>
-
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
-    <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
-
-        <!-- GLOBAL HEADER -->
-        <header id="Site-Header" class="bg-[#25295B] text-white shadow-sm">
-            <div class="border-b border-white/10">
-                <div class="nrb-section-shell flex items-center justify-between py-6">
-                    <a id="Brand-Mark" href="../../nrb.html" class="flex items-center gap-4">
-                        <div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="../../assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" />
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra Bank</span>
-                            <span class="text-sm text-slate-300">Central Bank of Nepal</span>
-                        </div>
-                    </a>
-                    <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
-                        <a href="#" class="transition hover:text-white">EN / NEP</a>
-                    </div>
-                </div>
-            </div>
-            <div id="Main-Header">
-                <div class="nrb-section-shell py-4">
-                    <nav id="Primary-Navigation" aria-label="Primary" class="flex items-center justify-between text-sm font-medium">
-                        <div class="relative group">
-                            <a id="Nav-About-NRB" href="../../pages/about/index.html" class="flex items-center gap-1.5 text-white border-b-2 border-white pb-0.5">
+<div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
+<!-- GLOBAL HEADER -->
+<header class="bg-[#25295B] text-white shadow-sm" id="Site-Header">
+<div class="border-b border-white/10">
+<div class="nrb-section-shell flex items-center justify-between py-6">
+<a class="flex items-center gap-4" href="../../nrb.html" id="Brand-Mark">
+<div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" src="../../assets/images/nrb-logo.png"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra Bank</span>
+<span class="text-sm text-slate-300">Central Bank of Nepal</span>
+</div>
+</a>
+<div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
+<a class="transition hover:text-white" href="#">EN / NEP</a>
+</div>
+</div>
+</div>
+<div id="Main-Header">
+<div class="nrb-section-shell py-4">
+<nav aria-label="Primary" class="flex items-center justify-between text-sm font-medium" id="Primary-Navigation">
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-white border-b-2 border-white pb-0.5" href="../../pages/about/index.html" id="Nav-About-NRB">
                                 About NRB
-                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                            </a>
-                            <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
-                                    <a href="../../pages/about/index.html#overview" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Institution Overview</a>
-                                    <a href="../../pages/about/index.html#leadership" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Leadership &amp; Governance</a>
-                                    <a href="../../pages/about/index.html#organization" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Organizational Structure</a>
-                                    <a href="../../pages/about/index.html#offices" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Offices &amp; Network</a>
-                                    <a href="../../pages/about/index.html#statements" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Financial Statements</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a id="Nav-Monetary-Policy" href="../../pages/monetary-policy/index.html" class="text-slate-100 transition hover:text-[#138496]">Monetary Policy</a>
-                        <a id="Nav-Bank-Supervision" href="../../pages/bank-supervision/index.html" class="text-slate-100 transition hover:text-[#138496]">Bank Supervision</a>
-                        <a id="Nav-Forex-Management" href="../../pages/forex-management/index.html" class="text-slate-100 transition hover:text-[#138496]">Forex Management</a>
-                        <a id="Nav-Statistics" href="../../pages/statistics/index.html" class="text-slate-100 transition hover:text-[#138496]">Statistics</a>
-                        <a id="Nav-Publications" href="../../pages/publications/index.html" class="text-slate-100 transition hover:text-[#138496]">Publications</a>
-                        <a id="Nav-Notices" href="../../pages/notices/index.html" class="text-slate-100 transition hover:text-[#138496]">Notices</a>
-                        <a id="Nav-Careers" href="../../pages/careers/index.html" class="text-slate-100 transition hover:text-[#138496]">Careers</a>
-                        <a id="Nav-Contact" href="../../pages/contact/index.html" class="text-slate-100 transition hover:text-[#138496]">Contact</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <main>
-
-            <!-- HERO — identical structure to principal-officers.html -->
-            <section class="border-b border-slate-200 bg-white">
-                <div class="nrb-section-shell py-10 lg:py-14">
-                    <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-                        <a href="../../nrb.html" class="transition hover:text-[#25295B]">Home</a>
-                        <span class="text-slate-300">/</span>
-                        <a href="index.html" class="transition hover:text-[#25295B]">About NRB</a>
-                        <span class="text-slate-300">/</span>
-                        <a href="index.html#leadership" class="transition hover:text-[#25295B]">Leadership</a>
-                        <span class="text-slate-300">/</span>
-                        <span class="text-slate-700">Board of Directors</span>
-                    </nav>
-                    <div class="mb-5">
-                        <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] transition-colors hover:text-[#1E3A5F]">
-                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                            Back to About Overview
-                        </a>
-                    </div>
-                    <span class="inline-block rounded-full border border-[#C59D5F]/25 bg-[#C59D5F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B6A30] mb-5">About NRB</span>
-                    <h1 class="nrb-page-title text-[#1E3A5F] mb-4">Board of Directors</h1>
-                    <p class="text-base text-slate-600 leading-relaxed max-w-2xl">The Board of Directors (BOD) of Nepal Rastra Bank comprises seven members. Among those, four are ex-officio members — including the Governor who serves as Chairperson — and three are non-executive Directors. All members are appointed by the Government of Nepal, Council of Ministers for a five-year term as per the NRB Act, 2002.</p>
-                </div>
-            </section>
-
-            <!-- LEADERSHIP NAVIGATION — same strip on all Leadership pages -->
-            <div class="border-b border-slate-200 bg-white">
-                <div class="nrb-section-shell">
-                    <nav class="about-local-nav flex items-center gap-8 py-4" aria-label="Leadership navigation">
-                        <a href="board-of-directors.html" aria-current="page">Board of Directors</a>
-                        <a href="principal-officers.html">Principal Officers</a>
-                        <a href="information-officers.html">Information Officers</a>
-                        <a href="governors-history.html">Governors History</a>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- BOARD HIERARCHY — Pyramid Layout -->
-            <section class="bg-slate-50 py-14 border-b border-slate-200">
-                <div class="nrb-section-shell">
-
-                    <div class="mb-10">
-                        <p class="nrb-display-note">Governance</p>
-                        <h2 class="nrb-section-title mt-1 text-slate-900">Board Members</h2>
-                    </div>
-
-                    <!-- TIER 1 — Governor / Chairperson (Apex) -->
-                    <div class="flex justify-center mb-8">
-                        <div class="bg-white rounded-[20px] border border-slate-200 p-8 text-center max-w-sm w-full">
-                            <div class="w-28 h-28 rounded-full overflow-hidden bg-slate-100 mx-auto mb-5 border-2 border-slate-200">
-                                <img src="https://www.nrb.org.np/contents/uploads/2025/05/Governor-sir-pp-NEW.jpg"
-                                     alt="Prof. Dr. Biswo Nath Poudel"
-                                     class="member-photo w-full h-full" />
-                            </div>
-                            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-2">Governor &amp; Chairperson</p>
-                            <h3 class="text-lg font-semibold text-slate-900 mb-1">Prof. Dr. Biswo Nath Poudel</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed">Chief monetary authority and executive head of Nepal Rastra Bank.</p>
-                            <p class="text-xs text-slate-400 mt-2">Appointed: May 20, 2025</p>
-                        </div>
-                    </div>
-
-                    <!-- Connector line -->
-                    <div class="flex justify-center mb-8">
-                        <div class="w-px h-8 bg-slate-200"></div>
-                    </div>
-
-                    <!-- ▲ TIER 2 — Ex-Officio Members -->
-                    <div class="mb-6">
-                        <p class="text-center text-xs font-semibold uppercase tracking-[0.22em] text-slate-400 mb-5">Ex-Officio Members</p>
-                        <div class="grid grid-cols-3 gap-6">
-
-                            <!-- Secretary, MoF -->
-                            <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
-                                <div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
-                                    <img src="https://www.nrb.org.np/contents/uploads/2026/03/Ghanshyam-Upadhyaya.jpeg"
-                                         alt="Dr. Ghanshyam Upadhyaya"
-                                         class="member-photo w-full h-full" />
-                                </div>
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Secretary, MoF</p>
-                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Dr. Ghanshyam Upadhyaya</h3>
-                                <p class="text-xs text-slate-500 leading-relaxed">Secretary, Ministry of Finance, Government of Nepal.</p>
-                                <p class="text-xs text-slate-400 mt-2">Appointed: Feb 13, 2025</p>
-                            </div>
-
-                            <!-- Deputy Governor 1 -->
-                            <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
-                                <div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
-                                    <img src="https://www.nrb.org.np/contents/uploads/2026/03/Kiran-Pandit.jpg"
-                                         alt="Mr. Kiran Pandit"
-                                         class="member-photo w-full h-full" />
-                                </div>
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Deputy Governor</p>
-                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Mr. Kiran Pandit</h3>
-                                <p class="text-xs text-slate-500 leading-relaxed">Policy formulation and institutional management.</p>
-                                <p class="text-xs text-slate-400 mt-2">Appointed: Apr 7, 2026</p>
-                            </div>
-
-                            <!-- Deputy Governor 2 -->
-                            <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
-                                <div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
-                                    <img src="https://www.nrb.org.np/contents/uploads/2026/08/Dirgha-Sir-PP-copy.jpg"
-                                         alt="Mr. Dirgha Bahadur Rawal"
-                                         class="member-photo w-full h-full" />
-                                </div>
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Deputy Governor</p>
-                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Mr. Dirgha Bahadur Rawal</h3>
-                                <p class="text-xs text-slate-500 leading-relaxed">Supervisory, regulatory and financial sector functions.</p>
-                                <p class="text-xs text-slate-400 mt-2">Appointed: Aug 19, 2026</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Connector line -->
-                    <div class="flex justify-center mb-6">
-                        <div class="w-px h-8 bg-slate-200"></div>
-                    </div>
-
-                    <!-- ▲ TIER 3 — Non-Executive Directors -->
-                    <div>
-                        <p class="text-center text-xs font-semibold uppercase tracking-[0.22em] text-slate-400 mb-5">Non-Executive Directors</p>
-                        <div class="grid grid-cols-3 gap-6">
-
-                            <!-- Non-Executive 1 -->
-                            <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
-                                <div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
-                                    <img src="https://www.nrb.org.np/contents/uploads/2022/05/Chinta-Mani-Shiwakoti.jpg"
-                                         alt="Mr. Chinta Mani Siwakoti"
-                                         class="member-photo w-full h-full" />
-                                </div>
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Non-Executive Director</p>
-                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Mr. Chinta Mani Siwakoti</h3>
-                                <p class="text-xs text-slate-500 leading-relaxed">Economics, Banking &amp; Commercial Law.</p>
-                                <p class="text-xs text-slate-400 mt-2">Appointed: May 20, 2022</p>
-                            </div>
-
-                            <!-- Non-Executive 2 -->
-                            <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
-                                <div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
-                                    <img src="https://www.nrb.org.np/contents/uploads/2022/05/Dr.-Shankar-Prasad-Acharya.jpg"
-                                         alt="Dr. Shankar Prasad Acharya"
-                                         class="member-photo w-full h-full" />
-                                </div>
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Non-Executive Director</p>
-                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Dr. Shankar Prasad Acharya</h3>
-                                <p class="text-xs text-slate-500 leading-relaxed">Economics &amp; Financial Policy.</p>
-                                <p class="text-xs text-slate-400 mt-2">Appointed: May 20, 2022</p>
-                            </div>
-
-                            <!-- Non-Executive 3 -->
-                            <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
-                                <div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
-                                    <img src="https://www.nrb.org.np/contents/uploads/2023/05/Rabindra-Prasad-Pandey-copy.jpg"
-                                         alt="Dr. Ravindra Prasad Pandey"
-                                         class="member-photo w-full h-full" />
-                                </div>
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Non-Executive Director</p>
-                                <h3 class="text-lg font-semibold text-slate-900 mb-1">Dr. Ravindra Prasad Pandey</h3>
-                                <p class="text-xs text-slate-500 leading-relaxed">Monetary &amp; Banking Disciplines.</p>
-                                <p class="text-xs text-slate-400 mt-2">Appointed: May 11, 2023</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- BOARD COMMITTEES -->
-            <section class="bg-white py-14">
-                <div class="nrb-section-shell">
-                    <div class="mb-10">
-                        <p class="nrb-display-note">Governance Structure</p>
-                        <h2 class="nrb-section-title mt-1 text-slate-900">Board Committees</h2>
-                        <p class="mt-2 text-sm text-slate-500">Standing committees constituted under the Board to support institutional accountability and oversight.</p>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-6">
-
-                        <!-- Management Committee -->
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 overflow-hidden">
-                            <div class="px-7 py-5 border-b border-slate-100">
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Committee</p>
-                                <h3 class="text-lg font-semibold text-slate-900">Management Committee</h3>
-                            </div>
-                            <div class="px-7 py-6">
-                                <table class="w-full text-sm">
-                                    <thead>
-                                        <tr class="border-b border-slate-100">
-                                            <th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Member</th>
-                                            <th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Role</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-slate-50">
-                                        <tr>
-                                            <td class="py-3 font-medium text-slate-900">Governor</td>
-                                            <td class="py-3 text-slate-600">Chairperson</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-3 font-medium text-slate-900">Deputy Governor</td>
-                                            <td class="py-3 text-slate-600">Member</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-3 font-medium text-slate-900">Deputy Governor</td>
-                                            <td class="py-3 text-slate-600">Member</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-3 font-medium text-slate-900">Senior Officer (Designated)</td>
-                                            <td class="py-3 text-slate-600">Member Secretary</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p class="mt-4 text-xs text-slate-400 leading-5">The Governor may invite any officer to attend the meetings of the Management Committee as required.</p>
-                            </div>
-                        </div>
-
-                        <!-- Audit Committee -->
-                        <div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 overflow-hidden">
-                            <div class="px-7 py-5 border-b border-slate-100">
-                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Committee</p>
-                                <h3 class="text-lg font-semibold text-slate-900">Audit Committee</h3>
-                            </div>
-                            <div class="px-7 py-6">
-                                <table class="w-full text-sm">
-                                    <thead>
-                                        <tr class="border-b border-slate-100">
-                                            <th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Member</th>
-                                            <th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Role</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-slate-50">
-                                        <tr>
-                                            <td class="py-3 font-medium text-slate-900">One of the Board Directors</td>
-                                            <td class="py-3 text-slate-600">Convenor</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-3 font-medium text-slate-900">External Expert (nominated by Board)</td>
-                                            <td class="py-3 text-slate-600">Member</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-3 font-medium text-slate-900">Chief, Internal Audit Department</td>
-                                            <td class="py-3 text-slate-600">Member Secretary</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- GLOBAL FOOTER — identical to principal-officers.html -->
-        <footer id="Footer" class="nrb-footer bg-[#25295B] text-white">
-            <div class="nrb-section-shell py-16">
-                <div class="flex flex-col gap-6 border-b border-white/10 pb-10">
-                    <div class="flex items-center gap-4">
-                        <div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="../../assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" />
-                        </div>
-                        <div>
-                            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra Bank</p>
-                            <p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
-                        </div>
-                    </div>
-                    <p class="max-w-3xl text-sm leading-6 text-slate-300">
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#overview">Institution Overview</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#leadership">Leadership &amp; Governance</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#organization">Organizational Structure</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#offices">Offices &amp; Network</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#statements">Financial Statements</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/regulations/index.html" id="Nav-Regulations">
+Regulations
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Laws &amp; Legislation</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/acts.html">Acts</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors mb-1" href="../../pages/regulations/rules-and-bylaws.html">Rules and Bylaws</a>
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-t border-slate-100 mb-1 mt-1">Policies &amp; Guidelines</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/notices.html">Notices</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/guidelines-and-manuals.html">Guidelines &amp; Manuals</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/other-policies.html">Other Policies</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/monetary-policy.html">Monetary Policy</a>
+</div>
+</div>
+</div>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/monetary-policy/index.html" id="Nav-Monetary-Policy">Monetary Policy</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/bank-supervision/index.html" id="Nav-Bank-Supervision">Bank Supervision</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/forex-management/index.html" id="Nav-Forex-Management">Forex Management</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/publications/index.html" id="Nav-Publications">Publications</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/notices/index.html" id="Nav-Notices">Notices</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/careers/index.html" id="Nav-Careers">Careers</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/contact/index.html" id="Nav-Contact">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<main>
+<!-- HERO — identical structure to principal-officers.html -->
+<section class="border-b border-slate-200 bg-white">
+<div class="nrb-section-shell py-10 lg:py-14">
+<nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+<a class="transition hover:text-[#25295B]" href="../../nrb.html">Home</a>
+<span class="text-slate-300">/</span>
+<a class="transition hover:text-[#25295B]" href="index.html">About NRB</a>
+<span class="text-slate-300">/</span>
+<a class="transition hover:text-[#25295B]" href="index.html#leadership">Leadership</a>
+<span class="text-slate-300">/</span>
+<span class="text-slate-700">Board of Directors</span>
+</nav>
+<h1 class="text-2xl font-bold text-slate-900 mb-4">Board of Directors</h1>
+<p class="text-base text-slate-600 leading-relaxed max-w-2xl">The Board of Directors (BOD) of Nepal Rastra Bank comprises seven members. Among those, four are ex-officio members — including the Governor who serves as Chairperson — and three are non-executive Directors. All members are appointed by the Government of Nepal, Council of Ministers for a five-year term as per the NRB Act, 2002.</p>
+</div>
+</section>
+<!-- LEADERSHIP NAVIGATION — same strip on all Leadership pages -->
+<div class="border-b border-slate-200 bg-white">
+<div class="nrb-section-shell">
+<nav aria-label="Leadership navigation" class="about-local-nav flex items-center gap-8 py-4">
+<a aria-current="page" href="board-of-directors.html">Board of Directors</a>
+<a href="principal-officers.html">Principal Officers</a>
+<a href="information-officers.html">Information Officers</a>
+<a href="governors-history.html">Governors History</a>
+</nav>
+</div>
+</div>
+<!-- BOARD HIERARCHY — Pyramid Layout -->
+<section class="bg-slate-50 py-14 border-b border-slate-200">
+<div class="nrb-section-shell">
+<div class="mb-10">
+<p class="nrb-display-note">Governance</p>
+<h2 class="nrb-section-title mt-1 text-slate-900">Board Members</h2>
+</div>
+<!-- TIER 1 — Governor / Chairperson (Apex) -->
+<div class="flex justify-center mb-8">
+<div class="bg-white rounded-[20px] border border-slate-200 p-8 text-center max-w-sm w-full">
+<div class="w-28 h-28 rounded-full overflow-hidden bg-slate-100 mx-auto mb-5 border-2 border-slate-200">
+<img alt="Prof. Dr. Biswo Nath Poudel" class="member-photo w-full h-full" src="https://www.nrb.org.np/contents/uploads/2025/05/Governor-sir-pp-NEW.jpg"/>
+</div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-2">Governor &amp; Chairperson</p>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Prof. Dr. Biswo Nath Poudel</h3>
+<p class="text-sm text-slate-500 leading-relaxed">Chief monetary authority and executive head of Nepal Rastra Bank.</p>
+<p class="text-xs text-slate-400 mt-2">Appointed: May 20, 2025</p>
+</div>
+</div>
+<!-- Connector line -->
+<div class="flex justify-center mb-8">
+<div class="w-px h-8 bg-slate-200"></div>
+</div>
+<!-- ▲ TIER 2 — Ex-Officio Members -->
+<div class="mb-6">
+<p class="text-center text-xs font-semibold uppercase tracking-[0.22em] text-slate-400 mb-5">Ex-Officio Members</p>
+<div class="grid grid-cols-3 gap-6">
+<!-- Secretary, MoF -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
+<img alt="Dr. Ghanshyam Upadhyaya" class="member-photo w-full h-full" src="https://www.nrb.org.np/contents/uploads/2026/03/Ghanshyam-Upadhyaya.jpeg"/>
+</div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Secretary, MoF</p>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Dr. Ghanshyam Upadhyaya</h3>
+<p class="text-xs text-slate-500 leading-relaxed">Secretary, Ministry of Finance, Government of Nepal.</p>
+<p class="text-xs text-slate-400 mt-2">Appointed: Feb 13, 2025</p>
+</div>
+<!-- Deputy Governor 1 -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
+<img alt="Mr. Kiran Pandit" class="member-photo w-full h-full" src="https://www.nrb.org.np/contents/uploads/2026/03/Kiran-Pandit.jpg"/>
+</div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Deputy Governor</p>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Mr. Kiran Pandit</h3>
+<p class="text-xs text-slate-500 leading-relaxed">Policy formulation and institutional management.</p>
+<p class="text-xs text-slate-400 mt-2">Appointed: Apr 7, 2026</p>
+</div>
+<!-- Deputy Governor 2 -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
+<img alt="Mr. Dirgha Bahadur Rawal" class="member-photo w-full h-full" src="https://www.nrb.org.np/contents/uploads/2026/08/Dirgha-Sir-PP-copy.jpg"/>
+</div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Deputy Governor</p>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Mr. Dirgha Bahadur Rawal</h3>
+<p class="text-xs text-slate-500 leading-relaxed">Supervisory, regulatory and financial sector functions.</p>
+<p class="text-xs text-slate-400 mt-2">Appointed: Aug 19, 2026</p>
+</div>
+</div>
+</div>
+<!-- Connector line -->
+<div class="flex justify-center mb-6">
+<div class="w-px h-8 bg-slate-200"></div>
+</div>
+<!-- ▲ TIER 3 — Non-Executive Directors -->
+<div>
+<p class="text-center text-xs font-semibold uppercase tracking-[0.22em] text-slate-400 mb-5">Non-Executive Directors</p>
+<div class="grid grid-cols-3 gap-6">
+<!-- Non-Executive 1 -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
+<img alt="Mr. Chinta Mani Siwakoti" class="member-photo w-full h-full" src="https://www.nrb.org.np/contents/uploads/2022/05/Chinta-Mani-Shiwakoti.jpg"/>
+</div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Non-Executive Director</p>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Mr. Chinta Mani Siwakoti</h3>
+<p class="text-xs text-slate-500 leading-relaxed">Economics, Banking &amp; Commercial Law.</p>
+<p class="text-xs text-slate-400 mt-2">Appointed: May 20, 2022</p>
+</div>
+<!-- Non-Executive 2 -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
+<img alt="Dr. Shankar Prasad Acharya" class="member-photo w-full h-full" src="https://www.nrb.org.np/contents/uploads/2022/05/Dr.-Shankar-Prasad-Acharya.jpg"/>
+</div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Non-Executive Director</p>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Dr. Shankar Prasad Acharya</h3>
+<p class="text-xs text-slate-500 leading-relaxed">Economics &amp; Financial Policy.</p>
+<p class="text-xs text-slate-400 mt-2">Appointed: May 20, 2022</p>
+</div>
+<!-- Non-Executive 3 -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 p-6 text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-slate-100 mx-auto mb-4 ring-2 ring-slate-100">
+<img alt="Dr. Ravindra Prasad Pandey" class="member-photo w-full h-full" src="https://www.nrb.org.np/contents/uploads/2023/05/Rabindra-Prasad-Pandey-copy.jpg"/>
+</div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Non-Executive Director</p>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Dr. Ravindra Prasad Pandey</h3>
+<p class="text-xs text-slate-500 leading-relaxed">Monetary &amp; Banking Disciplines.</p>
+<p class="text-xs text-slate-400 mt-2">Appointed: May 11, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BOARD COMMITTEES -->
+<section class="bg-white py-14">
+<div class="nrb-section-shell">
+<div class="mb-10">
+<p class="nrb-display-note">Governance Structure</p>
+<h2 class="nrb-section-title mt-1 text-slate-900">Board Committees</h2>
+<p class="mt-2 text-sm text-slate-500">Standing committees constituted under the Board to support institutional accountability and oversight.</p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<!-- Management Committee -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 overflow-hidden">
+<div class="px-7 py-5 border-b border-slate-100">
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Committee</p>
+<h3 class="text-lg font-semibold text-slate-900">Management Committee</h3>
+</div>
+<div class="px-7 py-6">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-slate-100">
+<th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Member</th>
+<th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Role</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-50">
+<tr>
+<td class="py-3 font-medium text-slate-900">Governor</td>
+<td class="py-3 text-slate-600">Chairperson</td>
+</tr>
+<tr>
+<td class="py-3 font-medium text-slate-900">Deputy Governor</td>
+<td class="py-3 text-slate-600">Member</td>
+</tr>
+<tr>
+<td class="py-3 font-medium text-slate-900">Deputy Governor</td>
+<td class="py-3 text-slate-600">Member</td>
+</tr>
+<tr>
+<td class="py-3 font-medium text-slate-900">Senior Officer (Designated)</td>
+<td class="py-3 text-slate-600">Member Secretary</td>
+</tr>
+</tbody>
+</table>
+<p class="mt-4 text-xs text-slate-400 leading-5">The Governor may invite any officer to attend the meetings of the Management Committee as required.</p>
+</div>
+</div>
+<!-- Audit Committee -->
+<div class="nrb-elevated-card bg-white rounded-[20px] border border-slate-200 overflow-hidden">
+<div class="px-7 py-5 border-b border-slate-100">
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#25295B] mb-1">Committee</p>
+<h3 class="text-lg font-semibold text-slate-900">Audit Committee</h3>
+</div>
+<div class="px-7 py-6">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-slate-100">
+<th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Member</th>
+<th class="text-left pb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">Role</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-50">
+<tr>
+<td class="py-3 font-medium text-slate-900">One of the Board Directors</td>
+<td class="py-3 text-slate-600">Convenor</td>
+</tr>
+<tr>
+<td class="py-3 font-medium text-slate-900">External Expert (nominated by Board)</td>
+<td class="py-3 text-slate-600">Member</td>
+</tr>
+<tr>
+<td class="py-3 font-medium text-slate-900">Chief, Internal Audit Department</td>
+<td class="py-3 text-slate-600">Member Secretary</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- GLOBAL FOOTER — identical to principal-officers.html -->
+<footer class="nrb-footer bg-[#25295B] text-white" id="Footer">
+<div class="nrb-section-shell py-16">
+<div class="flex flex-col gap-6 border-b border-white/10 pb-10">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" src="../../assets/images/nrb-logo.png"/>
+</div>
+<div>
+<p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra Bank</p>
+<p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
+</div>
+</div>
+<p class="max-w-3xl text-sm leading-6 text-slate-300">
                         The official digital headquarters for Nepal's central bank, bringing together monetary policy, economic data, financial regulation, research publications, notices, and public services in one authoritative portal.
                     </p>
-                </div>
-                <div class="mt-10 grid grid-cols-5 gap-8">
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
-                        <a href="../../pages/about/index.html" class="text-sm text-slate-300 transition hover:text-white">Overview</a>
-                        <a href="../../pages/about/index.html#leadership" class="text-sm text-slate-300 transition hover:text-white">Leadership</a>
-                        <a href="../../pages/about/index.html#organization" class="text-sm text-slate-300 transition hover:text-white">Departments</a>
-                        <a href="../../pages/about/index.html#offices" class="text-sm text-slate-300 transition hover:text-white">Offices</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp; Data</h3>
-                        <a href="../../pages/statistics/index.html" class="text-sm text-slate-300 transition hover:text-white">Economic indicators</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Exchange rates</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial stability</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Open data</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
-                        <a href="../../pages/publications/index.html" class="text-sm text-slate-300 transition hover:text-white">Reports</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Research</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Working papers</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Annual reports</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services</h3>
-                        <a href="../../pages/consumer-services/index.html" class="text-sm text-slate-300 transition hover:text-white">Consumer protection</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Complaints</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial literacy</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">FAQ</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
-                        <p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
-                        <p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
-                        <p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
-                        <p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
-                    </div>
-                </div>
-                <div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
-                    <p>&copy; 2026 Nepal Rastra Bank. All rights reserved.</p>
-                    <div class="flex flex-wrap items-center gap-5">
-                        <a href="#" class="transition hover:text-white">Privacy Policy</a>
-                        <a href="#" class="transition hover:text-white">Accessibility</a>
-                        <a href="#" class="transition hover:text-white">Terms of Use</a>
-                        <a href="#Footer" class="transition hover:text-white">Sitemap</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-    </div>
+</div>
+<div class="mt-10 grid grid-cols-5 gap-8">
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html">Overview</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#leadership">Leadership</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#organization">Departments</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#offices">Offices</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp; Data</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/statistics/index.html">Economic indicators</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Exchange rates</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial stability</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Open data</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/publications/index.html">Reports</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Research</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Working papers</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Annual reports</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/consumer-services/index.html">Consumer protection</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Complaints</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial literacy</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
+<p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
+<p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
+<p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
+<p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
+</div>
+</div>
+<div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
+<p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+<div class="flex flex-wrap items-center gap-5">
+<a class="transition hover:text-white" href="#">Privacy Policy</a>
+<a class="transition hover:text-white" href="#">Accessibility</a>
+<a class="transition hover:text-white" href="#">Terms of Use</a>
+<a class="transition hover:text-white" href="#Footer">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
 </body>
-
 </html>

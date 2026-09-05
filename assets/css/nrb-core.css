@@ -1,9 +1,7 @@
 /* NRB Core Design System */
 :root {
     --nrb-primary: #25295B;
-    --nrb-primary-deep: #1E3A5F;
     --nrb-secondary: #138496;
-    --nrb-gold: #C59D5F;
     --nrb-success: #16A34A;
     --nrb-alert: #DC2626;
     --nrb-bg: #F8FAFC;
@@ -31,7 +29,7 @@ h4,
 h5,
 h6,
 .nrb-heading {
-    font-family: 'IBM Plex Sans', 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: -0.02em;
 }
 
@@ -54,27 +52,28 @@ h6,
 }
 
 .nrb-page-title {
-    font-size: 56px;
-    line-height: 0.98;
+    font-size: 24px;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: -0.03em;
+    color: var(--nrb-text);
 }
 
 .nrb-section-title {
-    font-size: 34px;
-    line-height: 1.1;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    color: var(--nrb-text);
 }
 
 .nrb-card-title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 600;
+    color: var(--nrb-text);
 }
 
 .nrb-body-text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.65;
     color: var(--nrb-text-muted);
 }
@@ -88,7 +87,7 @@ h6,
 }
 
 .nrb-meta-text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     color: #64748B;
 }

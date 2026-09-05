@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="view-transition" content="same-origin" />
-    <title>About NRB | Nepal Rastra Bank</title>
-    <meta name="description" content="Learn about Nepal Rastra Bank — its governance, leadership, departments, provincial offices, financial transparency, and institutional information." />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/css/nrb-core.css" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>About NRB | Nepal Rastra Bank</title>
+<meta content="Learn about Nepal Rastra Bank — its governance, leadership, departments, provincial offices, financial transparency, and institutional information." name="description"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/nrb-core.css" rel="stylesheet"/>
+<style>
         html { scroll-behavior: auto; } /* JS handles smooth scroll with offset */
         .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
         .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
@@ -33,445 +32,453 @@
     </style>
 </head>
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
-    <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
-
-        <!-- GLOBAL HEADER -->
-        <header id="Site-Header" class="bg-[#25295B] text-white shadow-sm">
-            <div class="border-b border-white/10">
-                <div class="nrb-section-shell flex items-center justify-between py-6">
-                    <a id="Brand-Mark" href="../../nrb.html" class="flex items-center gap-4">
-                        <div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="../../assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" />
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra Bank</span>
-                            <span class="text-sm text-slate-300">Central Bank of Nepal</span>
-                        </div>
-                    </a>
-                    <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
-                        <a href="#" class="transition hover:text-white">EN / NEP</a>
-                    </div>
-                </div>
-            </div>
-            <div id="Main-Header">
-                <div class="nrb-section-shell py-4">
-                    <nav id="Primary-Navigation" aria-label="Primary" class="flex items-center justify-between text-sm font-medium">
-                        <div class="relative group">
-                            <a id="Nav-About-NRB" href="../../pages/about/index.html" class="flex items-center gap-1.5 text-white border-b-2 border-white pb-0.5">
+<div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
+<!-- GLOBAL HEADER -->
+<header class="bg-[#25295B] text-white shadow-sm" id="Site-Header">
+<div class="border-b border-white/10">
+<div class="nrb-section-shell flex items-center justify-between py-6">
+<a class="flex items-center gap-4" href="../../nrb.html" id="Brand-Mark">
+<div class="flex h-14 w-14 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-13 w-13 object-contain" src="../../assets/images/nrb-logo.png"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-200">Nepal Rastra Bank</span>
+<span class="text-sm text-slate-300">Central Bank of Nepal</span>
+</div>
+</a>
+<div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
+<a class="transition hover:text-white" href="#">EN / NEP</a>
+</div>
+</div>
+</div>
+<div id="Main-Header">
+<div class="nrb-section-shell py-4">
+<nav aria-label="Primary" class="flex items-center justify-between text-sm font-medium" id="Primary-Navigation">
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-white border-b-2 border-white pb-0.5" href="../../pages/about/index.html" id="Nav-About-NRB">
                                 About NRB
-                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                            </a>
-                            <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
-                                    <a href="../../pages/about/index.html#overview" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Institution Overview</a>
-                                    <a href="../../pages/about/index.html#leadership" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Leadership &amp; Governance</a>
-                                    <a href="../../pages/about/index.html#organization" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Organizational Structure</a>
-                                    <a href="../../pages/about/index.html#offices" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Offices &amp; Network</a>
-                                    <a href="../../pages/about/index.html#statements" class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors">Financial Statements</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a id="Nav-Monetary-Policy" href="../../pages/monetary-policy/index.html" class="text-slate-100 transition hover:text-[#138496]">Monetary Policy</a>
-                        <a id="Nav-Bank-Supervision" href="../../pages/bank-supervision/index.html" class="text-slate-100 transition hover:text-[#138496]">Bank Supervision</a>
-                        <a id="Nav-Forex-Management" href="../../pages/forex-management/index.html" class="text-slate-100 transition hover:text-[#138496]">Forex Management</a>
-                        <a id="Nav-Statistics" href="../../pages/statistics/index.html" class="text-slate-100 transition hover:text-[#138496]">Statistics</a>
-                        <a id="Nav-Publications" href="../../pages/publications/index.html" class="text-slate-100 transition hover:text-[#138496]">Publications</a>
-                        <a id="Nav-Notices" href="../../pages/notices/index.html" class="text-slate-100 transition hover:text-[#138496]">Notices</a>
-                        <a id="Nav-Careers" href="../../pages/careers/index.html" class="text-slate-100 transition hover:text-[#138496]">Careers</a>
-                        <a id="Nav-Contact" href="../../pages/contact/index.html" class="text-slate-100 transition hover:text-[#138496]">Contact</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        
-        <main id="Main-Content">
-
-            <!-- HERO & SNAPSHOT -->
-            <section id="Hero-Banner" class="border-b border-slate-200 bg-white">
-                <div class="nrb-section-shell py-10 lg:py-14">
-                    <nav id="Breadcrumb" aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-                        <a href="../../nrb.html" class="transition hover:text-[#25295B]">Home</a>
-                        <span class="text-slate-300">/</span>
-                        <span class="text-slate-700">About NRB</span>
-                    </nav>
-                    <div class="grid grid-cols-[1.2fr_1fr] gap-12 items-start">
-                        <div class="flex flex-col gap-8">
-                            <div>
-                                <span class="inline-flex items-center gap-1.5 rounded-full bg-[#25295B]/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#25295B] mb-4">The Central Bank of Nepal</span>
-                                <h1 class="nrb-page-title text-[#1E3A5F] mb-5">Nepal Rastra Bank</h1>
-                                <p class="text-base text-slate-600 leading-relaxed max-w-xl">Nepal Rastra Bank is the central bank of Nepal and the country's monetary authority. Established in 1956, NRB is responsible for maintaining monetary and financial stability, formulating monetary and foreign exchange policies, promoting a secure payment system, and supporting sustainable economic development.</p>
-                            </div>
-                            <hr class="border-slate-100" />
-                            <div id="who-we-are">
-                                <h2 class="text-base font-semibold text-slate-900 mb-3">Who We Are</h2>
-                                <p class="text-sm text-slate-600 leading-7">Nepal Rastra Bank (NRB) was established in 1956 as the central bank of Nepal. The Bank plays a vital role in maintaining macroeconomic stability, supervising and regulating the financial sector, managing foreign exchange reserves, developing payment systems, and fostering public confidence in the financial system.</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-5">
-                            <div class="w-full rounded-[20px] bg-[#25295B] p-6 text-white border border-slate-200 flex flex-col justify-between relative overflow-hidden shadow-sm">
-                                <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
-                                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Central Headquarters</span>
-                                    <span class="text-xs bg-white/10 px-2.5 py-1 rounded-md text-white font-medium">Baluwatar, Kathmandu</span>
-                                </div>
-                                <div class="space-y-2">
-                                    <p class="text-lg font-bold text-white">Nepal Rastra Bank Central Office</p>
-                                    <p class="text-xs text-slate-300 leading-relaxed">Formulated under the Nepal Rastra Bank Act 1955 (now Act 2002) as the supreme monetary & regulatory authority of the Federal Democratic Republic of Nepal.</p>
-                                </div>
-                                <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
-                                    <span>Governor: Mr. Maha Prasad Adhikari</span>
-                                    <span class="text-[#138496] font-semibold">Est. 1956 AD</span>
-                                </div>
-                            </div>
-                            <aside class="overflow-hidden rounded-[20px] bg-[#1E3A5F] text-white">
-                                <div class="px-6 py-4 border-b border-white/10">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">Institution Snapshot</p>
-                                </div>
-                                <div class="grid grid-cols-2 gap-px bg-white/10">
-                                    <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Established</p>
-                                        <p class="text-xl font-bold text-white">1956</p>
-                                    </div>
-                                    <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Legal Framework</p>
-                                        <p class="text-sm font-semibold text-white leading-snug">NRB Act, 2002</p>
-                                    </div>
-                                    <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Role</p>
-                                        <p class="text-sm font-semibold text-white">Central Bank</p>
-                                    </div>
-                                    <div class="bg-[#1E3A5F] px-5 py-4">
-                                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Mandate</p>
-                                        <p class="text-sm font-semibold text-white leading-snug">Financial Stability</p>
-                                    </div>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- LOCAL NAVIGATION -->
-            <div id="Local-Navigation" class="sticky top-0 z-10 border-b border-slate-200 bg-white shadow-sm">
-                <div class="nrb-section-shell">
-                    <nav class="about-local-nav flex items-center gap-8 py-4" aria-label="About sections">
-                        <a id="LocalNav-Overview"      href="#overview"      aria-current="page">Institution Overview</a>
-                        <a id="LocalNav-Leadership"    href="#leadership">Leadership &amp; Governance</a>
-                        <a id="LocalNav-Organization"  href="#organization">Organizational Structure</a>
-                        <a id="LocalNav-Offices"       href="#offices">Offices &amp; Network</a>
-                        <a id="LocalNav-Statements"    href="#statements">Financial Statements</a>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- 1. INSTITUTION OVERVIEW -->
-            <section id="overview" class="bg-slate-50 py-14 border-b border-slate-200">
-                <div class="nrb-section-shell">
-                    <header class="mb-8">
-                        <p class="nrb-display-note">Overview</p>
-                        <h2 class="nrb-section-title mt-1 text-slate-900">Institution Overview</h2>
-                    </header>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="nrb-elevated-card rounded-[20px] bg-[#1E3A5F] p-10 text-white relative overflow-hidden flex flex-col">
-                            <div class="absolute right-[-20px] top-[-20px] opacity-10 pointer-events-none">
-                                <svg width="180" height="180" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2z"/></svg>
-                            </div>
-                            <div class="relative z-10">
-                                <span class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496]">Guiding Principle</span>
-                                <h3 class="text-2xl font-bold mt-3 mb-5 text-white">Vision</h3>
-                                <p class="text-lg leading-relaxed text-slate-200 font-medium">"A Modern, Dynamic, Credible and Effective Central Bank"</p>
-                            </div>
-                        </div>
-                        <div class="nrb-elevated-card rounded-[20px] bg-white p-10 border border-slate-200 relative overflow-hidden flex flex-col">
-                            <div class="absolute right-[-20px] top-[-20px] opacity-[0.04] text-[#138496] pointer-events-none">
-                                <svg width="180" height="180" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
-                            </div>
-                            <div class="relative z-10">
-                                <span class="text-xs font-semibold uppercase tracking-[0.22em] text-[#25295B]">Core Purpose</span>
-                                <h3 class="text-2xl font-bold mt-3 mb-5 text-[#1E3A5F]">Mission</h3>
-                                <p class="text-base leading-relaxed text-slate-700 font-medium">"Maintaining Macroeconomic and Financial Stability for Sustainable and Inclusive Economic Development through Effective Monetary, Foreign Exchange, Financial Sector and Payment System Policies"</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 2. LEADERSHIP & GOVERNANCE -->
-            <section id="leadership" class="bg-white py-14 border-b border-slate-200">
-                <div class="nrb-section-shell">
-                    <div class="grid grid-cols-[1.6fr_1fr] gap-10 items-start">
-                        <div>
-                            <header class="mb-8">
-                                <p class="nrb-display-note">People</p>
-                                <h2 class="nrb-section-title mt-1 text-slate-900">Leadership &amp; Governance</h2>
-                                <p class="mt-2 text-sm text-slate-500">The governance structure ensuring accountability, transparency, and effective policy decision-making.</p>
-                            </header>
-                            <div class="flex flex-col gap-4">
-                                <a href="board-of-directors.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#1E3A5F]/20">
-                                    <div class="flex items-center gap-6">
-                                        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
-                                            <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                                        </div>
-                                        <div>
-                                            <p class="text-lg font-semibold text-[#1E3A5F] group-hover:text-[#138496] transition-colors">Board of Directors</p>
-                                            <p class="text-sm text-slate-600 mt-1">Strategic oversight, institutional governance, and policy direction.</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
-                                        <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                                    </div>
-                                </a>
-                                <a href="principal-officers.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#1E3A5F]/20">
-                                    <div class="flex items-center gap-6">
-                                        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
-                                            <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
-                                        </div>
-                                        <div>
-                                            <p class="text-lg font-semibold text-[#1E3A5F] group-hover:text-[#138496] transition-colors">Principal Officers</p>
-                                            <p class="text-sm text-slate-600 mt-1">Senior leadership responsible for the administration of Nepal Rastra Bank.</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
-                                        <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                                    </div>
-                                </a>
-                                <a href="information-officers.html" class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#1E3A5F]/20">
-                                    <div class="flex items-center gap-6">
-                                        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
-                                            <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                                        </div>
-                                        <div>
-                                            <p class="text-lg font-semibold text-[#1E3A5F] group-hover:text-[#138496] transition-colors">Information Officers</p>
-                                            <p class="text-sm text-slate-600 mt-1">Officers responsible for public information and institutional transparency (RTI).</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
-                                        <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Leadership Legacy sidebar (Entire box clickable, single arrow, smooth transition) -->
-                        <a href="governors-history.html" class="dir-row group rounded-[20px] bg-slate-50 border border-slate-200 p-7 flex flex-col h-full justify-between hover:border-[#1E3A5F]/20 hover:bg-slate-100/50 transition-all duration-300 ease-in-out">
-                            <div>
-                                <h3 class="text-base font-bold text-slate-900 group-hover:text-[#138496] transition-colors duration-300 mb-2">Leadership Legacy</h3>
-                                <p class="text-sm text-slate-500 mb-6 leading-relaxed">Nepal Rastra Bank has been led by distinguished governors shaping the nation's monetary history.</p>
-                                <div class="flex flex-col gap-8 relative before:absolute before:inset-y-1 before:left-1.5 before:w-px before:bg-slate-200">
-                                    <div class="relative pl-6">
-                                        <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-[#138496]"></div>
-                                        <p class="text-xs font-bold uppercase tracking-wider text-[#25295B] mb-0.5">1956</p>
-                                        <p class="text-sm font-semibold text-slate-900">Himalaya Shumsher J.B. Rana</p>
-                                    </div>
-                                    <div class="relative pl-6">
-                                        <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
-                                        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1961</p>
-                                        <p class="text-sm font-semibold text-slate-900">Laxmi Nath Gautam</p>
-                                    </div>
-                                    <div class="relative pl-6">
-                                        <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
-                                        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1965</p>
-                                        <p class="text-sm font-semibold text-slate-900">Kul Shekhar Sharma</p>
-                                    </div>
-                                    <div class="relative pl-6">
-                                        <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
-                                        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1973</p>
-                                        <p class="text-sm font-semibold text-slate-900">Yadav Prasad Pant</p>
-                                    </div>
-                                    <div class="relative pl-6">
-                                        <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
-                                        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1978</p>
-                                        <p class="text-sm font-semibold text-slate-900">Ganga Prasad Upadhyaya</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-8 pt-5 border-t border-slate-200 flex items-center justify-between">
-                                <p class="text-xs font-semibold text-slate-500">18 Governors • 1956–Present</p>
-                                <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496] group-hover:text-[#1E3A5F] transition-colors duration-300">
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#overview">Institution Overview</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#leadership">Leadership &amp; Governance</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#organization">Organizational Structure</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#offices">Offices &amp; Network</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#statements">Financial Statements</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/regulations/index.html" id="Nav-Regulations">
+Regulations
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Laws &amp; Legislation</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/acts.html">Acts</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors mb-1" href="../../pages/regulations/rules-and-bylaws.html">Rules and Bylaws</a>
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-t border-slate-100 mb-1 mt-1">Policies &amp; Guidelines</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/notices.html">Notices</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/guidelines-and-manuals.html">Guidelines &amp; Manuals</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/other-policies.html">Other Policies</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/monetary-policy.html">Monetary Policy</a>
+</div>
+</div>
+</div>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/monetary-policy/index.html" id="Nav-Monetary-Policy">Monetary Policy</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/bank-supervision/index.html" id="Nav-Bank-Supervision">Bank Supervision</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/forex-management/index.html" id="Nav-Forex-Management">Forex Management</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/publications/index.html" id="Nav-Publications">Publications</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/notices/index.html" id="Nav-Notices">Notices</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/careers/index.html" id="Nav-Careers">Careers</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/contact/index.html" id="Nav-Contact">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<main id="Main-Content">
+<!-- HERO & SNAPSHOT -->
+<section class="border-b border-slate-200 bg-white" id="Hero-Banner">
+<div class="nrb-section-shell py-10 lg:py-14">
+<nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500" id="Breadcrumb">
+<a class="transition hover:text-[#25295B]" href="../../nrb.html">Home</a>
+<span class="text-slate-300">/</span>
+<span class="text-slate-700">Nepal Rastra Bank</span>
+</nav>
+<div class="grid grid-cols-[1.2fr_1fr] gap-12 items-start">
+<div class="flex flex-col gap-8">
+<div>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-[#25295B]/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#25295B] mb-4">The Central Bank of Nepal</span>
+<h1 class="text-2xl font-bold text-slate-900 mb-4">Nepal Rastra Bank</h1>
+<p class="text-base text-slate-600 leading-relaxed max-w-xl">Nepal Rastra Bank is the central bank of Nepal and the country's monetary authority. Established in 1956, NRB is responsible for maintaining monetary and financial stability, formulating monetary and foreign exchange policies, promoting a secure payment system, and supporting sustainable economic development.</p>
+</div>
+<hr class="border-slate-100"/>
+<div id="who-we-are">
+<h2 class="text-base font-semibold text-slate-900 mb-3">Who We Are</h2>
+<p class="text-sm text-slate-600 leading-7">Nepal Rastra Bank (NRB) was established in 1956 as the central bank of Nepal. The Bank plays a vital role in maintaining macroeconomic stability, supervising and regulating the financial sector, managing foreign exchange reserves, developing payment systems, and fostering public confidence in the financial system.</p>
+</div>
+</div>
+<div class="flex flex-col gap-5">
+<div class="w-full rounded-[20px] bg-[#25295B] p-6 text-white border border-slate-200 flex flex-col justify-between relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
+<span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Central Headquarters</span>
+<span class="text-xs bg-white/10 px-2.5 py-1 rounded-md text-white font-medium">Baluwatar, Kathmandu</span>
+</div>
+<div class="space-y-2">
+<p class="text-lg font-bold text-white">Nepal Rastra Bank Central Office</p>
+<p class="text-xs text-slate-300 leading-relaxed">Formulated under the Nepal Rastra Bank Act 1955 (now Act 2002) as the supreme monetary &amp; regulatory authority of the Federal Democratic Republic of Nepal.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+<span>Governor: Mr. Maha Prasad Adhikari</span>
+<span class="text-[#138496] font-semibold">Est. 1956 AD</span>
+</div>
+</div>
+<aside class="overflow-hidden rounded-[20px] bg-[#25295B] text-white">
+<div class="px-6 py-4 border-b border-white/10">
+<p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">Institution Snapshot</p>
+</div>
+<div class="grid grid-cols-2 gap-px bg-white/10">
+<div class="bg-[#25295B] px-5 py-4">
+<p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Established</p>
+<p class="text-xl font-bold text-white">1956</p>
+</div>
+<div class="bg-[#25295B] px-5 py-4">
+<p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Legal Framework</p>
+<p class="text-sm font-semibold text-white leading-snug">NRB Act, 2002</p>
+</div>
+<div class="bg-[#25295B] px-5 py-4">
+<p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Role</p>
+<p class="text-sm font-semibold text-white">Central Bank</p>
+</div>
+<div class="bg-[#25295B] px-5 py-4">
+<p class="text-xs uppercase tracking-widest text-slate-400 mb-1">Mandate</p>
+<p class="text-sm font-semibold text-white leading-snug">Financial Stability</p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</section>
+<!-- LOCAL NAVIGATION -->
+<div class="sticky top-0 z-10 border-b border-slate-200 bg-white shadow-sm" id="Local-Navigation">
+<div class="nrb-section-shell">
+<nav aria-label="About sections" class="about-local-nav flex items-center gap-8 py-4">
+<a aria-current="page" href="#overview" id="LocalNav-Overview">Institution Overview</a>
+<a href="#leadership" id="LocalNav-Leadership">Leadership &amp; Governance</a>
+<a href="#organization" id="LocalNav-Organization">Organizational Structure</a>
+<a href="#offices" id="LocalNav-Offices">Offices &amp; Network</a>
+<a href="#statements" id="LocalNav-Statements">Financial Statements</a>
+</nav>
+</div>
+</div>
+<!-- 1. INSTITUTION OVERVIEW -->
+<section class="bg-slate-50 py-14 border-b border-slate-200" id="overview">
+<div class="nrb-section-shell">
+<header class="mb-8">
+<p class="nrb-display-note">Overview</p>
+<h2 class="nrb-section-title mt-1 text-slate-900">Institution Overview</h2>
+</header>
+<div class="grid grid-cols-2 gap-6">
+<div class="nrb-elevated-card rounded-[20px] bg-[#25295B] p-10 text-white relative overflow-hidden flex flex-col">
+<div class="absolute right-[-20px] top-[-20px] opacity-10 pointer-events-none">
+<svg fill="currentColor" height="180" viewbox="0 0 24 24" width="180"><path d="M12 2L2 22h20L12 2z"></path></svg>
+</div>
+<div class="relative z-10">
+<span class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496]">Guiding Principle</span>
+<h3 class="text-2xl font-bold mt-3 mb-5 text-white">Vision</h3>
+<p class="text-lg leading-relaxed text-slate-200 font-medium">"A Modern, Dynamic, Credible and Effective Central Bank"</p>
+</div>
+</div>
+<div class="nrb-elevated-card rounded-[20px] bg-white p-10 border border-slate-200 relative overflow-hidden flex flex-col">
+<div class="absolute right-[-20px] top-[-20px] opacity-[0.04] text-[#138496] pointer-events-none">
+<svg fill="currentColor" height="180" viewbox="0 0 24 24" width="180"><circle cx="12" cy="12" r="10"></circle></svg>
+</div>
+<div class="relative z-10">
+<span class="text-xs font-semibold uppercase tracking-[0.22em] text-[#25295B]">Core Purpose</span>
+<h3 class="text-2xl font-bold mt-3 mb-5 text-[#25295B]">Mission</h3>
+<p class="text-base leading-relaxed text-slate-700 font-medium">"Maintaining Macroeconomic and Financial Stability for Sustainable and Inclusive Economic Development through Effective Monetary, Foreign Exchange, Financial Sector and Payment System Policies"</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. LEADERSHIP & GOVERNANCE -->
+<section class="bg-white py-14 border-b border-slate-200" id="leadership">
+<div class="nrb-section-shell">
+<div class="grid grid-cols-[1.6fr_1fr] gap-10 items-start">
+<div>
+<header class="mb-8">
+<p class="nrb-display-note">People</p>
+<h2 class="nrb-section-title mt-1 text-slate-900">Leadership &amp; Governance</h2>
+<p class="mt-2 text-sm text-slate-500">The governance structure ensuring accountability, transparency, and effective policy decision-making.</p>
+</header>
+<div class="flex flex-col gap-4">
+<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#25295B]/20" href="board-of-directors.html">
+<div class="flex items-center gap-6">
+<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+<svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+</div>
+<div>
+<p class="text-lg font-semibold text-[#25295B] group-hover:text-[#138496] transition-colors">Board of Directors</p>
+<p class="text-sm text-slate-600 mt-1">Strategic oversight, institutional governance, and policy direction.</p>
+</div>
+</div>
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
+<svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</div>
+</a>
+<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#25295B]/20" href="principal-officers.html">
+<div class="flex items-center gap-6">
+<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+<svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg>
+</div>
+<div>
+<p class="text-lg font-semibold text-[#25295B] group-hover:text-[#138496] transition-colors">Principal Officers</p>
+<p class="text-sm text-slate-600 mt-1">Senior leadership responsible for the administration of Nepal Rastra Bank.</p>
+</div>
+</div>
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
+<svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</div>
+</a>
+<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#25295B]/20" href="information-officers.html">
+<div class="flex items-center gap-6">
+<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+<svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+</div>
+<div>
+<p class="text-lg font-semibold text-[#25295B] group-hover:text-[#138496] transition-colors">Information Officers</p>
+<p class="text-sm text-slate-600 mt-1">Officers responsible for public information and institutional transparency (RTI).</p>
+</div>
+</div>
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 group-hover:bg-[#138496]/10 transition-colors ml-4">
+<svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</div>
+</a>
+</div>
+</div>
+<!-- Leadership Legacy sidebar (Entire box clickable, single arrow, smooth transition) -->
+<a class="dir-row group rounded-[20px] bg-slate-50 border border-slate-200 p-7 flex flex-col h-full justify-between hover:border-[#25295B]/20 hover:bg-slate-100/50 transition-all duration-300 ease-in-out" href="governors-history.html">
+<div>
+<h3 class="text-base font-bold text-slate-900 group-hover:text-[#138496] transition-colors duration-300 mb-2">Leadership Legacy</h3>
+<p class="text-sm text-slate-500 mb-6 leading-relaxed">Nepal Rastra Bank has been led by distinguished governors shaping the nation's monetary history.</p>
+<div class="flex flex-col gap-8 relative before:absolute before:inset-y-1 before:left-1.5 before:w-px before:bg-slate-200">
+<div class="relative pl-6">
+<div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-[#138496]"></div>
+<p class="text-xs font-bold uppercase tracking-wider text-[#25295B] mb-0.5">1956</p>
+<p class="text-sm font-semibold text-slate-900">Himalaya Shumsher J.B. Rana</p>
+</div>
+<div class="relative pl-6">
+<div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
+<p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1961</p>
+<p class="text-sm font-semibold text-slate-900">Laxmi Nath Gautam</p>
+</div>
+<div class="relative pl-6">
+<div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
+<p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1965</p>
+<p class="text-sm font-semibold text-slate-900">Kul Shekhar Sharma</p>
+</div>
+<div class="relative pl-6">
+<div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
+<p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1973</p>
+<p class="text-sm font-semibold text-slate-900">Yadav Prasad Pant</p>
+</div>
+<div class="relative pl-6">
+<div class="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-slate-50 bg-slate-300"></div>
+<p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">1978</p>
+<p class="text-sm font-semibold text-slate-900">Ganga Prasad Upadhyaya</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-5 border-t border-slate-200 flex items-center justify-between">
+<p class="text-xs font-semibold text-slate-500">18 Governors • 1956–Present</p>
+<span class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496] group-hover:text-[#25295B] transition-colors duration-300">
                                     View Full Governors History 
-                                    <svg class="dir-row-arrow w-4 h-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 3. ORGANIZATIONAL STRUCTURE -->
-            <section id="organization" class="bg-slate-50 py-14 border-b border-slate-200">
-                <div class="nrb-section-shell">
-                    <header class="mb-10">
-                        <p class="nrb-display-note">Structure</p>
-                        <h2 class="nrb-section-title mt-1 text-slate-900">Organizational Structure</h2>
-                        <p class="mt-2 text-sm text-slate-500">The functional hierarchy and operational divisions of the central bank.</p>
-                    </header>
-                    <div class="grid grid-cols-3 gap-6">
-                        <!-- Card 1: Organogram -->
-                        <a href="organogram.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#1E3A5F]/20 transition-all">
-                            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="4" rx="1"/><rect x="1" y="16" width="6" height="4" rx="1"/><rect x="9" y="16" width="6" height="4" rx="1"/><rect x="17" y="16" width="6" height="4" rx="1"/><path d="M4 16V9h16v7"/><path d="M12 6v3"/></svg>
-                            </div>
-                            <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Organogram</h3>
-                            <p class="text-sm text-slate-600 leading-6 flex-grow">Explore the institutional hierarchy, executive decision-making bodies, and reporting structure of Nepal Rastra Bank.</p>
-                            <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Organogram <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                        </a>
-
-                        <!-- Card 2: Departments -->
-                        <a href="departments.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#1E3A5F]/20 transition-all">
-                            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M4 20V8l8-6 8 6v12"/><path d="M10 20v-6h4v6"/></svg>
-                            </div>
-                            <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Departments, Divisions &amp; Units</h3>
-                            <p class="text-sm text-slate-600 leading-6 flex-grow">Directory of 17 specialized departments, 1 executive office, 6 division offices, and 1 unit supporting monetary policy, supervision, and payment systems.</p>
-                            <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Departments <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                        </a>
-
-                        <!-- Card 3: Provincial Offices -->
-                        <a href="provincial-offices.html" class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#1E3A5F]/20 transition-all">
-                            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-                                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
-                            </div>
-                            <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Provincial Offices</h3>
-                            <p class="text-sm text-slate-600 leading-6 flex-grow">8 regional offices situated across Nepal's provinces extending regulatory, supervisory, currency management, and public treasury services nationwide.</p>
-                            <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Provincial Offices <svg class="dir-row-arrow h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 4. OFFICES & NETWORK -->
-            <section id="offices" class="bg-white py-14 border-b border-slate-200">
-                <div class="nrb-section-shell">
-                    <div class="grid grid-cols-[1.6fr_1fr] gap-12 items-center">
-                        <div>
-                            <p class="nrb-display-note">Network</p>
-                            <h2 class="nrb-section-title mt-1 mb-4 text-slate-900">Offices &amp; Network</h2>
-                            <p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank maintains eight provincial offices strategically located across Nepal's provinces, extending the Bank's regulatory, supervisory and public service functions to all regions of the country.</p>
-                            <a href="provincial-offices.html" class="inline-flex items-center gap-2 rounded-full bg-[#25295B] text-white px-6 py-3 text-sm font-semibold transition hover:bg-[#1E3A5F]">
+                                    <svg class="dir-row-arrow w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 3. ORGANIZATIONAL STRUCTURE -->
+<section class="bg-slate-50 py-14 border-b border-slate-200" id="organization">
+<div class="nrb-section-shell">
+<header class="mb-10">
+<p class="nrb-display-note">Structure</p>
+<h2 class="nrb-section-title mt-1 text-slate-900">Organizational Structure</h2>
+<p class="mt-2 text-sm text-slate-500">The functional hierarchy and operational divisions of the central bank.</p>
+</header>
+<div class="grid grid-cols-3 gap-6">
+<!-- Card 1: Organogram -->
+<a class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#25295B]/20 transition-all" href="organogram.html">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><rect height="4" rx="1" width="6" x="9" y="2"></rect><rect height="4" rx="1" width="6" x="1" y="16"></rect><rect height="4" rx="1" width="6" x="9" y="16"></rect><rect height="4" rx="1" width="6" x="17" y="16"></rect><path d="M4 16V9h16v7"></path><path d="M12 6v3"></path></svg>
+</div>
+<h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Organogram</h3>
+<p class="text-sm text-slate-600 leading-6 flex-grow">Explore the institutional hierarchy, executive decision-making bodies, and reporting structure of Nepal Rastra Bank.</p>
+<span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Organogram <svg class="dir-row-arrow h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</a>
+<!-- Card 2: Departments -->
+<a class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#25295B]/20 transition-all" href="departments.html">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 20h16"></path><path d="M4 20V8l8-6 8 6v12"></path><path d="M10 20v-6h4v6"></path></svg>
+</div>
+<h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Departments, Divisions &amp; Units</h3>
+<p class="text-sm text-slate-600 leading-6 flex-grow">Directory of 17 specialized departments, 1 executive office, 6 division offices, and 1 unit supporting monetary policy, supervision, and payment systems.</p>
+<span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Departments <svg class="dir-row-arrow h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</a>
+<!-- Card 3: Provincial Offices -->
+<a class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#25295B]/20 transition-all" href="provincial-offices.html">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="10" r="3"></circle><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path></svg>
+</div>
+<h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Provincial Offices</h3>
+<p class="text-sm text-slate-600 leading-6 flex-grow">8 regional offices situated across Nepal's provinces extending regulatory, supervisory, currency management, and public treasury services nationwide.</p>
+<span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Provincial Offices <svg class="dir-row-arrow h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. OFFICES & NETWORK -->
+<section class="bg-white py-14 border-b border-slate-200" id="offices">
+<div class="nrb-section-shell">
+<div class="grid grid-cols-[1.6fr_1fr] gap-12 items-center">
+<div>
+<p class="nrb-display-note">Network</p>
+<h2 class="nrb-section-title mt-1 mb-4 text-slate-900">Offices &amp; Network</h2>
+<p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank maintains eight provincial offices strategically located across Nepal's provinces, extending the Bank's regulatory, supervisory and public service functions to all regions of the country.</p>
+<a class="inline-flex items-center gap-2 rounded-full bg-[#25295B] text-white px-6 py-3 text-sm font-semibold transition hover:bg-[#25295B]" href="provincial-offices.html">
                                 View Provincial Offices
-                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                            </a>
-                        </div>
-                        <div class="w-full rounded-[20px] bg-white border border-slate-200 p-6 shadow-sm flex flex-col justify-between">
-                                <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
-                                    <span class="text-xs font-semibold uppercase tracking-wider text-[#138496]">Presence Summary</span>
-                                    <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-semibold">77 Districts</span>
-                                </div>
-                                <div class="space-y-3 text-sm text-slate-600">
-                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                                        <span class="font-semibold text-slate-900">Central Office (Baluwatar)</span>
-                                        <span class="text-xs font-medium text-slate-500">Kathmandu</span>
-                                    </div>
-                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                                        <span class="font-semibold text-slate-900">Banking &amp; Mint Division</span>
-                                        <span class="text-xs font-medium text-slate-500">Sundhara, KTM</span>
-                                    </div>
-                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                                        <span class="font-semibold text-slate-900">8 Provincial Offices</span>
-                                        <span class="text-xs font-medium text-slate-500">Nationwide</span>
-                                    </div>
-                                </div>
-                        </div></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 5. FINANCIAL STATEMENTS -->
-            <section id="statements" class="bg-slate-50 py-14">
-                <div class="nrb-section-shell">
-                    <div class="grid grid-cols-[1.6fr_1fr] gap-12 items-center">
-                        <div>
-                            <p class="nrb-display-note">Transparency</p>
-                            <h2 class="nrb-section-title mt-1 mb-4 text-slate-900">Financial Statements</h2>
-                            <p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank publishes annual audited financial statements and reports in accordance with its statutory obligations, ensuring full public accountability and institutional transparency.</p>
-                            <a href="financial-statements.html" class="inline-flex items-center gap-2 rounded-full bg-[#25295B] text-white px-6 py-3 text-sm font-semibold transition hover:bg-[#1E3A5F]">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<div class="w-full rounded-[20px] bg-white border border-slate-200 p-6 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+<span class="text-xs font-semibold uppercase tracking-wider text-[#138496]">Presence Summary</span>
+<span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-semibold">77 Districts</span>
+</div>
+<div class="space-y-3 text-sm text-slate-600">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<span class="font-semibold text-slate-900">Central Office (Baluwatar)</span>
+<span class="text-xs font-medium text-slate-500">Kathmandu</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<span class="font-semibold text-slate-900">Banking &amp; Mint Division</span>
+<span class="text-xs font-medium text-slate-500">Sundhara, KTM</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<span class="font-semibold text-slate-900">8 Provincial Offices</span>
+<span class="text-xs font-medium text-slate-500">Nationwide</span>
+</div>
+</div>
+</div></div>
+</div>
+</section></main></div>
+<!-- 5. FINANCIAL STATEMENTS -->
+<section class="bg-slate-50 py-14" id="statements">
+<div class="nrb-section-shell">
+<div class="grid grid-cols-[1.6fr_1fr] gap-12 items-center">
+<div>
+<p class="nrb-display-note">Transparency</p>
+<h2 class="nrb-section-title mt-1 mb-4 text-slate-900">Financial Statements</h2>
+<p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank publishes annual audited financial statements and reports in accordance with its statutory obligations, ensuring full public accountability and institutional transparency.</p>
+<a class="inline-flex items-center gap-2 rounded-full bg-[#25295B] text-white px-6 py-3 text-sm font-semibold transition hover:bg-[#25295B]" href="financial-statements.html">
                                 View Financial Statements
-                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                            </a>
-                        </div>
-                        <div class="nrb-elevated-card bg-[#1E3A5F] rounded-[20px] p-8 text-white">
-                            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496] mb-3">Featured Report</p>
-                            <h3 class="text-xl font-bold text-white mb-2">Annual Report 2024/25</h3>
-                            <p class="text-sm text-slate-300 leading-6 mb-6">Comprehensive review of Nepal Rastra Bank's operations, financial performance, and policy implementation for fiscal year 2024/25.</p>
-                            <a href="financial-statements.html" class="inline-flex items-center gap-2 rounded-[10px] border border-white/20 bg-white/10 px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-white hover:text-[#1E3A5F]">
-                                View Report
-                                <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- GLOBAL FOOTER -->
-        <footer id="Footer" class="nrb-footer bg-[#25295B] text-white">
-            <div class="nrb-section-shell py-16">
-                <div class="flex flex-col gap-6 border-b border-white/10 pb-10">
-                    <div class="flex items-center gap-4">
-                        <div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-                            <img src="../../assets/images/nrb-logo.png" alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" />
-                        </div>
-                        <div>
-                            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra Bank</p>
-                            <p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
-                        </div>
-                    </div>
-                    <p class="max-w-3xl text-sm leading-6 text-slate-300">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<a class="block nrb-elevated-card bg-[#25295B] rounded-[20px] p-8 text-white relative overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#25295B]/20" href="https://www.nrb.org.np/fmd/financial-statement-fy-2024-25-2081-82/" target="_blank">
+<!-- Subtle background decoration to make it feel less rigid -->
+<div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#138496]/10 blur-2xl transition-all duration-500 group-hover:bg-[#138496]/20 group-hover:scale-150"></div>
+<div class="relative z-10">
+<p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496] mb-3">Featured Report</p>
+<h3 class="text-xl font-bold text-white mb-2 group-hover:text-white transition-colors">Annual Report 2024/25</h3>
+<p class="text-sm text-slate-300 leading-6 mb-8 max-w-sm">Comprehensive review of Nepal Rastra Bank's operations, financial performance, and policy implementation for fiscal year 2024/25.</p>
+<div class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] group-hover:text-white transition-colors">
+            Open Document
+            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 group-hover:bg-[#138496] transition-colors">
+<svg class="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- GLOBAL FOOTER -->
+<footer class="nrb-footer bg-[#25295B] text-white" id="Footer">
+<div class="nrb-section-shell py-16">
+<div class="flex flex-col gap-6 border-b border-white/10 pb-10">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
+<img alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" src="../../assets/images/nrb-logo.png"/>
+</div>
+<div>
+<p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra Bank</p>
+<p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
+</div>
+</div>
+<p class="max-w-3xl text-sm leading-6 text-slate-300">
                         The official digital headquarters for Nepal's central bank, bringing together monetary policy, economic data, financial regulation, research publications, notices, and public services in one authoritative portal.
                     </p>
-                </div>
-                <div class="mt-10 grid grid-cols-5 gap-8">
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
-                        <a href="../../pages/about/index.html" class="text-sm text-slate-300 transition hover:text-white">Overview</a>
-                        <a href="../../pages/about/index.html#leadership" class="text-sm text-slate-300 transition hover:text-white">Leadership</a>
-                        <a href="../../pages/about/index.html#organization" class="text-sm text-slate-300 transition hover:text-white">Departments</a>
-                        <a href="../../pages/about/index.html#offices" class="text-sm text-slate-300 transition hover:text-white">Offices</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp; Data</h3>
-                        <a href="../../pages/statistics/index.html" class="text-sm text-slate-300 transition hover:text-white">Economic indicators</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Exchange rates</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial stability</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Open data</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
-                        <a href="../../pages/publications/index.html" class="text-sm text-slate-300 transition hover:text-white">Reports</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Research</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Working papers</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Annual reports</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services</h3>
-                        <a href="../../pages/consumer-services/index.html" class="text-sm text-slate-300 transition hover:text-white">Consumer protection</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Complaints</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">Financial literacy</a>
-                        <a href="#" class="text-sm text-slate-300 transition hover:text-white">FAQ</a>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
-                        <p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
-                        <p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
-                        <p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
-                        <p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
-                    </div>
-                </div>
-                <div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
-                    <p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
-                    <div class="flex flex-wrap items-center gap-5">
-                        <a href="#" class="transition hover:text-white">Privacy Policy</a>
-                        <a href="#" class="transition hover:text-white">Accessibility</a>
-                        <a href="#" class="transition hover:text-white">Terms of Use</a>
-                        <a href="#Footer" class="transition hover:text-white">Sitemap</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <script>
+</div>
+<div class="mt-10 grid grid-cols-5 gap-8">
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html">Overview</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#leadership">Leadership</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#organization">Departments</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#offices">Offices</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp; Data</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/statistics/index.html">Economic indicators</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Exchange rates</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial stability</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Open data</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/publications/index.html">Reports</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Research</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Working papers</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Annual reports</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services</h3>
+<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/consumer-services/index.html">Consumer protection</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Complaints</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial literacy</a>
+<a class="text-sm text-slate-300 transition hover:text-white" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
+<p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
+<p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
+<p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
+<p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
+</div>
+</div>
+<div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
+<p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+<div class="flex flex-wrap items-center gap-5">
+<a class="transition hover:text-white" href="#">Privacy Policy</a>
+<a class="transition hover:text-white" href="#">Accessibility</a>
+<a class="transition hover:text-white" href="#">Terms of Use</a>
+<a class="transition hover:text-white" href="#Footer">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
         (function () {
             const sections = ['overview', 'leadership', 'organization', 'offices', 'statements'];
 
@@ -541,5 +548,4 @@
         })();
     </script>
 </body>
-
 </html>
