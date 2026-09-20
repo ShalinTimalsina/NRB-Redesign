@@ -11,29 +11,13 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="../../assets/css/nrb-core.css" rel="stylesheet"/>
-<style>
-        .hub-card { transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
-        .hub-card:hover { border-color: rgba(30, 58, 95, 0.2); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05); }
-        .about-local-nav a {
-            position: relative; padding-bottom: 4px; font-size: 0.875rem;
-            font-weight: 500; color: #64748B; text-decoration: none;
-            white-space: nowrap; transition: color 150ms;
-        }
-        .about-local-nav a::after {
-            content: ''; position: absolute; bottom: -1px; left: 0; right: 0;
-            height: 2px; background: transparent; border-radius: 2px; transition: background 150ms;
-        }
-        .about-local-nav a:hover { color: #25295B; }
-        .about-local-nav a[aria-current="page"] { color: #25295B; font-weight: 600; }
-        .about-local-nav a[aria-current="page"]::after { background: #25295B; }
-        .dir-row-arrow { transition: transform 200ms ease-out, color 200ms ease-out; }
-        .dir-row:hover .dir-row-arrow { transform: translateX(2px); }
-    </style>
+
 </head>
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
 <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
 <!-- GLOBAL HEADER -->
 <header class="bg-[#25295B] text-white shadow-sm" id="Site-Header">
+<!-- Top Section: Logo and Utilities -->
 <div class="border-b border-white/10">
 <div class="nrb-section-shell flex items-center justify-between py-6">
 <a class="flex items-center gap-4" href="../../nrb.html" id="Brand-Mark">
@@ -50,27 +34,29 @@
 </div>
 </div>
 </div>
+<!-- Bottom Section: Primary Navigation -->
 <div id="Main-Header">
 <div class="nrb-section-shell py-4">
 <nav aria-label="Primary" class="flex items-center justify-between text-sm font-medium" id="Primary-Navigation">
 <div class="relative group">
-<a class="flex items-center gap-1.5 text-white border-b-2 border-white pb-0.5" href="../../pages/about/index.html" id="Nav-About-NRB">
-                                About NRB
-                                <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/about/index.html" id="Nav-About-NRB">
+About
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
 <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 <div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#overview">Institution Overview</a>
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#leadership">Leadership &amp; Governance</a>
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#organization">Organizational Structure</a>
-<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#offices">Offices &amp; Network</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#offices">Departments &amp; Offices</a>
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#statements">Financial Statements</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#contact">Contact &amp; Locations</a>
 </div>
 </div>
 </div>
 <div class="relative group">
-<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/regulations/index.html" id="Nav-Regulations">
-Regulations
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/regulations/index.html" id="Nav-Laws &amp; Policies">
+Laws &amp; Policies
 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
 <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -79,24 +65,121 @@ Regulations
 <a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/acts.html">Acts</a>
 <a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors mb-1" href="../../pages/regulations/rules-and-bylaws.html">Rules and Bylaws</a>
 <div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-t border-slate-100 mb-1 mt-1">Policies &amp; Guidelines</div>
-<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/notices.html">Notices</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/notices.html">Media &amp; Speeches</a>
 <a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/guidelines-and-manuals.html">Guidelines &amp; Manuals</a>
 <a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/other-policies.html">Other Policies</a>
 <a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/monetary-policy.html">Monetary Policy</a>
 </div>
 </div>
 </div>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/monetary-policy/index.html" id="Nav-Monetary-Policy">Monetary Policy</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/bank-supervision/index.html" id="Nav-Bank-Supervision">Bank Supervision</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/forex-management/index.html" id="Nav-Forex-Management">Forex Management</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/regulation-and-supervision/index.html" id="Nav-Bank-Supervision">
+Regulation &amp; Supervision
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-5 px-6 w-[720px] grid grid-cols-3 gap-x-6">
+<!-- Column 1: Regulated Sectors -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Regulated Sectors</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Banks &amp; Financial Institutions</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Foreign Exchange</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Payment Systems</a>
+</div>
+<!-- Column 2: Supervision -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Supervision</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Bank Supervision</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Financial Institutions</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Microfinance</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Non-Bank Entities</a>
+</div>
+<!-- Column 3: Resources -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Resources</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Circulars</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Notices</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Policies &amp; Guidelines</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Consumer Protection</a>
+</div>
+</div>
+</div>
+</div>
 <a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/publications/index.html" id="Nav-Publications">Publications</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/notices/index.html" id="Nav-Notices">Notices</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/careers/index.html" id="Nav-Careers">Careers</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/contact/index.html" id="Nav-Contact">Contact</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/procurement/index.html" id="Nav-Procurement">
+Procurement
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-72 flex flex-col">
+<!-- Column 1: Procurement Opportunities -->
+<div class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Procurement Opportunities</div>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/procurement/notices/index.html">
+<span class="block">Notices</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Procurement announcements and updates.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/procurement/global-tenders/index.html">
+<span class="block">Global Tenders</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">International procurement opportunities.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/procurement/domestic-tenders/index.html">
+<span class="block">Domestic Tenders</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">National procurement opportunities.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/procurement/pre-qualified-companies/index.html">
+<span class="block">Pre-Qualified Companies</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Approved vendor information.</span>
+</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/careers/index.html" id="Nav-Careers">
+Careers
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-96 flex flex-col">
+<div class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Career Opportunities</div>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<span class="block leading-tight mt-0.5">Online Portal for Contract Application</span>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<span class="block leading-tight mt-0.5">Online Portal for Open Competition</span>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<span class="block leading-tight mt-0.5">Online Portal for Performance Evaluation Based Promotion & Internal Competition</span>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/careers/notices/index.html">
+<span class="block">Notices</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/careers/open-competition/index.html">
+<span class="block">Open Competition</span>
+</a>
+</div>
+</div>
+</div>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/monetary-policy/index.html" id="Nav-Monetary-Policy">Monetary Policy</a>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/notices/index.html" id="Nav-Media &amp; Speeches">Media &amp; Speeches</a>
 </nav>
 </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cur = window.location.href;
+    document.querySelectorAll('#Primary-Navigation > div > div > a, #Primary-Navigation > div > a').forEach(a => {
+        const m = a.href.match(/\/pages\/([^\/]+)\//);
+        if (m && cur.includes('/pages/' + m[1] + '/')) {
+            a.classList.add('nrb-nav-active');
+        }
+    });
+});
+</script>
 </header>
 <main>
 <!-- HERO -->
@@ -105,7 +188,7 @@ Regulations
 <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
 <a class="transition hover:text-[#25295B]" href="../../nrb.html">Home</a>
 <span class="text-slate-300">/</span>
-<a class="transition hover:text-[#25295B]" href="index.html">About NRB</a>
+<a class="transition hover:text-[#25295B]" href="index.html">About</a>
 <span class="text-slate-300">/</span>
 <a class="transition hover:text-[#25295B]" href="financial-statements.html">Financial Statements</a>
 <span class="text-slate-300">/</span>
@@ -119,10 +202,10 @@ Regulations
 <!-- FINANCIAL STATEMENTS NAVIGATION STRIP -->
 <div class="border-b border-slate-200 bg-white sticky top-0 z-20 shadow-sm">
 <div class="nrb-section-shell">
-<nav aria-label="Financial Statements navigation" class="about-local-nav flex items-center gap-8 py-4">
+<nav aria-label="Financial Statements navigation" class="nrb-page-nav flex items-center gap-8 py-4">
 <a href="financial-statements.html">Overview</a>
 <a aria-current="page" href="annual-financial-statements.html">Annual Financial Statements (Audited)</a>
-<a href="investment-related-notices.html">Investment Related Notices</a>
+<a href="investment-related-notices.html">Investment Related Media & Speeches</a>
 </nav>
 </div>
 </div>
@@ -273,7 +356,7 @@ Regulations
 </div>
 <div class="mt-10 grid grid-cols-5 gap-8">
 <div class="flex flex-col gap-4">
-<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About NRB</h3>
+<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About</h3>
 <a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html">Overview</a>
 <a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#leadership">Leadership</a>
 <a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#organization">Departments</a>
