@@ -14,6 +14,7 @@
 <body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
 <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
 <header class="bg-[#25295B] text-white shadow-sm" id="Site-Header">
+<!-- Top Section: Logo and Utilities -->
 <div class="border-b border-white/10">
 <div class="nrb-section-shell flex items-center justify-between py-6">
 <a class="flex items-center gap-4" href="../../../nrb.html" id="Brand-Mark">
@@ -30,6 +31,7 @@
 </div>
 </div>
 </div>
+<!-- Bottom Section: Primary Navigation -->
 <div id="Main-Header">
 <div class="nrb-section-shell py-4">
 <nav aria-label="Primary" class="flex items-center justify-between text-sm font-medium" id="Primary-Navigation">
@@ -49,17 +51,165 @@ About
 </div>
 </div>
 </div>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/regulations/index.html" id="Nav-Laws-Policies">Laws &amp; Policies</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/regulation-and-supervision/index.html" id="Nav-Bank-Supervision">Regulation &amp; Supervision</a>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../../pages/regulations/index.html" id="Nav-Laws &amp; Policies">
+Laws &amp; Policies
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Laws &amp; Legislation</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../../pages/regulations/acts.html">Acts</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors mb-1" href="../../../pages/regulations/rules-and-bylaws.html">Rules and Bylaws</a>
+<div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-t border-slate-100 mb-1 mt-1">Policies &amp; Guidelines</div>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../../pages/regulations/notices.html">Media &amp; Speeches</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../../pages/regulations/guidelines-and-manuals.html">Guidelines &amp; Manuals</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../../pages/regulations/other-policies.html">Other Policies</a>
+<a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../../pages/regulations/monetary-policy.html">Monetary Policy</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../../pages/regulation-and-supervision/index.html" id="Nav-Bank-Supervision">
+Regulation &amp; Supervision
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-5 px-6 w-[720px] grid grid-cols-3 gap-x-6">
+<!-- Column 1: Regulated Sectors -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Regulated Sectors</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Banks &amp; Financial Institutions</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Foreign Exchange</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Payment Systems</a>
+</div>
+<!-- Column 2: Supervision -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Supervision</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Bank Supervision</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Financial Institutions</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Microfinance</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Non-Bank Entities</a>
+</div>
+<!-- Column 3: Resources -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Resources</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Circulars</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Notices</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Policies &amp; Guidelines</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Consumer Protection</a>
+</div>
+</div>
+</div>
+</div>
 <a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/publications/index.html" id="Nav-Publications">Publications</a>
 <a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/procurement/index.html" id="Nav-Procurement">Procurement</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/careers/index.html" id="Nav-Careers">Careers</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/monetary-policy/index.html" id="Nav-Monetary-Policy">Monetary Policy</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/notices/index.html" id="Nav-Media-Speeches">Media &amp; Speeches</a>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../../pages/procurement/index.html" id="Nav-Procurement">
+Procurement
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-72 flex flex-col">
+<!-- Column 1: Procurement Opportunities -->
+<div class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Procurement Opportunities</div>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/procurement/notices/index.html">
+<span class="block">Notices</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Procurement announcements and updates.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/procurement/global-tenders/index.html">
+<span class="block">Global Tenders</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">International procurement opportunities.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/procurement/domestic-tenders/index.html">
+<span class="block">Domestic Tenders</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">National procurement opportunities.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/procurement/pre-qualified-companies/index.html">
+<span class="block">Pre-Qualified Companies</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Approved vendor information.</span>
+</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../../pages/careers/index.html" id="Nav-Careers">
+Careers
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-96 flex flex-col">
+<div class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Career Opportunities</div>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<span class="block leading-tight mt-0.5">Online Portal for Contract Application</span>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<span class="block leading-tight mt-0.5">Online Portal for Open Competition</span>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<span class="block leading-tight mt-0.5">Online Portal for Performance Evaluation Based Promotion & Internal Competition</span>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/careers/notices/index.html">
+<span class="block">Notices</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/careers/open-competition/index.html">
+<span class="block">Open Competition</span>
+</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../../pages/monetary-policy/index.html" id="Nav-Monetary-Policy">
+Monetary Policy
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-72 flex flex-col">
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/monetary-policy/index.html#overview">
+<span class="block">Overview</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Policy stance, objectives, and current rates.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/monetary-policy/index.html#monetary-operations">
+<span class="block">Monetary Operations</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Open market operations and liquidity management.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/monetary-policy/index.html#data-reports">
+<span class="block">Data &amp; Reports</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Policy documents, bulletins, and data series.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/monetary-policy/index.html#circulars">
+<span class="block">Circulars</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Official circulars issued to regulated institutions.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/monetary-policy/index.html#notices">
+<span class="block">Notices</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Public notices related to monetary policy.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../../pages/monetary-policy/index.html#policies-procedures">
+<span class="block">Policies &amp; Procedures</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Operational frameworks and procedural guidelines.</span>
+</a>
+</div>
+</div>
+</div>
+<a class="text-slate-100 transition hover:text-[#138496]" href="../../../pages/notices/index.html" id="Nav-Media &amp; Speeches">Media &amp; Speeches</a>
 </nav>
 </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cur = window.location.href;
+    document.querySelectorAll('#Primary-Navigation > div > div > a, #Primary-Navigation > div > a').forEach(a => {
+        const m = a.href.match(/\/pages\/([^\/]+)\//);
+        if (m && cur.includes('/pages/' + m[1] + '/')) {
+            a.classList.add('nrb-nav-active');
+        }
+    });
+});
+</script>
 </header>
 <main id="Main-Content">
 <section class="border-b border-slate-200 bg-white" id="Hero-Banner">
@@ -78,140 +228,66 @@ About
 <section class="py-14" id="notices-list">
 <div class="nrb-section-shell">
 <div class="flex items-center justify-between mb-8">
-<p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">10 Notices</p>
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">4 Notices</p>
 <span class="text-xs bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full font-semibold">Public Debt Management</span>
 </div>
 <div class="flex flex-col gap-3">
-<!-- Notice 1 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%85%e0%a4%b8%e0%a5%8b%e0%a4%9c-%e0%a5%a8-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%a9%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a7-%e0%a4%ae%e0%a4%b9/" target="_blank">
+<!-- Document 1 -->
+<a class="hub-card nrb-elevated-card flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[14px] hover:border-[#138496] group transition-colors" href="https://www.nrb.org.np/pdm/%e0%a4%85%e0%a4%b8%e0%a5%8b%e0%a4%9c-%e0%a5%a8-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%a9%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a7-%e0%a4%ae%e0%a4%b9/" target="_blank">
 <div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-[#25295B] group-hover:bg-[#138496]/10 group-hover:text-[#138496] transition-colors mt-0.5">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
 </div>
 <div>
 <p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">असोज २ गते रु.३० अर्बको १ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">September 18, 2026 · 296.30 kb</p>
+<p class="text-xs text-slate-500 mt-1">September 18, 2026 · 296.30 kb</p>
 </div>
 </div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
 </a>
-<!-- Notice 2 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a9%e0%a5%a7-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%ac%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a7-%e0%a4%ae%e0%a4%b9/" target="_blank">
+
+<!-- Document 2 -->
+<a class="hub-card nrb-elevated-card flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[14px] hover:border-[#138496] group transition-colors" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a9%e0%a5%a7-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%ac%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a7-%e0%a4%ae%e0%a4%b9/" target="_blank">
 <div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-[#25295B] group-hover:bg-[#138496]/10 group-hover:text-[#138496] transition-colors mt-0.5">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
 </div>
 <div>
 <p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ ३१ गते रु.६० अर्बको १ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">September 16, 2026 · 171.63 kb</p>
+<p class="text-xs text-slate-500 mt-1">September 16, 2026 · 171.63 kb</p>
 </div>
 </div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
 </a>
-<!-- Notice 3 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a8%e0%a5%ac-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%ad%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a8-%e0%a4%ae%e0%a4%b9/" target="_blank">
+
+<!-- Document 3 -->
+<a class="hub-card nrb-elevated-card flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[14px] hover:border-[#138496] group transition-colors" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a8%e0%a5%ac-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%ad%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a8-%e0%a4%ae%e0%a4%b9/" target="_blank">
 <div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-[#25295B] group-hover:bg-[#138496]/10 group-hover:text-[#138496] transition-colors mt-0.5">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
 </div>
 <div>
 <p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ २६ गते रु.७० अर्बको २ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">September 11, 2026 · 171.64 kb</p>
+<p class="text-xs text-slate-500 mt-1">September 11, 2026 · 171.64 kb</p>
 </div>
 </div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
 </a>
-<!-- Notice 4 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a8%e0%a5%aa-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%ab%e0%a5%ab-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a8-%e0%a4%ae%e0%a4%b9/" target="_blank">
+
+<!-- Document 4 -->
+<a class="hub-card nrb-elevated-card flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[14px] hover:border-[#138496] group transition-colors" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a8%e0%a5%aa-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%ab%e0%a5%ab-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a8-%e0%a4%ae%e0%a4%b9/" target="_blank">
 <div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-[#25295B] group-hover:bg-[#138496]/10 group-hover:text-[#138496] transition-colors mt-0.5">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
 </div>
 <div>
 <p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ २४ गते रु.५५ अर्बको २ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">September 9, 2026 · 301.24 kb</p>
+<p class="text-xs text-slate-500 mt-1">September 9, 2026 · 301.24 kb</p>
 </div>
 </div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
 </a>
-<!-- Notice 5 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a8%e0%a5%a8-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%a8%e0%a5%ab-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a8-%e0%a4%ae%e0%a4%b9/" target="_blank">
-<div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
-</div>
-<div>
-<p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ २२ गते रु.३५ अर्बको २ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">September 7, 2026 · 296.33 kb</p>
-</div>
-</div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</a>
-<!-- Notice 6 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a7%e0%a5%ae-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%a7%e0%a5%ae-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a9-%e0%a4%ae%e0%a4%b9/" target="_blank">
-<div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
-</div>
-<div>
-<p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ १८ गते रु.१८ अर्बको ३ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">September 3, 2026 · 171.63 kb</p>
-</div>
-</div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</a>
-<!-- Notice 7 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a7%e0%a5%ab-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%a8%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%a9-%e0%a4%ae%e0%a4%b9/" target="_blank">
-<div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
-</div>
-<div>
-<p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ १५ गते रु.२० अर्बको ३ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">August 31, 2026 · 171.64 kb</p>
-</div>
-</div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</a>
-<!-- Notice 8 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%a7%e0%a5%a6-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%af%e0%a5%a6-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%aa-%e0%a4%ae%e0%a4%b9/" target="_blank">
-<div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
-</div>
-<div>
-<p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ १० गते रु.९० अर्बको ४ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">August 26, 2026 · 171.63 kb</p>
-</div>
-</div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</a>
-<!-- Notice 9 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ac%e0%a5%8d%e0%a4%af%e0%a4%be%e0%a4%9c%e0%a4%a6%e0%a4%b0%e0%a4%b8%e0%a4%ae%e0%a5%8d%e0%a4%ac%e0%a4%a8%e0%a5%8d%e0%a4%a7%e0%a5%80-%e0%a4%b5%e0%a4%bf%e0%a4%b5%e0%a4%b0%e0%a4%a3-%e0%a4%89%e0%a4%aa/" target="_blank">
-<div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
-</div>
-<div>
-<p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">ब्याजदरसम्बन्धी विवरण उपलब्ध गराउने सम्बन्धमा</p>
-<p class="text-xs text-slate-500 mt-0.5">August 24, 2026 · 435.18 kb</p>
-</div>
-</div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</a>
-<!-- Notice 10 -->
-<a class="dir-row group flex items-center justify-between p-5 bg-white border border-slate-200 rounded-[16px] hover:border-[#25295B]/30 hover:shadow-sm transition-all" href="https://www.nrb.org.np/pdm/%e0%a4%ad%e0%a4%a6%e0%a5%8c-%e0%a5%ab-%e0%a4%97%e0%a4%a4%e0%a5%87-%e0%a4%b0%e0%a5%81-%e0%a5%ae%e0%a5%ab-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%95%e0%a5%8b-%e0%a5%ac-%e0%a4%ae%e0%a4%b9%e0%a4%bf/" target="_blank">
-<div class="flex items-start gap-4">
-<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-slate-100 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
-<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 3h14v18H5z"></path><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path></svg>
-</div>
-<div>
-<p class="text-sm font-semibold text-slate-900 group-hover:text-[#138496] transition-colors">भदौ ५ गते रु.८५ अर्बको ६ महिने निक्षेप संकलन बोलकबोल सम्बन्धी सूचना</p>
-<p class="text-xs text-slate-500 mt-0.5">August 21, 2026 · 113.09 kb</p>
-</div>
-</div>
-<svg class="dir-row-arrow h-5 w-5 text-slate-400 group-hover:text-[#138496] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</a>
+
 </div>
 <div class="mt-10 pt-6 border-t border-slate-100">
 <a class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] hover:text-[#25295B] transition-colors" href="../../../pages/monetary-policy/index.html">
