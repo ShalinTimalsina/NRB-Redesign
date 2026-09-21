@@ -10,10 +10,10 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link href="../../assets/css/nrb-core.css" rel="stylesheet"/>
-
 </head>
-<body class="min-w-[1440px] bg-slate-50 text-slate-900 antialiased">
+<body class="min-w-[1440px] bg-[#F8FAFC] text-slate-900 antialiased">
 <div class="nrb-page-frame mx-auto w-full max-w-[1440px]">
 <!-- GLOBAL HEADER -->
 <header class="bg-[#25295B] text-white shadow-sm" id="Site-Header">
@@ -30,7 +30,7 @@
 </div>
 </a>
 <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-200">
-<a class="transition hover:text-white" href="#">EN / NEP</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">EN / NEP</a>
 </div>
 </div>
 </div>
@@ -43,14 +43,14 @@
 About
 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
-<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-3 w-64 flex flex-col">
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#overview">Institution Overview</a>
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#leadership">Leadership &amp; Governance</a>
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#organization">Organizational Structure</a>
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#offices">Departments &amp; Offices</a>
 <a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#statements">Financial Statements</a>
-<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/about/index.html#contact">Contact &amp; Locations</a>
+<a class="px-5 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/contact/index.html">Contact &amp; Locations</a>
 </div>
 </div>
 </div>
@@ -59,8 +59,8 @@ About
 Laws &amp; Policies
 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
-<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 w-64 flex flex-col">
+<div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-3 w-64 flex flex-col">
 <div class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Laws &amp; Legislation</div>
 <a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors" href="../../pages/regulations/acts.html">Acts</a>
 <a class="px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors mb-1" href="../../pages/regulations/rules-and-bylaws.html">Rules and Bylaws</a>
@@ -77,43 +77,145 @@ Laws &amp; Policies
 Regulation &amp; Supervision
 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
-<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-5 px-6 w-[720px] grid grid-cols-3 gap-x-6">
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-5 px-6 w-[480px] grid grid-cols-2 gap-x-6">
 <!-- Column 1: Regulated Sectors -->
 <div class="flex flex-col">
 <div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Regulated Sectors</div>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Banks &amp; Financial Institutions</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Foreign Exchange</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Payment Systems</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/regulation-and-supervision/bfr/index.html">Banks &amp; Financial Institutions</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/regulation-and-supervision/fxm/index.html">Foreign Exchange</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/regulation-and-supervision/psd/index.html">Payment Systems</a>
 </div>
 <!-- Column 2: Supervision -->
 <div class="flex flex-col">
 <div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Supervision</div>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Bank Supervision</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Financial Institutions</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Microfinance</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Non-Bank Entities</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/regulation-and-supervision/bsd/index.html">Bank Supervision</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/regulation-and-supervision/fisd/index.html">Financial Institutions</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/regulation-and-supervision/mfd/index.html">Microfinance</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/regulation-and-supervision/nbfisd/index.html">Non-Bank Entities</a>
 </div>
-<!-- Column 3: Resources -->
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/publications/index.html" id="Nav-Publications">
+Publications
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-5 px-6 w-[850px] grid grid-cols-3 gap-x-6 text-left">
+<!-- Column 1: Research & Analysis -->
 <div class="flex flex-col">
-<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Resources</div>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Circulars</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Notices</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Policies &amp; Guidelines</a>
-<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="#">Consumer Protection</a>
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-3">Research &amp; Analysis</div>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/economic-review/index.html">
+<span class="block">Economic Review</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Periodic reviews of economic trends.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/macroeconomic-reports/index.html">
+<span class="block">Macroeconomic Reports</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Monthly and annual economic data.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/working-papers/index.html">
+<span class="block">NRB Working Papers</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Research papers from NRB economists.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/publications/study-reports/index.html">
+<span class="block">Study Reports</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">In-depth research and study findings.</span>
+</a>
+</div>
+<!-- Column 2: Institutional Reports -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-3">Institutional Reports</div>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/annual-reports/index.html">
+<span class="block">Annual Reports</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Comprehensive yearly performance reports.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/financial-stability/index.html">
+<span class="block">Financial Stability Reports</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Assessments of financial system health.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/publications/economic-activities/index.html">
+<span class="block">Economic Activities Reports</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Regional and national economic activity.</span>
+</a>
+</div>
+<!-- Column 3: Special Publications -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-3">Special Publications</div>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/special-publications/index.html">
+<span class="block">Special Publications</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Ad-hoc reports and special releases.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/golden-jubilee/index.html">
+<span class="block">Golden Jubilee Publications</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">50th anniversary commemorative releases.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/publications/arthabodh/index.html">
+<span class="block">Arthabodh</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Financial literacy and awareness.</span>
+</a>
+<a class="px-2 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/publications/know-your-bank-notes/index.html">
+<span class="block">Know Your Bank Notes</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Security features and banknote guides.</span>
+</a>
 </div>
 </div>
 </div>
 </div>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/publications/index.html" id="Nav-Publications">Publications</a>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/statistics/index.html" id="Nav-Statistics">Statistics</a>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/statistics/index.html" id="Nav-Statistics">
+Statistics
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-5 px-6 w-[1080px] grid grid-cols-4 gap-x-6 text-left">
+<!-- Column 1: Macroeconomic -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-3">Macroeconomic Statistics</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/statistics/macroeconomic/index.html">
+<span class="block">Macroeconomic Statistics</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5 leading-relaxed">Inflation, economic activity, surveys and macroeconomic indicators.</span>
+</a>
+</div>
+<!-- Column 2: Financial Sector -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-3">Financial Sector Statistics</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/statistics/financial-sector/index.html">
+<span class="block">Bank and Financial Sector Statistics</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5 leading-relaxed">Banking, microfinance and financial sector performance data.</span>
+</a>
+</div>
+<!-- Column 3: Monetary & Forex -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-3">Monetary &amp; Forex Statistics</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg mb-1" href="../../pages/statistics/monetary-forex/index.html">
+<span class="block">Interest Rates and Monetary Operations</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5 leading-relaxed">Monetary operations, interest rates and policy rates.</span>
+</a>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/forex-management/index.html">
+<span class="block">Daily Exchange Rate</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5 leading-relaxed">Live data of the exchanges.</span>
+</a>
+</div>
+<!-- Column 4: Financial Inclusion -->
+<div class="flex flex-col">
+<div class="px-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-3">Financial Inclusion &amp; Payments</div>
+<a class="px-2 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/statistics/financial-inclusion/index.html">
+<span class="block">Financial Inclusion</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5 leading-relaxed">Financial inclusion indicators, payment systems and access metrics.</span>
+</a>
+</div>
+</div>
+</div>
+</div>
 <div class="relative group">
 <a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/procurement/index.html" id="Nav-Procurement">
 Procurement
 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
-<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-72 flex flex-col">
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-3 px-2 w-72 flex flex-col">
 <!-- Column 1: Procurement Opportunities -->
 <div class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Procurement Opportunities</div>
 <a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/procurement/notices/index.html">
@@ -140,20 +242,20 @@ Procurement
 Careers
 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
-<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-96 flex flex-col">
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-3 px-2 w-96 flex flex-col">
 <div class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">Career Opportunities</div>
-<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-4" href="https://jobs.nrb.org.np/" target="_blank">
 <span class="block leading-tight mt-0.5">Online Portal for Contract Application</span>
-<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </a>
-<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-4" href="https://jobs.nrb.org.np/" target="_blank">
 <span class="block leading-tight mt-0.5">Online Portal for Open Competition</span>
-<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </a>
-<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-3" href="https://jobs.nrb.org.np/" target="_blank">
-<span class="block leading-tight mt-0.5">Online Portal for Performance Evaluation Based Promotion & Internal Competition</span>
-<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg flex items-start justify-between gap-4" href="https://jobs.nrb.org.np/" target="_blank">
+<span class="block leading-tight mt-0.5">Online Portal for Performance Evaluation Based Promotion &amp; Internal Competition</span>
+<svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </a>
 <a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/careers/notices/index.html">
 <span class="block">Notices</span>
@@ -169,8 +271,8 @@ Careers
 Monetary Policy
 <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </a>
-<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<div class="bg-white rounded-[16px] shadow-lg border border-slate-200 py-3 px-2 w-72 flex flex-col">
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-3 px-2 w-72 flex flex-col">
 <a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/monetary-policy/monetary-operations/index.html">
 <span class="block">Monetary Operations</span>
 <span class="block text-xs text-slate-400 font-normal mt-0.5">Open market operations and liquidity management.</span>
@@ -194,26 +296,51 @@ Monetary Policy
 </div>
 </div>
 </div>
-<a class="text-slate-100 transition hover:text-[#138496]" href="../../pages/notices/index.html" id="Nav-Media &amp; Speeches">Media &amp; Speeches</a>
+<div class="relative group">
+<a class="flex items-center gap-1.5 text-slate-100 transition hover:text-[#138496]" href="../../pages/media-speeches/index.html" id="Nav-Media-Speeches">
+Media &amp; Speeches
+<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+<div class="bg-white rounded-xl shadow-md border border-slate-200 py-3 px-2 w-72 flex flex-col">
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/media-speeches/media-releases/index.html">
+<span class="block">Media Releases</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Official press statements.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/media-speeches/speeches/index.html">
+<span class="block">Speeches</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Governor's official speeches.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/media-speeches/notices/index.html">
+<span class="block">Notices</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Public notices from the Governor's office.</span>
+</a>
+<a class="px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#138496] font-medium transition-colors rounded-lg" href="../../pages/media-speeches/bok-kpp/index.html">
+<span class="block">BOK-KPP Reports</span>
+<span class="block text-xs text-slate-400 font-normal mt-0.5">Joint study reports.</span>
+</a>
+</div>
+</div>
+</div>
 </nav>
 </div>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const cur = window.location.href;
-    document.querySelectorAll('#Primary-Navigation > div > div > a, #Primary-Navigation > div > a').forEach(a => {
-        const m = a.href.match(/\/pages\/([^\/]+)\//);
-        if (m && cur.includes('/pages/' + m[1] + '/')) {
-            a.classList.add('nrb-nav-active');
-        }
-    });
+ const cur = window.location.href;
+ document.querySelectorAll('#Primary-Navigation > div > div > a, #Primary-Navigation > div > a').forEach(a => {
+ const m = a.href.match(/\/pages\/([^\/]+)\//);
+ if (m && cur.includes('/pages/' + m[1] + '/')) {
+ a.classList.add('nrb-nav-active');
+ }
+ });
 });
 </script>
 </header>
 <main id="Main-Content">
 <!-- HERO & SNAPSHOT -->
 <section class="border-b border-slate-200 bg-white" id="Hero-Banner">
-<div class="nrb-section-shell py-10 lg:py-14">
+<div class="nrb-section-shell py-12">
 <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500" id="Breadcrumb">
 <a class="transition hover:text-[#25295B]" href="../../nrb.html">Home</a>
 <span class="text-slate-300">/</span>
@@ -233,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 </div>
 <div class="flex flex-col gap-5">
-<div class="w-full rounded-[20px] bg-[#25295B] p-6 text-white border border-slate-200 flex flex-col justify-between relative overflow-hidden shadow-sm">
+<div class="w-full rounded-xl bg-[#25295B] p-6 text-white border border-slate-200 flex flex-col justify-between relative overflow-hidden shadow-sm">
 <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
 <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Central Headquarters</span>
 <span class="text-xs bg-white/10 px-2.5 py-1 rounded-md text-white font-medium">Baluwatar, Kathmandu</span>
@@ -247,7 +374,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <span class="text-[#138496] font-semibold">Est. 1956 AD</span>
 </div>
 </div>
-<aside class="overflow-hidden rounded-[20px] bg-[#25295B] text-white">
+<aside class="overflow-hidden rounded-xl bg-[#25295B] text-white">
 <div class="px-6 py-4 border-b border-white/10">
 <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">Institution Snapshot</p>
 </div>
@@ -294,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <h2 class="nrb-section-title mt-1 text-slate-900">Institution Overview</h2>
 </header>
 <div class="grid grid-cols-2 gap-6">
-<div class="nrb-elevated-card rounded-[20px] bg-[#25295B] p-10 text-white relative overflow-hidden flex flex-col">
+<div class="nrb-elevated-card rounded-xl bg-[#25295B] p-10 text-white relative overflow-hidden flex flex-col focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl">
 <div class="absolute right-[-20px] top-[-20px] opacity-10 pointer-events-none">
 <svg fill="currentColor" height="180" viewbox="0 0 24 24" width="180"><path d="M12 2L2 22h20L12 2z"></path></svg>
 </div>
@@ -304,7 +431,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <p class="text-lg leading-relaxed text-slate-200 font-medium">"A Modern, Dynamic, Credible and Effective Central Bank"</p>
 </div>
 </div>
-<div class="nrb-elevated-card rounded-[20px] bg-white p-10 border border-slate-200 relative overflow-hidden flex flex-col">
+<div class="nrb-elevated-card rounded-xl bg-white p-10 border border-slate-200 relative overflow-hidden flex flex-col focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl">
 <div class="absolute right-[-20px] top-[-20px] opacity-[0.04] text-[#138496] pointer-events-none">
 <svg fill="currentColor" height="180" viewbox="0 0 24 24" width="180"><circle cx="12" cy="12" r="10"></circle></svg>
 </div>
@@ -320,7 +447,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- 2. LEADERSHIP & GOVERNANCE -->
 <section class="bg-white py-14 border-b border-slate-200" id="leadership">
 <div class="nrb-section-shell">
-<div class="grid grid-cols-[1.6fr_1fr] gap-10 items-start">
+<div class="grid grid-cols-[1.6fr_1fr] gap-8 items-start">
 <div>
 <header class="mb-8">
 <p class="nrb-display-note">People</p>
@@ -328,9 +455,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <p class="mt-2 text-sm text-slate-500">The governance structure ensuring accountability, transparency, and effective policy decision-making.</p>
 </header>
 <div class="flex flex-col gap-4">
-<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#25295B]/20" href="board-of-directors.html">
+<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-6 bg-white border border-slate-200 rounded-xl group hover:border-[#25295B]/20 focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl" href="board-of-directors.html">
 <div class="flex items-center gap-6">
-<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300 focus:outline-none focus:text-white focus:underline">
 <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
 </div>
 <div>
@@ -342,9 +469,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 </div>
 </a>
-<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#25295B]/20" href="principal-officers.html">
+<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-6 bg-white border border-slate-200 rounded-xl group hover:border-[#25295B]/20 focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl" href="principal-officers.html">
 <div class="flex items-center gap-6">
-<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300 focus:outline-none focus:text-white focus:underline">
 <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg>
 </div>
 <div>
@@ -356,9 +483,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <svg class="dir-row-arrow h-5 w-5 text-[#138496]" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 </div>
 </a>
-<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-8 bg-white border border-slate-200 rounded-[20px] group hover:border-[#25295B]/20" href="information-officers.html">
+<a class="dir-row hub-card nrb-elevated-card flex items-center justify-between p-6 bg-white border border-slate-200 rounded-xl group hover:border-[#25295B]/20 focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl" href="information-officers.html">
 <div class="flex items-center gap-6">
-<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[16px] bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300">
+<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-[#25295B] border border-slate-100 group-hover:bg-[#25295B] group-hover:text-white group-hover:border-[#25295B] transition-all duration-300 focus:outline-none focus:text-white focus:underline">
 <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
 </div>
 <div>
@@ -373,7 +500,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 </div>
 <!-- Leadership Legacy sidebar (Entire box clickable, single arrow, smooth transition) -->
-<a class="dir-row group rounded-[20px] bg-slate-50 border border-slate-200 p-7 flex flex-col h-full justify-between hover:border-[#25295B]/20 hover:bg-slate-100/50 transition-all duration-300 ease-in-out" href="governors-history.html">
+<a class="dir-row group rounded-xl bg-slate-50 border border-slate-200 p-7 flex flex-col h-full justify-between hover:border-[#25295B]/20 hover:bg-slate-100/50 transition-all duration-300 ease-in-out" href="governors-history.html">
 <div>
 <h3 class="text-base font-bold text-slate-900 group-hover:text-[#138496] transition-colors duration-300 mb-2">Leadership Legacy</h3>
 <p class="text-sm text-slate-500 mb-6 leading-relaxed">Nepal Rastra Bank has been led by distinguished governors shaping the nation's monetary history.</p>
@@ -408,8 +535,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="mt-8 pt-5 border-t border-slate-200 flex items-center justify-between">
 <p class="text-xs font-semibold text-slate-500">18 Governors • 1956–Present</p>
 <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496] group-hover:text-[#25295B] transition-colors duration-300">
-                                    View Full Governors History 
-                                    <svg class="dir-row-arrow w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+ View Full Governors History 
+ <svg class="dir-row-arrow w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </span>
 </div>
 </a>
@@ -426,8 +553,8 @@ document.addEventListener("DOMContentLoaded", function() {
 </header>
 <div class="grid grid-cols-3 gap-6">
 <!-- Card 1: Organogram -->
-<a class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#25295B]/20 transition-all" href="organogram.html">
-<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+<a class="hub-card nrb-elevated-card group flex flex-col rounded-xl bg-white border border-slate-200 p-6 hover:border-[#25295B]/20 transition-all focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl" href="organogram.html">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors focus:outline-none focus:text-white focus:underline">
 <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><rect height="4" rx="1" width="6" x="9" y="2"></rect><rect height="4" rx="1" width="6" x="1" y="16"></rect><rect height="4" rx="1" width="6" x="9" y="16"></rect><rect height="4" rx="1" width="6" x="17" y="16"></rect><path d="M4 16V9h16v7"></path><path d="M12 6v3"></path></svg>
 </div>
 <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Organogram</h3>
@@ -435,8 +562,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Organogram <svg class="dir-row-arrow h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
 </a>
 <!-- Card 2: Departments -->
-<a class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#25295B]/20 transition-all" href="departments.html">
-<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+<a class="hub-card nrb-elevated-card group flex flex-col rounded-xl bg-white border border-slate-200 p-6 hover:border-[#25295B]/20 transition-all focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl" href="departments.html">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors focus:outline-none focus:text-white focus:underline">
 <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 20h16"></path><path d="M4 20V8l8-6 8 6v12"></path><path d="M10 20v-6h4v6"></path></svg>
 </div>
 <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Departments, Divisions &amp; Units</h3>
@@ -444,8 +571,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#138496]">View Departments <svg class="dir-row-arrow h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
 </a>
 <!-- Card 3: Provincial Offices -->
-<a class="hub-card nrb-elevated-card group flex flex-col rounded-[20px] bg-white border border-slate-200 p-8 hover:border-[#25295B]/20 transition-all" href="provincial-offices.html">
-<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors">
+<a class="hub-card nrb-elevated-card group flex flex-col rounded-xl bg-white border border-slate-200 p-6 hover:border-[#25295B]/20 transition-all focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl" href="provincial-offices.html">
+<div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#25295B] mb-5 group-hover:bg-[#25295B] group-hover:text-white transition-colors focus:outline-none focus:text-white focus:underline">
 <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="10" r="3"></circle><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path></svg>
 </div>
 <h3 class="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#138496] transition-colors">Provincial Offices</h3>
@@ -464,11 +591,11 @@ document.addEventListener("DOMContentLoaded", function() {
 <h2 class="nrb-section-title mt-1 mb-4 text-slate-900">Offices &amp; Network</h2>
 <p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank maintains eight provincial offices strategically located across Nepal's provinces, extending the Bank's regulatory, supervisory and public service functions to all regions of the country.</p>
 <a class="inline-flex items-center gap-2 rounded-full bg-[#25295B] text-white px-6 py-3 text-sm font-semibold transition hover:bg-[#25295B]" href="provincial-offices.html">
-                                View Provincial Offices
-                                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+ View Provincial Offices
+ <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 </a>
 </div>
-<div class="w-full rounded-[20px] bg-white border border-slate-200 p-6 shadow-sm flex flex-col justify-between">
+<div class="w-full rounded-xl bg-white border border-slate-200 p-6 shadow-sm flex flex-col justify-between">
 <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
 <span class="text-xs font-semibold uppercase tracking-wider text-[#138496]">Presence Summary</span>
 <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-semibold">77 Districts</span>
@@ -499,20 +626,20 @@ document.addEventListener("DOMContentLoaded", function() {
 <h2 class="nrb-section-title mt-1 mb-4 text-slate-900">Financial Statements</h2>
 <p class="text-sm text-slate-600 leading-7 mb-8">Nepal Rastra Bank publishes annual audited financial statements and reports in accordance with its statutory obligations, ensuring full public accountability and institutional transparency.</p>
 <a class="inline-flex items-center gap-2 rounded-full bg-[#25295B] text-white px-6 py-3 text-sm font-semibold transition hover:bg-[#25295B]" href="financial-statements.html">
-                                View Financial Statements
-                                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+ View Financial Statements
+ <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 </a>
 </div>
-<a class="block nrb-elevated-card bg-[#25295B] rounded-[20px] p-8 text-white relative overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#25295B]/20" href="https://www.nrb.org.np/fmd/financial-statement-fy-2024-25-2081-82/" target="_blank">
+<a class="block nrb-elevated-card bg-[#25295B] rounded-xl p-6 text-white relative overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#25295B]/20 focus:outline-none focus:ring-2 focus:ring-[#138496] rounded-xl" href="https://www.nrb.org.np/fmd/financial-statement-fy-2024-25-2081-82/" target="_blank">
 <!-- Subtle background decoration to make it feel less rigid -->
-<div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#138496]/10 blur-2xl transition-all duration-500 group-hover:bg-[#138496]/20 group-hover:scale-150"></div>
+<div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#138496]/10 blur-2xl transition-all duration-500 group-hover:bg-[#138496]/20 group-"></div>
 <div class="relative z-10">
 <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#138496] mb-3">Featured Report</p>
-<h3 class="text-xl font-bold text-white mb-2 group-hover:text-white transition-colors">Annual Report 2024/25</h3>
+<h3 class="text-xl font-bold text-white mb-2 group-hover:text-white transition-colors focus:outline-none focus:text-white focus:underline">Annual Report 2024/25</h3>
 <p class="text-sm text-slate-300 leading-6 mb-8 max-w-sm">Comprehensive review of Nepal Rastra Bank's operations, financial performance, and policy implementation for fiscal year 2024/25.</p>
-<div class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] group-hover:text-white transition-colors">
-            Open Document
-            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 group-hover:bg-[#138496] transition-colors">
+<div class="inline-flex items-center gap-2 text-sm font-semibold text-[#138496] group-hover:text-white transition-colors focus:outline-none focus:text-white focus:underline">
+ Open Document
+ <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 group-hover:bg-[#138496] transition-colors">
 <svg class="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
 <path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round"></path>
 <path d="m12 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -526,137 +653,148 @@ document.addEventListener("DOMContentLoaded", function() {
 </section>
 <!-- GLOBAL FOOTER -->
 <footer class="nrb-footer bg-[#25295B] text-white" id="Footer">
-<div class="nrb-section-shell py-16">
-<div class="flex flex-col gap-6 border-b border-white/10 pb-10">
+<div class="nrb-section-shell py-12">
+<!-- Top Row: Branding -->
+<div class="flex items-center justify-between pb-8 border-b border-white/10">
 <div class="flex items-center gap-4">
-<div class="flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white shadow-sm">
-<img alt="Nepal Rastra Bank Official Seal" class="h-11 w-11 object-contain" src="../../assets/images/nrb-logo.png"/>
+<div class="flex h-11 w-11 items-center justify-center rounded-full bg-white">
+<img alt="NRB" class="h-10 w-10 object-contain" src="../../assets/images/nrb-logo.png"/>
 </div>
 <div>
-<p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-200">Nepal Rastra Bank</p>
-<p class="mt-1 text-sm text-slate-300">Central Bank of Nepal</p>
+<p class="text-sm font-semibold uppercase tracking-[0.22em] text-white">Nepal Rastra Bank</p>
+<p class="text-xs text-slate-400 mt-0.5">Central Bank of Nepal · Est. 1956</p>
 </div>
 </div>
-<p class="max-w-3xl text-sm leading-6 text-slate-300">
-                        The official digital headquarters for Nepal's central bank, bringing together monetary policy, economic data, financial regulation, research publications, notices, and public services in one authoritative portal.
-                    </p>
+<div class="flex items-center gap-4">
+<a aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white transition focus:outline-none focus:text-white focus:underline" href="#">
+<svg class="h-4 w-4" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a aria-label="Twitter" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white transition focus:outline-none focus:text-white focus:underline" href="#">
+<svg class="h-4 w-4" fill="currentColor" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
 </div>
-<div class="mt-10 grid grid-cols-5 gap-8">
+</div>
+<!-- Middle Row: Navigation Columns -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 pb-8">
+<!-- Column 1: About NRB -->
 <div class="flex flex-col gap-4">
-<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">About</h3>
-<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html">Overview</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#leadership">Leadership</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#organization">Departments</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/about/index.html#offices">Offices</a>
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">About NRB</h3>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/about/index.html">Overview &amp; History</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/about/index.html#leadership">Board of Directors</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/about/index.html#organization">Departments</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/monetary-policy/index.html">Monetary Policy</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/regulation-and-supervision/index.html">Regulation &amp; Supervision</a>
 </div>
+<!-- Column 2: Data & Publications -->
 <div class="flex flex-col gap-4">
-<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Statistics &amp; Data</h3>
-<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/statistics/index.html">Economic indicators</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Exchange rates</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial stability</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Open data</a>
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">Data &amp; Publications</h3>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/forex-management/index.html">Exchange Rates</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/statistics/index.html">Statistics &amp; Indicators</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/publications/index.html">Publications &amp; Reports</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/media-speeches/index.html">Media &amp; Speeches</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/notices/index.html">Notices &amp; Circulars</a>
 </div>
+<!-- Column 3: Public Services -->
 <div class="flex flex-col gap-4">
-<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Publications</h3>
-<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/publications/index.html">Reports</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Research</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Working papers</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Annual reports</a>
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">Public Services</h3>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="http://gunaso.nrb.org.np/" rel="noopener" target="_blank">Consumer Protection</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="http://emap.nrb.org.np/" rel="noopener" target="_blank">Financial Inclusion Portal</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="https://goaml.fiu.nrb.org.np/PRD/Home" rel="noopener" target="_blank">goAML Portal</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/procurement/index.html">Procurement</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../../pages/contact/index.html">Contact &amp; Feedback</a>
 </div>
+<!-- Column 4: Contact Information -->
 <div class="flex flex-col gap-4">
-<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Consumer Services</h3>
-<a class="text-sm text-slate-300 transition hover:text-white" href="../../pages/consumer-services/index.html">Consumer protection</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Complaints</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">Financial literacy</a>
-<a class="text-sm text-slate-300 transition hover:text-white" href="#">FAQ</a>
-</div>
-<div class="flex flex-col gap-4">
-<h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Contact</h3>
-<p class="text-sm leading-6 text-slate-300">Baluwatar, Kathmandu, Nepal</p>
-<p class="text-sm leading-6 text-slate-300">Phone: +977-1-4419804</p>
-<p class="text-sm leading-6 text-slate-300">Email: info@nrb.org.np</p>
-<p class="text-sm leading-6 text-slate-300">Provincial offices available nationwide</p>
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">Central Office</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Baluwatar, Kathmandu<br/>Bagmati Province, Nepal</p>
+<p class="text-sm text-slate-400">Phone: +977-1-4419804</p>
+<p class="text-sm text-slate-400">Email: info@nrb.org.np</p>
+<div class="mt-2 pt-3 border-t border-white/5">
+<p class="text-xs text-slate-500"><span class="text-slate-300">Spokesperson:</span> <a class="hover:text-white transition focus:outline-none focus:text-white focus:underline" href="../../pages/about/information-officers.html">Mr. Guru Prasad Paudel</a></p>
+<p class="text-xs text-slate-500 mt-1"><span class="text-slate-300">Info Officer:</span> <a class="hover:text-white transition focus:outline-none focus:text-white focus:underline" href="../../pages/about/information-officers.html">Dr. Sanjay Prasad Mishra</a></p>
 </div>
 </div>
-<div class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400">
+</div>
+<!-- Bottom Row: Legal -->
+<div class="flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-500">
 <p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
 <div class="flex flex-wrap items-center gap-5">
-<a class="transition hover:text-white" href="#">Privacy Policy</a>
-<a class="transition hover:text-white" href="#">Accessibility</a>
-<a class="transition hover:text-white" href="#">Terms of Use</a>
-<a class="transition hover:text-white" href="#Footer">Sitemap</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Privacy Policy</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Accessibility</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Terms of Use</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Sitemap</a>
 </div>
 </div>
 </div>
 </footer>
 <script>
-        (function () {
-            const sections = ['overview', 'leadership', 'organization', 'offices', 'statements'];
+ (function () {
+ const sections = ['overview', 'leadership', 'organization', 'offices', 'statements'];
 
-            /* ── Active indicator ───────────────────────────────────────── */
-            const navLinks = {};
-            sections.forEach(id => {
-                const key = 'LocalNav-' + id.charAt(0).toUpperCase() + id.slice(1);
-                const el = document.getElementById(key);
-                if (el) navLinks[id] = el;
-            });
-            function setActive(id) {
-                sections.forEach(s => {
-                    const link = navLinks[s];
-                    if (!link) return;
-                    s === id
-                        ? link.setAttribute('aria-current', 'page')
-                        : link.removeAttribute('aria-current');
-                });
-            }
+ /* ── Active indicator ───────────────────────────────────────── */
+ const navLinks = {};
+ sections.forEach(id => {
+ const key = 'LocalNav-' + id.charAt(0).toUpperCase() + id.slice(1);
+ const el = document.getElementById(key);
+ if (el) navLinks[id] = el;
+ });
+ function setActive(id) {
+ sections.forEach(s => {
+ const link = navLinks[s];
+ if (!link) return;
+ s === id
+ ? link.setAttribute('aria-current', 'page')
+ : link.removeAttribute('aria-current');
+ });
+ }
 
-            /* ── Sticky offset helper ───────────────────────────────────── */
-            /* Site-Header is NOT sticky — it scrolls away.                  */
-            /* Only the Local-Navigation bar stays pinned at the top.        */
-            function getStickyOffset() {
-                const localNav = document.getElementById('Local-Navigation');
-                const localNavH = localNav ? localNav.getBoundingClientRect().height : 56;
-                return localNavH + 12; /* +12px breathing room */
-            }
+ /* ── Sticky offset helper ───────────────────────────────────── */
+ /* Site-Header is NOT sticky — it scrolls away. */
+ /* Only the Local-Navigation bar stays pinned at the top. */
+ function getStickyOffset() {
+ const localNav = document.getElementById('Local-Navigation');
+ const localNavH = localNav ? localNav.getBoundingClientRect().height : 56;
+ return localNavH + 12; /* +12px breathing room */
+ }
 
-            /* ── Smooth-scroll with correct offset ──────────────────────── */
-            function scrollToSection(id) {
-                const target = document.getElementById(id);
-                if (!target) return;
-                const absoluteTop = target.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({ top: Math.max(0, absoluteTop - getStickyOffset()), behavior: 'smooth' });
-            }
+ /* ── Smooth-scroll with correct offset ──────────────────────── */
+ function scrollToSection(id) {
+ const target = document.getElementById(id);
+ if (!target) return;
+ const absoluteTop = target.getBoundingClientRect().top + window.scrollY;
+ window.scrollTo({ top: Math.max(0, absoluteTop - getStickyOffset()), behavior: 'smooth' });
+ }
 
-            /* ── Intercept local nav clicks ─────────────────────────────── */
-            document.querySelectorAll('.nrb-page-nav a[href^="#"]').forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const id = this.getAttribute('href').slice(1);
-                    setActive(id);
-                    scrollToSection(id);
-                    history.replaceState(null, '', '#' + id);
-                });
-            });
+ /* ── Intercept local nav clicks ─────────────────────────────── */
+ document.querySelectorAll('.nrb-page-nav a[href^="#"]').forEach(link => {
+ link.addEventListener('click', function (e) {
+ e.preventDefault();
+ const id = this.getAttribute('href').slice(1);
+ setActive(id);
+ scrollToSection(id);
+ history.replaceState(null, '', '#' + id);
+ });
+ });
 
-            /* ── IntersectionObserver keeps indicator in sync on free scroll */
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) setActive(entry.target.id);
-                });
-            }, { rootMargin: '-10% 0px -75% 0px', threshold: 0 });
-            sections.forEach(id => {
-                const el = document.getElementById(id);
-                if (el) observer.observe(el);
-            });
+ /* ── IntersectionObserver keeps indicator in sync on free scroll */
+ const observer = new IntersectionObserver((entries) => {
+ entries.forEach(entry => {
+ if (entry.isIntersecting) setActive(entry.target.id);
+ });
+ }, { rootMargin: '-10% 0px -75% 0px', threshold: 0 });
+ sections.forEach(id => {
+ const el = document.getElementById(id);
+ if (el) observer.observe(el);
+ });
 
-            /* ── Handle deep-link on page load (e.g. URL has #leadership) ─ */
-            window.addEventListener('load', () => {
-                const hash = window.location.hash.slice(1);
-                if (hash && sections.includes(hash)) {
-                    setTimeout(() => scrollToSection(hash), 100);
-                }
-            });
-        })();
-    </script>
+ /* ── Handle deep-link on page load (e.g. URL has #leadership) ─ */
+ window.addEventListener('load', () => {
+ const hash = window.location.hash.slice(1);
+ if (hash && sections.includes(hash)) {
+ setTimeout(() => scrollToSection(hash), 100);
+ }
+ });
+ })();
+ </script>
 </body>
 </html>

@@ -1,27 +1,76 @@
-<footer id="Footer" class="nrb-footer bg-[#25295B] text-white">
-    <div class="mx-auto w-full max-w-7xl px-8 py-16">
-        <div class="grid grid-cols-[1fr_0.7fr_0.7fr_0.9fr] gap-8">
-            <div id="Footer-Brand-Section" class="flex flex-col gap-4">
-                <div class="flex items-center gap-4">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white text-[#25295B]">
-                        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M12 3l8 4v10l-8 4-8-4V7l8-4z" />
-                            <path d="M8 10h8" />
-                            <path d="M12 7v10" />
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">Nepal Rastra Bank
-                        </div>
-                        <div class="text-sm text-slate-300">Central Bank of Nepal</div>
-                    </div>
-                </div>
-                <p class="max-w-md text-sm leading-6 text-slate-300">Maintaining monetary stability, financial sector
-                    confidence, and transparent public communication for Nepal.</p>
-            </div>
-        </div>
-        <div class="mt-8 border-t border-white/10 pt-6 text-sm text-slate-400">© 2026 Nepal Rastra Bank. All rights
-            reserved.</div>
-    </div>
+
+<footer class="nrb-footer bg-[#25295B] text-white" id="Footer">
+<div class="nrb-section-shell py-12">
+<!-- Top Row: Branding -->
+<div class="flex items-center justify-between pb-8 border-b border-white/10">
+<div class="flex items-center gap-4">
+<div class="flex h-11 w-11 items-center justify-center rounded-full bg-white">
+<img alt="NRB" class="h-10 w-10 object-contain" src="../assets/images/nrb-logo.png"/>
+</div>
+<div>
+<p class="text-sm font-semibold uppercase tracking-[0.22em] text-white">Nepal Rastra Bank</p>
+<p class="text-xs text-slate-400 mt-0.5">Central Bank of Nepal · Est. 1956</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white transition focus:outline-none focus:text-white focus:underline" href="#">
+<svg class="h-4 w-4" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a aria-label="Twitter" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white transition focus:outline-none focus:text-white focus:underline" href="#">
+<svg class="h-4 w-4" fill="currentColor" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Middle Row: Navigation Columns -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 pb-8">
+<!-- Column 1: About NRB -->
+<div class="flex flex-col gap-4">
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">About NRB</h3>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/about/index.html">Overview &amp; History</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/about/index.html#leadership">Board of Directors</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/about/index.html#organization">Departments</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/monetary-policy/index.html">Monetary Policy</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/regulation-and-supervision/index.html">Regulation &amp; Supervision</a>
+</div>
+<!-- Column 2: Data & Publications -->
+<div class="flex flex-col gap-4">
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">Data &amp; Publications</h3>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/forex-management/index.html">Exchange Rates</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/statistics/index.html">Statistics &amp; Indicators</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/publications/index.html">Publications &amp; Reports</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/media-speeches/index.html">Media &amp; Speeches</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/notices/index.html">Notices &amp; Circulars</a>
+</div>
+<!-- Column 3: Public Services -->
+<div class="flex flex-col gap-4">
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">Public Services</h3>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="http://gunaso.nrb.org.np/" rel="noopener" target="_blank">Consumer Protection</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="http://emap.nrb.org.np/" rel="noopener" target="_blank">Financial Inclusion Portal</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="https://goaml.fiu.nrb.org.np/PRD/Home" rel="noopener" target="_blank">goAML Portal</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/procurement/index.html">Procurement</a>
+<a class="text-sm text-slate-400 transition hover:text-white focus:outline-none focus:text-white focus:underline" href="../pages/contact/index.html">Contact &amp; Feedback</a>
+</div>
+<!-- Column 4: Contact Information -->
+<div class="flex flex-col gap-4">
+<h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-200 mb-1">Central Office</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Baluwatar, Kathmandu<br/>Bagmati Province, Nepal</p>
+<p class="text-sm text-slate-400">Phone: +977-1-4419804</p>
+<p class="text-sm text-slate-400">Email: info@nrb.org.np</p>
+<div class="mt-2 pt-3 border-t border-white/5">
+<p class="text-xs text-slate-500"><span class="text-slate-300">Spokesperson:</span> <a class="hover:text-white transition focus:outline-none focus:text-white focus:underline" href="../pages/about/information-officers.html">Mr. Guru Prasad Paudel</a></p>
+<p class="text-xs text-slate-500 mt-1"><span class="text-slate-300">Info Officer:</span> <a class="hover:text-white transition focus:outline-none focus:text-white focus:underline" href="../pages/about/information-officers.html">Dr. Sanjay Prasad Mishra</a></p>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Legal -->
+<div class="flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-500">
+<p>© 2026 Nepal Rastra Bank. All rights reserved.</p>
+<div class="flex flex-wrap items-center gap-5">
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Privacy Policy</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Accessibility</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Terms of Use</a>
+<a class="transition hover:text-white focus:outline-none focus:text-white focus:underline" href="#">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
