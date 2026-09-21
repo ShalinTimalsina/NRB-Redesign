@@ -1,0 +1,121 @@
+{
+  "About": {
+    "href": "#",
+    "children": []
+  },
+  "Laws, Policies &Guidelines": {
+    "href": "#",
+    "children": []
+  },
+  "Regulations &Supervisions": {
+    "href": "#",
+    "children": []
+  },
+  "Publication": {
+    "href": "#",
+    "children": []
+  },
+  "Statistics": {
+    "href": "https://www.nrb.org.np/departments/statistics-data-links/",
+    "children": [
+      {
+        "text": "Statistics",
+        "href": "https://www.nrb.org.np/departments/statistics-data-links/",
+        "children": []
+      }
+    ]
+  },
+  "Procurement": {
+    "href": "#",
+    "children": [
+      {
+        "text": "Assets and Service Management Department",
+        "href": "https://www.nrb.org.np/departments/gsd/",
+        "children": [
+          {
+            "text": "Notices",
+            "href": "/category/notices/?department=gsd"
+          },
+          {
+            "text": "Global Tenders",
+            "href": "/category/global-tenders/"
+          },
+          {
+            "text": "Domestic Tenders",
+            "href": "/category/domestic-tenders/"
+          },
+          {
+            "text": "Pre-qualified Companies",
+            "href": "/category/pre-qualified-companies/?department=gsd"
+          }
+        ]
+      }
+    ]
+  },
+  "Career": {
+    "href": "#",
+    "children": [
+      {
+        "text": "Human Resources Management Department",
+        "href": "https://www.nrb.org.np/departments/hrm/",
+        "children": [
+          {
+            "text": "Online portal for contract application",
+            "href": "https://jobs.nrb.org.np/"
+          },
+          {
+            "text": "Online Portal for Open Competition",
+            "href": "https://jobs.nrb.org.np/"
+          },
+          {
+            "text": "Online Portal for Performance Evaluation Based Promotion & Internal Competition",
+            "href": "https://jobs.nrb.org.np/"
+          },
+          {
+            "text": "Notices",
+            "href": "/category/notices/?department=hrm"
+          },
+          {
+            "text": "खुल्ला प्रतियोगितात्मक परीक्षाको पाठ्यक्रम",
+            "href": "/category/open-competition-syllabus/"
+          }
+        ]
+      }
+    ]
+  },
+  "MonetaryManagement": {
+    "href": "#",
+    "children": [
+      {
+        "text": "Monetary Management Department",
+        "href": "https://www.nrb.org.np/departments/pdm/",
+        "children": [
+          {
+            "text": "Notices",
+            "href": "/category/pdm-notices/?department=pdm"
+          },
+          {
+            "text": "Monetary Operations",
+            "href": "https://www.nrb.org.np/category/monetary-operations/"
+          },
+          {
+            "text": "Data & Reports",
+            "href": "https://www.nrb.org.np/category/reports/"
+          },
+          {
+            "text": "Circulars",
+            "href": "https://www.nrb.org.np/category/pdm-circulars/?department=pdm"
+          },
+          {
+            "text": "Acts, Rules & Bylaws, Policies & Procedures",
+            "href": "https://www.nrb.org.np/category/acts-bylaws/?department=pdm"
+          }
+        ]
+      }
+    ]
+  },
+  "MediaSpeeches": {
+    "href": "#",
+    "children": []
+  }
+}

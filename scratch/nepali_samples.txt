@@ -1,0 +1,40 @@
+
+--- pages/about/information-officers.html ---
+<p class="text-xs text-slate-400 mb-3">
+ प्रवक्ता
+</p>
+-
+<p class="text-sm text-slate-500 mb-5">
+ श्री गुरुप्रसाद पौडेल
+</p>
+-
+<p class="text-xs text-slate-400 mb-3">
+ सह प्रवक्ता तथा सूचना अधिकारी
+</p>
+-
+
+--- pages/regulations/acts.html ---
+<p class="font-semibold text-base text-slate-900 group-hover:text-[#138496] transition-colors leading-snug">
+ विदेशी विनिमय (नियमित गर्ने) ऐन, २०१९
+</
+-
+<p class="font-semibold text-base text-slate-900 group-hover:text-[#138496] transition-colors leading-snug">
+ विनिमेय अधिकारपत्र ऐन, २०३४
+</p>
+-
+<p class="font-semibold text-base text-slate-900 group-hover:text-[#138496] transition-colors leading-snug">
+ भुक्तानी तथा फर्स्यौट ऐन, २०७५
+</p>
+-
+
+--- pages/monetary-policy/circulars/index.html ---
+<p class="font-semibold text-base text-slate-900 group-hover:text-[#138496] transition-colors leading-snug">
+ मौद्रिक नीति तर्जुमा कार्यविधि, २०७३ (दो
+-
+<p class="font-semibold text-base text-slate-900 group-hover:text-[#138496] transition-colors leading-snug">
+ नेपाल राष्ट्र बैंक , कर्मचारी सेवा विनिय
+-
+<p class="font-semibold text-base text-slate-900 group-hover:text-[#138496] transition-colors leading-snug">
+ हेजिङ्ग नियमावली, २०७९
+</p>
+-

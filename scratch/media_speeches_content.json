@@ -1,0 +1,35 @@
+{
+  "media_releases": [],
+  "speeches": [
+    {
+      "title": "Governor's Speeches",
+      "link": "https://www.nrb.org.np/category/governors-speech/?department=ofg"
+    },
+    {
+      "title": "Speech of Governor at Conference on Leadership Development for the New Normal",
+      "link": "https://www.nrb.org.np/ofg/speech-of-governor-at-conference-on-leadership-development-for-the-new-normal/"
+    }
+  ],
+  "ofg_links": [
+    {
+      "title": "MediaSpeeches",
+      "link": "#"
+    },
+    {
+      "title": "Media Release",
+      "link": "https://www.nrb.org.np/category/media-releases/?department=ofg"
+    },
+    {
+      "title": "Speeches",
+      "link": "https://www.nrb.org.np/category/governors-speech/?department=ofg"
+    },
+    {
+      "title": "Media Release",
+      "link": "https://www.nrb.org.np/category/media-releases/?department=ofg"
+    },
+    {
+      "title": "Speeches",
+      "link": "https://www.nrb.org.np/category/governors-speech/?department=ofg"
+    }
+  ]
+}
